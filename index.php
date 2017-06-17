@@ -1,3 +1,19 @@
+<?php 
+/*
+====================================
+Jonathan Wagner
+Jonathan.Wagner@Windstream.com
+WBP
+====================================
+FILE NAME:          index.php
+ TAB SIZE:          4
+SOFT TABS:          NO
+====================================
+Copywrite @2015
+*/
+	error_reporting(E_ALL);
+	?>
+
 <!DOCTYPE HTML>
 <!--
 	Stellar by HTML5 UP
@@ -186,3 +202,7 @@
 
 	</body>
 </html>
+
+<?php 
+//end
+ ?>
