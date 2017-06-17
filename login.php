@@ -20,8 +20,8 @@
 session_name('lllbackoffice');
 session_start();
 ini_set("allow_url_include", true);
-require_once('user.class.php');
-require_once('mystring.class.php');
+require_once('./user.class.php');
+require_once('./mystring.class.php');
 
  ?>
 <head>
