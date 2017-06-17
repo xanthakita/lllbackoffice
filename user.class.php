@@ -1,7 +1,7 @@
 <?php
 ini_set("allow_url_include", true);
 // include_once('/var/www/html/Classes/kint/Kint.class.php');  //debug functions
-require_once("include.php");
+//require_once("include.php");
 
 $users = '';
 
