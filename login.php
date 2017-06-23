@@ -28,7 +28,7 @@ require_once('./mystring.class.php');
 	<title> LLLBackoffice Login</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the document listing page for the NOC Document Management System">
+    <meta name="description" content="LLL Backoffice Login page">
     <meta name="author" content="Jonathan Wagner">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">

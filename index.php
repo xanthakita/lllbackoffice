@@ -12,6 +12,9 @@ SOFT TABS:          NO
 Copywrite @2015
 */
 	error_reporting(E_ALL);
+	if (!isset($_COOKIE["userid"])) {
+		header('location: login.php');
+	}
 	?>
 
 <!DOCTYPE HTML>
