@@ -1,8 +1,8 @@
 <?php
 ini_set("allow_url_include", true);
 // require_once ('/var/www/html/Classes/kint/Kint.class.php');
-require_once ('include.php');
-session_name("nocdms");
+//require_once ('include.php');
+session_name("lllbackoffice");
 session_start();
 /* ?>
 
@@ -46,11 +46,11 @@ switch ($_POST['act']) {
 			if (isset($_COOKIE['CallingPage'])) {
 				header('Location: '.$_COOKIE['CallingPage']);
 			} else {
-				header('Location: http://voiptools.windstream.com/index.php');
+				header('Location: http://lllbackoffice.com/index.php');
 			}
 		} else {
 			echo "<h1>Invalid Login</h1>";
-			echo "Please <a href='http://voiptools.windstream.com/cms/login.php'>Try again</a><br>";
+			echo "Please <a href='http://lllbackoffice.com/login.php'>Try again</a><br>";
 			echo "or <a href'userpwdreset.php'>Reset Password</a><br>";
 		}
 		break;
@@ -93,8 +93,8 @@ switch ($_POST['act']) {
 		$firstname = $_POST['firstname'];
 		$lastname  = $_POST['lastname'];
 		$email     = $_POST['email'];
-		$userdept  = $_POST['dept'];
-		$userpriv  = $_POST['user_priv'];
+		// $userdept  = $_POST['dept'];
+		// $userpriv  = $_POST['user_priv'];
 		if (isset($_POST['linenum'])) {
 			$linenum = $_POST['linenum'];
 			//delete line from file usernotinsystem.log
@@ -115,7 +115,7 @@ switch ($_POST['act']) {
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 		//if ($pwd1 === $pwd2) {
-		$output = $user->Add_User($username, $firstname, $lastname, $email, $userdept, $userpriv);
+		$output = $user->Add_User($username, $firstname, $lastname, $email); //, $userdept, $userpriv);
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://voiptools.windstream.com/index.php');
 		/*} else {

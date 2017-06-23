@@ -175,7 +175,7 @@ function togglePageElementVisibility(what)
 
     <div class="well well-sm input-group">
     <form action="usercontroller.php" method="POST" accept-charset="utf-8">
-    If you have yet to be setup on the NOCDMS system please sign up to get access, you will be able to log in as soon as that process is complete.<br>
+    If you need to be setup on the lllbackoffice system please sign up to get access.<br>
     	<input type="hidden" name="act" value="signup" >
     	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-caution">Signup for Access</button><br>
     </form>
