@@ -6,10 +6,9 @@
 <body>
 
 <?php 
-	// Class for controlling the documents for the NOC Document Management System (DMS)
  	ini_set("allow_url_include", true);
- 	include_once("include.php");
- 	     require_once('/var/www/html/Classes/kint/Kint.class.php');
+ 	//include_once("include.php");
+ 	    // require_once('/var/www/html/Classes/kint/Kint.class.php');
  	     kint::enabled(false);
  	if (isset($_SESSION['username'])) {$username=$_SESSION['username'];}
 
