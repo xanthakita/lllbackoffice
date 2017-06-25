@@ -18,7 +18,7 @@ class mydbconnect {
 		//require '/var/www/html/AS/inc/mysqlinc.php';
 		$result = mysqli_query($sql, $link);
 		if (!$result) {
-			die('Invalid query:  '.mysql_error());
+			die('Invalid query:  '.mysqli_error());
 		}
 		return $result;
 	}
