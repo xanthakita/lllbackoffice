@@ -3,9 +3,9 @@
 // This is for connectivity to the mysql database server on the nocbox01
 
 $mysqlserver='localhost';
-$mysqlusername='advsrv';
-$mysqlpassword='Adv4nc3d';
-$dbname = 'NOCTOOLS';
+$mysqlusername='xanthakita';
+$mysqlpassword='6619Y^0m3';
+$dbname = 'lllbackoffice';
  
 // Constants
 if (!isset($myglobals)) {
