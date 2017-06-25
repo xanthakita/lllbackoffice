@@ -2,6 +2,7 @@
 ini_set("allow_url_include", true);
 // require_once ('/var/www/html/Classes/kint/Kint.class.php');
 //require_once ('include.php');
+require_once ('user.class.php');
 session_name("lllbackoffice");
 session_start();
 /* ?>
@@ -16,7 +17,7 @@ session_start();
 
 <?php
  */
-// Class for controlling the documents for the NOC Document Management System (DMS)
+
 
 if (isset($_COOKIE['uid'])) {$adminuser = json_decode($_COOKIE['uid']);} else { $adminuser = 'not set';}
 
