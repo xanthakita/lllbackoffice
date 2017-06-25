@@ -15,7 +15,7 @@ class mydbconnect {
 	private function sqldblink($sql) {
 		// d($sql);
 
-		require '/var/www/html/AS/inc/mysqlinc.php';
+		//require '/var/www/html/AS/inc/mysqlinc.php';
 		$result = mysqli_query($sql, $link);
 		if (!$result) {
 			die('Invalid query:  '.mysql_error());
