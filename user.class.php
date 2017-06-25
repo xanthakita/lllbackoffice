@@ -26,7 +26,7 @@ Class User {
 		require_once('/var/www/html/Classes/mydbconnect.class.php');
 		$dbname = 'lllbackoffice';
 		$link=mysqli_connect($mysqlserver, $mysqlusername, $mysqlpassword, $dbname) or die ("Error connecting to mysql server: ".mysql_error());
-		s($link, $mysqlserver, $mysqlusername, $mysqlpassword, $dbname);
+		//s($link, $mysqlserver, $mysqlusername, $mysqlpassword, $dbname);
 		// mysql_select_db($dbname, $link) or die ("Error selecting specified database on mysql server: ".mysql_error());
 		$users = new mydbconnect;
 	}
