@@ -1,0 +1,63 @@
+<?php
+
+//mydbconnect.class.php
+/*
+listing scripts that call this class as I find them:
+/var/www/html/hardware/sonus/gatewaysignalforkcontrol.php
+
+
+ */
+// require_once ('/var/www/html/Classes/kint/Kint.class.php');
+// kint::enabled(false);
+
+class mydbconnect {
+
+	private function sqldblink($sql) {
+		// d($sql);
+
+		require '/var/www/html/AS/inc/mysqlinc.php';
+		$result = mysql_query($sql, $link);
+		if (!$result) {
+			die('Invalid query:  '.mysql_error());
+		}
+		return $result;
+	}
+
+	public function getnextid($tablename) {
+		$mysql  = "SELECT auto_increment FROM information_schema.tables WHERE table_name='$tablename'";
+		$result = $this->sqldblink($mysql);
+		$id     = mysql_fetch_array($result, MYSQL_ASSOC);
+
+		$this->id = $id['auto_increment'];
+		//return $this->id;
+		return $this->id;
+
+	}
+
+	public function gettablenames($schemaname) {
+		$mysql  = "SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = '$schemaname'";
+		$result = $this->sqldblink($mysql);
+		while ($tables = mysql_fetch_array($result, MYSQL_ASSOC)) {
+			$thetables[] = $tables['TABLE_NAME'];
+		}
+		$this->tables = $thetables;
+		return $this->tables;
+	}
+
+	public function querydb($sql) {
+		// d($sql);
+		$myoutput       = null;
+		$this->myoutput = array();
+		$result         = $this->sqldblink($sql);
+		// d($result);
+		while ($mydata = mysql_fetch_array($result, MYSQL_ASSOC)) {
+
+			$this->myoutput[] = $mydata;
+		};
+		return $this->myoutput;
+
+	}
+
+}
+
+?>
