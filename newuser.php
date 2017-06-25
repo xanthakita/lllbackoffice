@@ -27,19 +27,13 @@
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to the NOC Document Management System </h3>
- 		Username (CSO): <input type="text" name="username" value="<?php echo $username; ?>"><br>
+ 		Username (first initial lastname i.e. jsmith): <input type="text" name="username" value="<?php echo $username; ?>"><br>
  	<?php /*	Password: <input type="password" name="pwd1" value="" ><br>
  		Verify Password: <input type="password" name="pwd2" value="" ><br> */
  	?>
  		Firstname: <input type="text" name="firstname" value="" >
  		Lastname: <input type="text" name="lastname" value=""><br>
- 		Email: <input type="email" name="email" value=""><br>
- 		Department: <br>
- 		CNOC:<input type="radio" name="dept" value="'CNOC'">
- 		DNOC:<input type="radio" name="dept" value="'DNOC'">
- 		ENOC:<input type="radio" name="dept" value="'ENOC'">
- 		TNOC:<input type="radio" name="dept" value="'TNOC'">
- 		VNOC:<input type="radio" name="dept" value="'VNOC'"><br><br>
+ 		Email: <input type="email" name="email" value=""><br><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
  </td>
