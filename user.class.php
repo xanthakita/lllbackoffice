@@ -24,10 +24,10 @@ Class User {
 		// print "In BaseClass constructor\n";
 		require('/var/www/html/Classes/mydbi.php');
 		require_once('/var/www/html/Classes/mydbconnect.class.php');
-		$dbname = 'dms';
-		$link=mysql_connect($mysqlserver, $mysqlusername, $mysqlpassword) or die ("Error connecting to mysql server: ".mysql_error());
+		$dbname = 'lllbackoffice';
+		$link=mysqli_connect($mysqlserver, $mysqlusername, $mysqlpassword, $dbname) or die ("Error connecting to mysql server: ".mysql_error());
 		s($link, $mysqlserver, $mysqlusername, $mysqlpassword, $dbname);
-		mysql_select_db($dbname, $link) or die ("Error selecting specified database on mysql server: ".mysql_error());
+		// mysql_select_db($dbname, $link) or die ("Error selecting specified database on mysql server: ".mysql_error());
 		$users = new mydbconnect;
 	}
 
@@ -95,25 +95,13 @@ Class User {
 	public function Check_User_Auth($uid,$pwd){
 		// is called by $this->login in order to verify the correct password was passed to the login method.
 			GLOBAL $users;
-			$sql="SELECT username, firstname, lastname, userEmail, userpriv, department, deptId, password, id from dms.user where (username = '$uid' and active='1');";
+			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid' and active='1');";
 			// d($sql);
 			$getuser=$users->querydb($sql);
 
 
-		$ch = curl_init("http://166.102.188.239/ata-tools/ldaptest.php?username=$uid&password=$pwd");
-		// kint::enabled(false); d($ch);
-		// $ch = curl_init("http://166.102.188.239/jonathan/adldap.php?username=$uid&password=$pwd");
-			$fp = fopen("./authcheck.txt", "w");
-			curl_setopt($ch, CURLOPT_FILE, $fp);
-			curl_setopt($ch, CURLOPT_HEADER, 0);
-			curl_exec($ch);
-			curl_close($ch);
-			fclose($fp);
-// kint::enabled(false);
-// d(sizeof($getuser));
-			if (filesize("./authcheck.txt") > 0) {
-					passthru("echo '' >> ./auth.log; cat ./authcheck.txt >> ./auth.log");
-			//if (hash('sha1',$pwd) == $getuser[1]['password']) {
+
+			if (hash('sha1',$pwd) == $getuser[1]['password']) {
 			// since it's possible someone who isn't in the system can successfully log in and see the base docs check to see if the query returned anything
 				if (sizeof($getuser)==0) { //user has valid CSO but is not active in the system
 					passthru("echo '' >> ./usernotinsystem.log; cat ./authcheck.txt >> ./usernotinsystem.log");
