@@ -18,8 +18,8 @@
 	user: can add and edit customers can mark customers inactive
  */ 
 
-setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
-	if (!isset($_COOKIE["userid"])) {
+//setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
+	if (isset($_COOKIE["userid"])) {
 		header('location: index.php');
 	}
 session_name('lllbackoffice');
