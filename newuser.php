@@ -9,7 +9,7 @@
  	ini_set("allow_url_include", true);
  	//include_once("include.php");
  	    // require_once('/var/www/html/Classes/kint/Kint.class.php');
- 	     kint::enabled(false);
+ 	     //kint::enabled(false);
  	if (isset($_SESSION['username'])) {$username=$_SESSION['username'];}
 
  	if ( isset($_SESSION['errorstring']) ) {
