@@ -26,7 +26,7 @@ class mydbconnect {
 	public function getnextid($tablename) {
 		$mysql  = "SELECT auto_increment FROM information_schema.tables WHERE table_name='$tablename'";
 		$result = $this->sqldblink($mysql);
-		$id     = mysqli_fetch_array($result, MYSQL_ASSOC);
+		$id     = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 		$this->id = $id['auto_increment'];
 		//return $this->id;
@@ -37,7 +37,7 @@ class mydbconnect {
 	public function gettablenames($schemaname) {
 		$mysql  = "SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_SCHEMA = '$schemaname'";
 		$result = $this->sqldblink($mysql);
-		while ($tables = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+		while ($tables = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 			$thetables[] = $tables['TABLE_NAME'];
 		}
 		$this->tables = $thetables;
@@ -50,7 +50,7 @@ class mydbconnect {
 		$this->myoutput = array();
 		$result         = $this->sqldblink($sql);
 		// d($result);
-		while ($mydata = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+		while ($mydata = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
 			$this->myoutput[] = $mydata;
 		};
