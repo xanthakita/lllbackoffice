@@ -14,6 +14,8 @@ Copywrite @2015
 	error_reporting(E_ALL);
 	if (!isset($_COOKIE["userid"])) {
 		header('location: login.php');
+	} else {
+		$username=$_COOKIE["userid"];
 	}
 	?>
 

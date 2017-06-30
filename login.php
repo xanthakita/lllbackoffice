@@ -21,7 +21,7 @@
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
 	if (isset($_COOKIE["userid"])) {
 		header('location: index.php');
-	}
+	} 
 session_name('lllbackoffice');
 session_start();
 ini_set("allow_url_include", true);
