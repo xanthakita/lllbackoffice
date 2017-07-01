@@ -26,10 +26,10 @@
 			<td>
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
- 		<h3> Please enter the following to signup for access to the NOC Document Management System </h3>
+ 		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		Username (first initial lastname i.e. jsmith): <input type="text" name="username" value="<?php echo $username; ?>"><br>
- 	<?php /*	Password: <input type="password" name="pwd1" value="" ><br>
- 		Verify Password: <input type="password" name="pwd2" value="" ><br> */
+ 		Password: <input type="password" name="pwd1" value="" ><br>
+ 		Verify Password: <input type="password" name="pwd2" value="" ><br> 
  	?>
  		Firstname: <input type="text" name="firstname" value="" >
  		Lastname: <input type="text" name="lastname" value=""><br>

@@ -89,8 +89,8 @@ switch ($_POST['act']) {
 		// s('in adduser');
 		// d($_POST);
 		$username = $_POST['username'];
-		//$pwd1 = $_POST['pwd1'];
-		//$pwd2 = $_POST['pwd2'];
+		$pwd1 = $_POST['pwd1'];
+		$pwd2 = $_POST['pwd2'];
 		$firstname = $_POST['firstname'];
 		$lastname  = $_POST['lastname'];
 		$email     = $_POST['email'];
@@ -115,14 +115,14 @@ switch ($_POST['act']) {
 		}
 
 		// d($username, $firstname, $lastname, $email, $userdept);
-		//if ($pwd1 === $pwd2) {
-		$output = $user->Add_User($username, $firstname, $lastname, $email); //, $userdept, $userpriv);
+		if ($pwd1 === $pwd2) {
+		$output = $user->Add_User($username, $firstname, $lastname, $email, $pwd1); //, $userdept, $userpriv);
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://voiptools.windstream.com/index.php');
-		/*} else {
+		} else {
 	$_SESSION['errormsg']= "Passwords do not match!";
 	header('location: newuser.php');
-	} */
+	} 
 		break;
 	case 'signup':
 		if (isset($_POST['username'])) {$_SESSION['username'] = $_POST['username'];	}

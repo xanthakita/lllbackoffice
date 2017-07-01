@@ -237,13 +237,13 @@ Class User {
 		return($GetEmail[0][email]);
 	}
 
-	public function Add_User($uid, $fname, $lname, $email, $department, $user_priv){
-		// Adds a user to the dms.user table
+	public function Add_User($uid, $fname, $lname, $email, $pwd){
+		// Adds a user to the user table
 			GLOBAL $users;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			//$hashpw=hash('sha1', $pwd);
-			$sql="Replace into dms.user (username, firstname, lastname, userpriv, userEmail, created_at, activated_at, active, department, deptId) values ('$uid', '$fname', '$lname', '$user_priv', '$email', '$time', '$time', 1, '$department' , (select id from dms.departments where department='".$department."' ));";
+			$hashpw=hash('sha256', $pwd);
+			$sql="Replace into lllbackoffice.user (username, firstname, lastname, userEmail, password ,active, added_at) values ('$uid', '$fname', '$lname', '$email', '$hashpw','1', '$time'. '$time');";
 			$adduser=$users->querydb($sql);
 
 	}
