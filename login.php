@@ -129,6 +129,7 @@ function togglePageElementVisibility(what)
       }
     </script>
 
+<?php include('Classes/include.php'); ?>
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
