@@ -17,13 +17,9 @@
  		$_SESSION['errorstring']="";
  	}
  ?>
-<center>
-<table>
+
+<div class="well center-text">
 	<caption>Signup Form</caption>
-	<tbody>
-		<tr>
-			<td width="80">&nbsp;</td>
-			<td>
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
@@ -36,11 +32,7 @@
  		Email: <input type="email" name="email" value=""><br><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
- </td>
-		</tr>
-	</tbody>
-</table>
-</center>
+	</div>
 
 </body>
 </html>
