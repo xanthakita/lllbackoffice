@@ -34,6 +34,8 @@ Copywrite @2015
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+<?php include('Classes/include.php'); ?>
 	</head>
 	<body>
 
@@ -52,7 +54,7 @@ Copywrite @2015
 				
 					<nav id="nav">
 						<ul>
-							<li><a href="login.html" class="active">Login</a></li>
+							<li><a href="logout.php" class="active">Logout</a></li>
 							<li><a href="#first">Find Client</a></li>
 							<li><a href="#second">Add Client</a></li>
 							<li><a href="#cta">Reports</a></li>

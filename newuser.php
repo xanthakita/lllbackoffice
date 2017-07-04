@@ -28,7 +28,6 @@
  		Username (first initial lastname i.e. jsmith): <input type="text" name="username" value="<?php echo $username; ?>"><br>
  		Password: <input type="password" name="pwd1" value="" ><br>
  		Verify Password: <input type="password" name="pwd2" value="" ><br> 
- 	?>
  		Firstname: <input type="text" name="firstname" value="" >
  		Lastname: <input type="text" name="lastname" value=""><br>
  		Email: <input type="email" name="email" value=""><br><br>
