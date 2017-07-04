@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>New User Signup</title>
+<?php include('Classes/include.php'); ?>
 </head>
 <body>
 
