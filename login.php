@@ -136,7 +136,7 @@ function togglePageElementVisibility(what)
         <div class="container">
             <div class="navbar-header row-fluid">
 
-                <a class="navbar-brand" href="http://voiptools.windstream.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a>
+                <a class="navbar-brand" href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a>
             </span>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -144,12 +144,6 @@ function togglePageElementVisibility(what)
                 </button>
         </div>
 
-
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="http://voiptools.windstream.com/index.php">Home</a></li>
-                </ul>
-            </div>
         </div>
     </header>
     <center>
