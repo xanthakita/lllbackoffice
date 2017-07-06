@@ -41,7 +41,7 @@ switch ($_POST['act']) {
 		// $output = $user->login($username, $password);
 		$output = $user->login($username, urlencode($password));
 		// d($output);
-		// var_dump($output);
+		var_dump($output);
 
 		if ($output) {
 
