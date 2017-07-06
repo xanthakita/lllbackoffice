@@ -170,14 +170,14 @@ function togglePageElementVisibility(what)
 	   <span class="glyphicon glyphicon-log-in"></span><button type="submit" name="Login" value="Login" class="btn btn-default">Login</button>
     </form>
     </div>
-	<div class="well well-sm input-group">
+<!-- 	<div class="well well-sm input-group">
 		<form action="usercontroller.php" method="POST" accept-charset="utf-8">
 		If you have forgotten your password, Click here:<br>
 		<input type="hidden" id="username2" name="username">
 		<input type="hidden" name="act" value="forgot" >
 		<span class="glyphicon glyphicon-wrench"></span><button type="submit" name="Send_Rest_Code" value="Send Reset Code" class="btn btn-danger">Send Reset Code</button>
 		</form>
-	</div>  
+	</div>   -->
 
     <div class="well well-sm input-group">
     <form action="usercontroller.php" method="POST" accept-charset="utf-8">
