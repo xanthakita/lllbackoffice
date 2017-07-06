@@ -95,52 +95,19 @@ Class User {
 	public function Check_User_Auth($uid,$pwd){
 		// is called by $this->login in order to verify the correct password was passed to the login method.
 			GLOBAL $users;
-			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid' and active='1');";
+			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid' and active=1);";
 			// d($sql);
 			$getuser=$users->querydb($sql);
 
-
-
 			if (hash('sha256',$pwd) == $getuser[1]['password']) {
-			// since it's possible someone who isn't in the system can successfully log in and see the base docs check to see if the query returned anything
-				if (sizeof($getuser)==0) { //user has valid CSO but is not active in the system
-					passthru("echo '' >> ./usernotinsystem.log; cat ./authcheck.txt >> ./usernotinsystem.log");
-					$fp=fopen("./authcheck.txt","r");
-					$authed=fread($fp, filesize("./authcheck.txt"));
-					fclose($fp);
-					$loggeduser=json_decode($authed);
-					d($loggeduser[0], $authed);
-					$splitat=strpos($loggeduser[0][1],' ');
-					$firstname=substr($loggeduser[0][1],0,$splitat);
-					$lastname=substr($loggeduser[0][1],$splitat+1);
-
-					// d($firstname, $lastname);
-
-					$userArray = array(
-						"username" => $loggeduser[0][0],
-						"firstname" => $firstname,
-						"lastname" => $lastname,
-						"userEmail" => $loggeduser[0][3],
-						"userpriv" => '1',
-						"department" => 'NOC',
-						"deptId" => $loggeduser[0][6],
-						"id" => '0'
-						);
-				} else {
 					// d($getuser);
 				$userArray = array(
 					"username" => $getuser[0]['username'],
 					"firstname" => $getuser[0]['firstname'],
 					"lastname" => $getuser[0]['lastname'],
 					"userEmail" => $getuser[0]['userEmail'],
-					"userpriv" => $getuser[0]['userpriv'],
-					"department" => $getuser[0]['department'],
-					"deptId" => $getuser[0]['deptId'],
 					"id" => $getuser[0]['id']
 					);
-				}
-
-
 					// d($userArray);
 				$userJson=json_encode($userArray);
 				return($userJson);
