@@ -2,6 +2,7 @@
 ini_set("allow_url_include", true);
 // require_once ('/var/www/html/Classes/kint/Kint.class.php');
 //require_once ('include.php');
+require_once('mystring.class.php');
 require_once ('user.class.php');
 session_name("lllbackoffice");
 session_start();
