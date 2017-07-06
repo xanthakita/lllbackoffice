@@ -15,7 +15,6 @@ class mydbconnect {
 
 	private function __construct() {
 		require ('mydbi.php');
-		
 	}
 
 	private function sqldblink($sql) {
