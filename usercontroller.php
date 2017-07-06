@@ -118,7 +118,7 @@ switch ($_POST['act']) {
 		if ($pwd1 === $pwd2) {
 		$output = $user->Add_User($username, $firstname, $lastname, $email, $pwd1); //, $userdept, $userpriv);
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
-		header('location: http://voiptools.windstream.com/index.php');
+		header('location: http://lllbackoffice.com/index.php');
 		} else {
 	$_SESSION['errormsg']= "Passwords do not match!";
 	header('location: newuser.php');
