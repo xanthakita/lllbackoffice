@@ -21,7 +21,6 @@
  ?>
 <div class="container">
 <div class="well center-text">
-	<caption>Signup Form</caption>
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
@@ -31,7 +30,7 @@
  		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
  		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value=""><br>
  		<label for="email">Email:</label> <input type="email" name="email" value=""><br>
- 		<label for="artistimage">Artist Image:</label><input type="image" name="artistimage" id="image" /><br /><br>
+ 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="image" /><br /><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
 	</div>
