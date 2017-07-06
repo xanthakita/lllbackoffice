@@ -1,5 +1,5 @@
 <?php
-reguire('Classes/mydbconnect.class.php');
+require('Classes/mydbconnect.class.php');
 $dbtest = new mydbconnect;
 $sql="Show tables;";
 
