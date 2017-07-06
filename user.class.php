@@ -36,6 +36,7 @@ Class User {
 			GLOBAL $thisuser;
 			// kint::enabled(false); d($uid);
 			$authorized = $this->Check_User_Auth($uid,$pwd);
+			var_dump($authorized);
 		// Logs a user in and starts a session for the logged in user.
 		if ($this->Check_User_Exists($uid)) {
 			if ($authorized != FALSE) {
