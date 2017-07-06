@@ -63,7 +63,7 @@ Class User {
 				if (isset($authorized)){
 					// build session variable for user
 					setcookie('uid',$authorized, strtotime('+8 hour'), '/');
-					
+
 					$_SESSION['thisUser'] = $authorized;
 					//session_name("nocdms");
 					//session_start();
@@ -81,6 +81,7 @@ Class User {
 		// clears users vars and clears the Session var
 		$_SESSION = null;
 		setcookie('uid',$uid, strtotime('-1 minute'), '/');
+		setcookie('userid',$username, strtotime('-1 minute'), '/');
 		session_destroy();
 		echo "Logging $uid out.\n";
 		return(TRUE);
