@@ -19,14 +19,14 @@
  		$_SESSION['errorstring']="";
  	}
  ?>
-
+<div class="container">
 <div class="well center-text">
 	<caption>Signup Form</caption>
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>"><br>
- 		<label for="pwd1">Password:</label><input type="password" name="pwd1" value="" ><br>
+ 		<label for="pwd1">Password:</label><input type="password" name="pwd1" value="" >
  		<label for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" ><br> 
  		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
  		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value=""><br>
@@ -35,6 +35,6 @@
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
 	</div>
-
+</div>
 </body>
 </html>
