@@ -44,11 +44,11 @@ switch ($_POST['act']) {
 
 		if ($output) {
 
-			 d($thisUser);
+			 // d($thisUser);
 			if (isset($_COOKIE['CallingPage'])) {
 				header('Location: '.$_COOKIE['CallingPage']);
 			} else {
-				setcookie('userid',$thisUser, strtotime('+8 hour'), '/');
+				setcookie('userid',$username, strtotime('+8 hour'), '/');
 				header('Location: http://lllbackoffice.com/index.php');
 			}
 		} else {
