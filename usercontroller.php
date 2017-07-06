@@ -105,17 +105,10 @@ switch ($_POST['act']) {
 		$target_file = $target_dir . basename($_FILES["artistimage"][$username]);
 		$uploadOk = 1;
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-		// Check if image file is a actual image or fake image
-		if(isset($_POST["submit"])) {
+
 		    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-		    if($check !== false) {
-		        echo "File is an image - " . $check["mime"] . ".";
 		        $uploadOk = 1;
-		    } else {
-		        echo "File is not an image.";
-		        $uploadOk = 0;
-		    }
-		}
+		move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
 		// $userdept  = $_POST['dept'];
 		// $userpriv  = $_POST['user_priv'];
@@ -139,7 +132,7 @@ switch ($_POST['act']) {
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 		if ($pwd1 === $pwd2) {
-		$output = $user->Add_User($username, $firstname, $lastname, $email, $pwd1); //, $userdept, $userpriv);
+		$output = $user->Add_User($username, $firstname, $lastname, $picture, $email, $pwd1); //, $userdept, $userpriv);
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/index.php');
 		} else {

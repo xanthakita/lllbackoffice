@@ -209,13 +209,13 @@ Class User {
 		return($GetEmail[0][email]);
 	}
 
-	public function Add_User($uid, $fname, $lname, $email, $pwd){
+	public function Add_User($uid, $fname, $lname, $picture, $email, $pwd){
 		// Adds a user to the user table
 			GLOBAL $users;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$hashpw=hash('sha256', $pwd);
-			$sql="Replace into lllbackoffice.user (username, firstname, lastname, userEmail, password ,active, added_at, last_updated) values ('$uid', '$fname', '$lname', '$email', '$hashpw','1', '$time', '$time');";
+			$sql="Replace into lllbackoffice.user (username, firstname, lastname, picture, userEmail, password ,active, added_at, last_updated) values ('$uid', '$fname', '$lname', '$picture', '$email', '$hashpw','1', '$time', '$time');";
 			$adduser=$users->querydb($sql);
 
 	}
