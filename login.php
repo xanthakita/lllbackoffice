@@ -141,7 +141,7 @@ function togglePageElementVisibility(what)
     <div><br></div>
     <div class="container">
     <center>
-                <a class="navbar-brand" href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a>
+                <a class="navbar-brand" href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a><br>
 <div class="row-fluid">
 <div class="span3"></div>
 <div class="span6">
