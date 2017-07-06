@@ -101,7 +101,7 @@ Class User {
 			// d($sql);
 			$getuser=$users->querydb($sql);
 			var_dump(hash('sha256',$pwd));
-			var_dump($getuser]);
+			var_dump($getuser);
 			if (hash('sha256',$pwd) == $getuser[1]['password']) {
 					// d($getuser);
 				$userArray = array(
