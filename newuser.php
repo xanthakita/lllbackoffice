@@ -25,13 +25,13 @@
  <form action="usercontroller.php" method="post" accept-charset="utf-8">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
- 		Username (first initial lastname i.e. jsmith): <input type="text" name="username" value="<?php echo $username; ?>"><br>
- 		Password: <input type="password" name="pwd1" value="" ><br>
- 		Verify Password: <input type="password" name="pwd2" value="" ><br> 
- 		Firstname: <input type="text" name="firstname" value="" >
- 		Lastname: <input type="text" name="lastname" value=""><br>
- 		Email: <input type="email" name="email" value=""><br>
- 		Picture: <input type="image" name="artistimage" id="image" /><br /><br>
+ 		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>"><br>
+ 		<label for="pwd1">Password:</label><input type="password" name="pwd1" value="" ><br>
+ 		<label for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" ><br> 
+ 		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
+ 		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value=""><br>
+ 		<label for="email">Email:</label> <input type="email" name="email" value=""><br>
+ 		<label for="artistimage">Artist Image:</label><input type="image" name="artistimage" id="image" /><br /><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
 	</div>
