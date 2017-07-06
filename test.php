@@ -3,5 +3,5 @@ require('Classes/mydbconnect.class.php');
 $dbtest = new mydbconnect;
 $sql="Show tables;";
 
-echo $dbtest->querydb($sql).PHP_EOL;
+var_dump($dbtest->querydb($sql));
 ?>
