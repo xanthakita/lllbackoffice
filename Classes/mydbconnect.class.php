@@ -56,6 +56,7 @@ class mydbconnect {
 
 	public function querydb($sql) {
 		// d($sql);
+		var_dump($sql);
 		$myoutput       = null;
 		$this->myoutput = array();
 		$result         = $this->sqldblink($sql);
