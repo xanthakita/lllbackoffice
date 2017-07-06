@@ -37,7 +37,7 @@ $user = new User($username);
 switch ($_POST['act']) {
 	case 'login':
 		// create an instance of user in the session array
-		//$_SESSION['thisUser'] = new User($username);
+		$_SESSION['thisUser'] = new User($username);
 		// $output = $user->login($username, $password);
 		$output = $user->login($username, urlencode($password));
 		// d($output);
