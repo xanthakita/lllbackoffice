@@ -12,7 +12,7 @@ $users = '';
 
 Class User {
 	// The User class is where all the work is done which involves users There are two tables accessed:
-	// dms.user and dms.userpriv
+	// lllbackoffice.user and lllbackoffice.userpriv
 	// Each method is named to be clear as to what it's purpose is. adding comments for each one.
 
 	public function __construct($username) {
@@ -86,7 +86,7 @@ Class User {
 	public function Check_User_Active($uid){
 			GLOBAL $users;
 			// kint::enabled(true);
-			$sql="SELECT active from dms.user where (username = '$uid');";
+			$sql="SELECT active from lllbackoffice.user where (username = '$uid');";
 			$getuser=$users->querydb($sql);
 			// dd($getuser);
 		
@@ -152,7 +152,7 @@ Class User {
 		// called by $this->login first to verify that the user attempting to log in exists
 			GLOBAL $users;
 			$getuser='';
-			$sql="SELECT * from dms.user where (username = '$uid' and active = 1);";
+			$sql="SELECT * from lllbackoffice.user where (username = '$uid' and active = 1);";
 			$checkuser=$users->querydb($sql);
 			// s($checkuser);
 			if (isset($checkuser[0]['id'])) {$lines=1;} else { $lines=0;}
@@ -163,7 +163,7 @@ Class User {
 		// called by $this->login first to verify that the user attempting to log in exists
 			GLOBAL $users;
 			$getuser='';
-			$sql="SELECT * from dms.user where active='$status';";
+			$sql="SELECT * from lllbackoffice.user where active='$status';";
 			$checkuser=$users->querydb($sql);
 			// s($checkuser);
 			if (isset($checkuser[0]['id'])) {$lines=1;} else { $lines=0;}
@@ -175,7 +175,7 @@ Class User {
 		// kint::enabled(false);
 		// d($username);
 		$getuser='';
-		$sql="update dms.user set active=0 where username='$username';";
+		$sql="update lllbackoffice.user set active=0 where username='$username';";
 		$checkuser=$users->querydb($sql);
 		// d($checkuser);
 		if (isset($checkuser[0]['id'])) {$lines=1;} else { $lines=0;}
@@ -187,7 +187,7 @@ Class User {
 		// kint::enabled(false);
 		// d($username);
 		$getuser='';
-		$sql="update dms.user set active=1 where username='$username';";
+		$sql="update lllbackoffice.user set active=1 where username='$username';";
 		$checkuser=$users->querydb($sql);
 		// d($checkuser);
 		if (isset($checkuser[0]['id'])) {$lines=1;} else { $lines=0;}
@@ -199,7 +199,7 @@ Class User {
 		// kint::enabled(false);
 		// d($username);
 		$getuser='';
-		$sql="update dms.user set userpriv='$user_priv' where username='$username';";
+		$sql="update lllbackoffice.user set userpriv='$user_priv' where username='$username';";
 		$checkuser=$users->querydb($sql);
 		// d($checkuser);
 		if (isset($checkuser[0]['id'])) {$lines=1;} else { $lines=0;}
@@ -209,7 +209,7 @@ Class User {
 	public function GetName($username){
 		// returns the firstname of the requested user
 		GLOBAL $users;
-		$sql="SELECT firstname, lastname from dms.user where username = '$username';";
+		$sql="SELECT firstname, lastname from lllbackoffice.user where username = '$username';";
 		$getname=$users->querydb($sql);
 		$UserName=$getname[0]['firstname']." ".$getname[0]['lastname'];
 		return($UserName);
@@ -219,7 +219,7 @@ Class User {
 		// returns the firstname of the requested user
 		// kint::enabled(false);
 		GLOBAL $users;
-		$sql="SELECT firstname, lastname from dms.user where id = '$id';";
+		$sql="SELECT firstname, lastname from lllbackoffice.user where id = '$id';";
 		$getname=$users->querydb($sql);
 		if (is_array($getname)) {$UserName=array_pop($getname);} else {$UserName='';}
 		$TheUser=$UserName['firstname']." ".$UserName['lastname'];
@@ -231,7 +231,7 @@ Class User {
 	public function GetEmail($username){
 		// returns the firstname of the requested user
 		GLOBAL $users;
-		$sql="SELECT userEmail from dms.user where username = '$username';";
+		$sql="SELECT userEmail from lllbackoffice.user where username = '$username';";
 		$GetEmail=$users->querydb($sql);
 		// d($GetEmail);
 		return($GetEmail[0][email]);
@@ -243,14 +243,14 @@ Class User {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$hashpw=hash('sha256', $pwd);
-			$sql="Replace into lllbackoffice.user (username, firstname, lastname, userEmail, password ,active, added_at) values ('$uid', '$fname', '$lname', '$email', '$hashpw','1', '$time'. '$time');";
+			$sql="Replace into lllbackoffice.user (username, firstname, lastname, userEmail, password ,active, added_at, last_updated) values ('$uid', '$fname', '$lname', '$email', '$hashpw','1', '$time', '$time');";
 			$adduser=$users->querydb($sql);
 
 	}
 
 
 	public function Delete_User($du_uid, $fname, $lname, $authpwd ){
-		// This method does not actually delete a user from the dms.user table instaed it simply changes the active flag to 0 so the user will not be considered.
+		// This method does not actually delete a user from the lllbackoffice.user table instaed it simply changes the active flag to 0 so the user will not be considered.
 			GLOBAL $users;
 			// s($du_uid, $fname, $lname, $authpwd );
 			if ($this->Check_User_Exists($du_uid)) {
@@ -260,7 +260,7 @@ Class User {
 					$now = new DateTime();
 					$time = $now->format('Y-m-d H:i:s');
 					$hashpw=hash('sha1', $pwd);
-					$sql="UPDATE dms.user SET active=0 WHERE (username='$du_uid' and firstname='$fname' and lastname='$lname');";
+					$sql="UPDATE lllbackoffice.user SET active=0 WHERE (username='$du_uid' and firstname='$fname' and lastname='$lname');";
 					$deluser=$users->querydb($sql);
 					$retval='TRUE';
 					s($retval);
@@ -278,7 +278,7 @@ Class User {
 
 	public function Set_User_Priv($uid, $priv, $uid_changes){
 	// allows the priviledge level to be set for a given user. I can only be set by someone with a higher prib level than the requested level.
-	// levels are in the dms.userpriv table but here is a list
+	// levels are in the lllbackoffice.userpriv table but here is a list
 	// 0  - pending   		-- User has to be approved by the Administrator
 	// 1  - reader    		-- Read only access to the documents everyone should have read only access unless specifically indicated otherwise.
 	// 2  - editor    		-- This user can check a document out and make changes and check it back in (changes have to be approved by the Administrator or Author)
@@ -295,15 +295,15 @@ Class User {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			// check to see if requesting user ($uid_changes) has higher perms than user being changed ($uid)
-			$sql="select username, userpriv from dms.user where username='$uid_changes';";
+			$sql="select username, userpriv from lllbackoffice.user where username='$uid_changes';";
 			$userrequsting_priv=$users->querydb($sql);
 			// s($userrequsting_priv);
-			$sql="select username, userpriv from dms.user where username='$uid';";
+			$sql="select username, userpriv from lllbackoffice.user where username='$uid';";
 			$userexisting_priv=$users->querydb($sql);
 			// s($userexisting_priv);
 			if (($userrequsting_priv[3][userpriv] <= $userexisting_priv[4][userpriv]) or ($userrequsting_priv[3][userpriv] <= $priv)) { return(FALSE);}
 			else {
-				$sql="update dms.user set userpriv='$priv', last_changed='$time' where username='$uid';";
+				$sql="update lllbackoffice.user set userpriv='$priv', last_changed='$time' where username='$uid';";
 				$userchanged_priv=$users->querydb($sql);
 				// s($userchanged_priv);
 				return($userchanged_priv);
@@ -318,7 +318,7 @@ Class User {
 
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="select a.userpriv, b.priviledge from dms.user a join dms.userpriv b on a.userpriv = b.priv_code where username='$uid';";
+			$sql="select a.userpriv, b.priviledge from lllbackoffice.user a join lllbackoffice.userpriv b on a.userpriv = b.priv_code where username='$uid';";
 			$user_priv=$users->querydb($sql);
 			// s($user_priv, $user_priv[3][priviledge]);
 			return($user_priv[3][priviledge]);
@@ -332,7 +332,7 @@ Class User {
 
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="select department from dms.user where username='$uid';";
+			$sql="select department from lllbackoffice.user where username='$uid';";
 			$user_priv=$users->querydb($sql);
 			// s($user_priv, $user_priv[0][department]);
 			return($user_priv[0][department]);
@@ -342,13 +342,13 @@ Class User {
 		GLOBAL $users;
 		$now = new DateTime();
 		$time = $now->format('Y-m-d H:i:s');
-		$sql="select password from dms.user where username='$uid';";
+		$sql="select password from lllbackoffice.user where username='$uid';";
 		$userpwd=$users->querydb($sql);
 		// d($userpwd);
 		if (hash('sha1', $oldpwd) == $userpwd[0][password]) {
 			$newpass = hash('sha1', $newpwd);
 			// puts the hash of the new password in the db clears teh reset code hash from the table
-			$sql2="update dms.user set password='$newpass', last_changed='$time' where username='$uid';";
+			$sql2="update lllbackoffice.user set password='$newpass', last_changed='$time' where username='$uid';";
 			$userpwdreset=$users->querydb($sql2);
 			return(TRUE);
 		} else {
@@ -369,7 +369,7 @@ Class User {
 		$now = new DateTime();
 		$time = $now->format('Y-m-d H:i:s');
 		// s($uid, $code);
-		$sql="select userEmail from dms.user where username='$uid';";
+		$sql="select userEmail from lllbackoffice.user where username='$uid';";
 		$email=$users->querydb($sql);
 		$myRecipient=$email[0]['userEmail'];
 		// d($email);
@@ -390,7 +390,7 @@ Class User {
 		if (mail($myRecipient,$mySubject,$myMessage ,$myHeaders)) {
 			// next we put the hased version of the code into the database
 			$thehash=hash('sha1',$code);
-			$sql="update dms.user set resetcode='$thehash', last_changed='$time' where username='$uid';";
+			$sql="update lllbackoffice.user set resetcode='$thehash', last_changed='$time' where username='$uid';";
 			$userchanged_pwd=$users->querydb($sql);
 
 			return($code);
@@ -404,12 +404,12 @@ Class User {
 		GLOBAL $users;
 		$now = new DateTime();
 		$time = $now->format('Y-m-d H:i:s');
-		$sql="select resetcode from dms.user where username='$uid';";
+		$sql="select resetcode from lllbackoffice.user where username='$uid';";
 		$userpwd=$users->querydb($sql);
 		if (hash('sha1', $code) == $userpwd[0][resetcode]) {
 			$newpwd = hash('sha1', $newpwd);
 			// puts the hash of the new password in the db clears teh reset code hash from the table
-			$sql2="update dms.user set password='$newpwd', resetcode='', last_changed='$time' where username='$uid';";
+			$sql2="update lllbackoffice.user set password='$newpwd', resetcode='', last_changed='$time' where username='$uid';";
 			$userpwdreset=$users->querydb($sql2);
 			return(TRUE);
 		} else {
@@ -424,7 +424,7 @@ Class User {
 		$time = $now->format('Y-m-d H:i:s');
 		$newpwd = hash('sha1', $newpwd);
 			// puts the hash of the new password in the db clears teh reset code hash from the table
-			$sql2="update dms.user set password='$newpwd', resetcode='', last_changed='$time' where username='$uid';";
+			$sql2="update lllbackoffice.user set password='$newpwd', resetcode='', last_changed='$time' where username='$uid';";
 			$userpwdreset=$users->querydb($sql2);
 			// d($userpwdreset);
 			return($userpwdreset);
@@ -435,7 +435,7 @@ Class User {
 	{
 		// update new table useradmin
 		GLOBAL $users;
-		$sql="insert into dms.useradmin (admin_userid, userinfo, ts) values('$username', '$update', now());";
+		$sql="insert into lllbackoffice.useradmin (admin_userid, userinfo, ts) values('$username', '$update', now());";
 		$updated=$users->querydb($sql);
 		return($updated);
 	}
