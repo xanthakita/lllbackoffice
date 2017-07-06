@@ -30,7 +30,8 @@
  		Verify Password: <input type="password" name="pwd2" value="" ><br> 
  		Firstname: <input type="text" name="firstname" value="" >
  		Lastname: <input type="text" name="lastname" value=""><br>
- 		Email: <input type="email" name="email" value=""><br><br>
+ 		Email: <input type="email" name="email" value=""><br>
+ 		Picture: <input type="image" name="artistimage" id="image" /><br /><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
 	</div>
