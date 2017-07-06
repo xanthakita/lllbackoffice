@@ -35,9 +35,9 @@ Class User {
 	public function login($uid, $pwd){
 			GLOBAL $thisuser;
 			// kint::enabled(false); d($uid);
-			var_dump($pwd);
+			// var_dump($pwd);
 			$authorized = $this->Check_User_Auth($uid,$pwd);
-			var_dump($authorized);
+			// var_dump($authorized);
 		// Logs a user in and starts a session for the logged in user.
 		if ($this->Check_User_Exists($uid)) {
 			if ($authorized != FALSE) {
@@ -63,6 +63,7 @@ Class User {
 				if (isset($authorized)){
 					// build session variable for user
 					setcookie('uid',$authorized, strtotime('+8 hour'), '/');
+					setcookie('userid',$thisUser, strtotime('+8 hour'), '/');
 					//$_SESSION['thisUser'] = $authorized;
 					//session_name("nocdms");
 					//session_start();
