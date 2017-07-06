@@ -24,7 +24,7 @@ class mydbconnect {
 		$mysqlpassword='6619Y^0m3';
 		$dbname = 'lllbackoffice';
 		$link=mysqli_connect($mysqlserver, $mysqlusername, $mysqlpassword) or die ("Error connecting to mysql server: ".mysqli_error());
-		mysqli_select_db($dbname, $link) or die ("Error selecting specified database on mysql server: ".mysql_error());
+		mysqli_select_db($link, $dbname) or die ("Error selecting specified database on mysql server: ".mysql_error());
 		//require '/var/www/html/AS/inc/mysqlinc.php';
 		$result = mysqli_query($link, $sql);
 		if (!$result) {
