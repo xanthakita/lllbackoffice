@@ -95,7 +95,7 @@ Class User {
 	public function Check_User_Auth($uid,$pwd){
 		// is called by $this->login in order to verify the correct password was passed to the login method.
 			GLOBAL $users;
-			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid' and active=1);";
+			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid');";
 			// d($sql);
 			$getuser=$users->querydb($sql);
 
