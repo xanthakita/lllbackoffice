@@ -13,11 +13,12 @@ listing scripts that call this class as I find them:
 class mydbconnect {
 
 
-	public function __construct() {
-		require ('mydbi.php');
-	}
+	// public function __construct() {
+	// 	require ('mydbi.php');
+	// }
 
 	private function sqldblink($sql) {
+		require ('mydbi.php');
 		// d($sql);
 		// $mysqlserver='162.243.25.103';
 		// $mysqlusername='xanthakita';
