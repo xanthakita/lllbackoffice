@@ -133,16 +133,7 @@ function togglePageElementVisibility(what)
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
-        <div class="container">
-            <div class="navbar-header row-fluid">
 
-                <a class="navbar-brand" href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a>
-            </span>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                </button>
-        </div>
 
         </div>
     </header>
@@ -150,6 +141,7 @@ function togglePageElementVisibility(what)
     <div><br></div>
     <div class="container">
     <center>
+                <a class="navbar-brand" href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a>
 <div class="row-fluid">
 <div class="span3"></div>
 <div class="span6">
