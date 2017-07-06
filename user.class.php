@@ -63,7 +63,7 @@ Class User {
 				if (isset($authorized)){
 					// build session variable for user
 					setcookie('uid',$authorized, strtotime('+8 hour'), '/');
-					setcookie('userid',$thisUser, strtotime('+8 hour'), '/');
+					
 					//$_SESSION['thisUser'] = $authorized;
 					//session_name("nocdms");
 					//session_start();
