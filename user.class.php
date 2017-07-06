@@ -101,7 +101,7 @@ Class User {
 
 
 
-			if (hash('sha1',$pwd) == $getuser[1]['password']) {
+			if (hash('sha256',$pwd) == $getuser[1]['password']) {
 			// since it's possible someone who isn't in the system can successfully log in and see the base docs check to see if the query returned anything
 				if (sizeof($getuser)==0) { //user has valid CSO but is not active in the system
 					passthru("echo '' >> ./usernotinsystem.log; cat ./authcheck.txt >> ./usernotinsystem.log");
