@@ -146,6 +146,8 @@ function togglePageElementVisibility(what)
 
         </div>
     </header>
+    <body>
+    <div class="container">
     <center>
 <div class="row-fluid">
 <div class="span3"></div>
@@ -184,5 +186,6 @@ function togglePageElementVisibility(what)
 <div class="span3"></div>
 </div>
 </center>
+</div>
 </body>
 </html>
