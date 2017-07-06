@@ -1,6 +1,6 @@
 <?php
 ini_set("allow_url_include", true);
-// require_once ('/var/www/html/Classes/kint/Kint.class.php');
+require_once ('/var/www/html/Classes/kint.php');
 require_once ('Classes/include.php');
 require_once('mystring.class.php');
 require_once ('user.class.php');
@@ -23,7 +23,7 @@ session_start();
 if (isset($_COOKIE['uid'])) {$adminuser = json_decode($_COOKIE['uid']);} else { $adminuser = 'not set';}
 
 // kint::enabled(false);
-// kint::enabled(true);
+kint::enabled(true);
 
 // d($_POST);
 //controlls the login process
@@ -33,19 +33,19 @@ if (isset($_POST['newpassword'])) {$newpass = $_POST['newpassword'];}
 
 $user = new User($username);
 
-// d($user);
+d($user);
 switch ($_POST['act']) {
 	case 'login':
 		// create an instance of user in the session array
 		$_SESSION['thisUser'] = new User($username);
 		// $output = $user->login($username, $password);
 		$output = $user->login($username, urlencode($password));
-		// d($output);
+		d($output);
 		// var_dump($output);
 
 		if ($output) {
 
-			// d($_SESSION);
+			d($_SESSION);
 			if (isset($_COOKIE['CallingPage'])) {
 				header('Location: '.$_COOKIE['CallingPage']);
 			} else {
