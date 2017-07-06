@@ -13,16 +13,16 @@ listing scripts that call this class as I find them:
 class mydbconnect {
 
 
-	// private function __construct() {
-	// 	require ('mydbi.php');
-	// }
+	private function __construct() {
+		require ('mydbi.php');
+	}
 
 	private function sqldblink($sql) {
 		// d($sql);
-		$mysqlserver='162.243.25.103';
-		$mysqlusername='xanthakita';
-		$mysqlpassword='6619Y^0m3';
-		$dbname = 'lllbackoffice';
+		// $mysqlserver='162.243.25.103';
+		// $mysqlusername='xanthakita';
+		// $mysqlpassword='6619Y^0m3';
+		// $dbname = 'lllbackoffice';
 		$link=mysqli_connect($mysqlserver, $mysqlusername, $mysqlpassword) or die ("Error connecting to mysql server: ".mysqli_error($link));
 		mysqli_select_db($link, $dbname) or die ("Error selecting specified database on mysql server: ".mysqli_error($link));
 		//require '/var/www/html/AS/inc/mysqlinc.php';
@@ -56,7 +56,7 @@ class mydbconnect {
 
 	public function querydb($sql) {
 		// d($sql);
-		var_dump($sql);
+		//var_dump($sql);
 		$myoutput       = null;
 		$this->myoutput = array();
 		$result         = $this->sqldblink($sql);
