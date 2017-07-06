@@ -13,7 +13,7 @@ listing scripts that call this class as I find them:
 class mydbconnect {
 
 
-	private function __construct() {
+	public function __construct() {
 		require ('mydbi.php');
 	}
 
