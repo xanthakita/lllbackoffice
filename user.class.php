@@ -100,7 +100,8 @@ Class User {
 			$sql="SELECT username, firstname, lastname, userEmail, password, id from lllbackoffice.user where (username = '$uid');";
 			// d($sql);
 			$getuser=$users->querydb($sql);
-
+			var_dump(hash('sha256',$pwd));
+			var_dump($getuser[1]['password']);
 			if (hash('sha256',$pwd) == $getuser[1]['password']) {
 					// d($getuser);
 				$userArray = array(
