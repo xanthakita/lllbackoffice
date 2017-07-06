@@ -52,7 +52,7 @@ switch ($_POST['act']) {
 				header('Location: http://lllbackoffice.com/index.php');
 			}
 		} else {
-			echo "<div class='container center-text'><div class="well"><h1>Invalid Login</h1>";
+			echo "<div class='container center-text'><div class='well'><h1>Invalid Login</h1>";
 			echo "Please <a href='http://lllbackoffice.com/login.php'>Try again</a><br>";
 			echo "or <a href'userpwdreset.php'>Reset Password</a><br>";
 			echo "</div></div>";
