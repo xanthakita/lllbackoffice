@@ -136,7 +136,7 @@ switch ($_POST['act']) {
 
 		$output = $user->logout($username);
 		if ($output) {
-			header('Location: http://voiptools.windstream.com/cms/login.php');
+			header('Location: http://lllbackoffice.com/login.php');
 		} else {
 			echo "Failed to log out.";
 		}
@@ -148,7 +148,7 @@ switch ($_POST['act']) {
 		// d($username, $newpassword);
 		$output = $user->User_Admin_Change_Password($username, $newpassword);
 		setcookie('errormsg', "Passwords reset!", strtotime('15 seconds'), '/');
-		header('location: http://voiptools.windstream.com/index.php');
+		header('location: http://lllbackoffice.com/index.php');
 		break;
 	case 'ListUsers':
 		$status = $_POST['status'];
@@ -158,25 +158,25 @@ switch ($_POST['act']) {
 		} else {
 			$_SESSION['inactive_userlist'] = $user->User_Listing($status);
 		}
-		header('location: http://voiptools.windstream.com/cms/administer.php');
+		header('location: http://lllbackoffice.com/administer.php');
 		break;
 	case 'UserDeactivate':
 		setcookie("ListInActive", 0, time()+300);
 		$user->User_Deactivate($_POST['username']);
 		$_SESSION['active_userlist'] = $user->User_Listing(1);
-		header('location: http://voiptools.windstream.com/cms/administer.php');
+		header('location: http://lllbackoffice.com/administer.php');
 		break;
 	case 'UserActivate':
 		setcookie("ListActive", 1, time()+300);
 		$user->User_Activate($_POST['username']);
 		$_SESSION['inactive_userlist'] = $user->User_Listing(0);
-		header('location: http://voiptools.windstream.com/cms/administer.php');
+		header('location: http://lllbackoffice.com/administer.php');
 		break;
 	case 'UpdatePriv':
 		setcookie("ListActive", 1, time()+300);
 		$user->User_ChangePriv($_POST['username'], $_POST['user_priv']);
 		$_SESSION['active_userlist'] = $user->User_Listing(1);
-		header('location: http://voiptools.windstream.com/cms/administer.php');
+		header('location: http://lllbackoffice.com/administer.php');
 		break;
 }
 
