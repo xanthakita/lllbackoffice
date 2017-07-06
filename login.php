@@ -186,4 +186,3 @@ function togglePageElementVisibility(what)
 </center>
 </body>
 </html>
-?>
