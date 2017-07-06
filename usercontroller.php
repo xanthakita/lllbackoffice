@@ -23,7 +23,7 @@ session_start();
 if (isset($_COOKIE['uid'])) {$adminuser = json_decode($_COOKIE['uid']);} else { $adminuser = 'not set';}
 
 // kint::enabled(false);
-kint::enabled(true);
+kint::trace;
 
 // d($_POST);
 //controlls the login process
