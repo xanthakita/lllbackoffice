@@ -63,7 +63,7 @@ Copywrite @2015
 				
 				<!-- Main -->
 					<div id="main">
-
+						<div class="container">
 						<!-- Introduction -->
 							<section id="intro" class="main">
 								<div class="spotlight">
@@ -164,6 +164,7 @@ Copywrite @2015
 								</footer>
 							</section>
 
+					</div>
 					</div>
 
 				<!-- Footer -->
