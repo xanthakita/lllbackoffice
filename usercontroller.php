@@ -98,7 +98,7 @@ switch ($_POST['act']) {
 		$lastname  = $_POST['lastname'];
 		$email     = $_POST['email'];
 		$picture   = $_POST['artistimage'];
-
+		d($picture);
 		// images
 
 		$target_dir = "images/artists/";
