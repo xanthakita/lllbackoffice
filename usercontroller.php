@@ -104,6 +104,7 @@ switch ($_POST['act']) {
 		$target_dir = "images/artists/";
 		$target_file = $target_dir . basename($_FILES["artistimage"][$username]);
 		$uploadOk = 1;
+		d($target_file);
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			d($_FILES);
 		    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
