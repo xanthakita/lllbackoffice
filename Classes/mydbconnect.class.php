@@ -62,12 +62,14 @@ class mydbconnect {
 		$this->myoutput = array();
 		$result         = $this->sqldblink($sql);
 		// d($result);
+		if ($result) {
 		while ($mydata = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
 			$this->myoutput[] = $mydata;
-		};
+		}
+		}
 		return $this->myoutput;
-
+		
 	}
 
 }
