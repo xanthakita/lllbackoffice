@@ -21,7 +21,7 @@
  ?>
 <div class="container">
 <div class="well center-text">
- <form action="usercontroller.php" method="post" accept-charset="utf-8">
+ <form action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>"><br>
