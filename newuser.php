@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta charset="UTF-8">
 	<title>New User Signup</title>
 <?php include('Classes/include.php'); ?>
 </head>
@@ -30,10 +30,20 @@
  		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
  		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value=""><br>
  		<label for="email">Email:</label> <input type="email" name="email" value=""><br>
- 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="image" /><br /><br>
+ 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" /><br /><br>
  		<input type="submit" name="submit" value="Submit"><br>
  </form>
 	</div>
 </div>
+<script>
+document.getElementById('artistimage').addEventListener('change', function(){
+    var file = this.files[0];
+    // This code is only for demo ...
+    console.log("name : " + file.name);
+    console.log("size : " + file.size);
+    console.log("type : " + file.type);
+    console.log("date : " + file.lastModified);
+}, false);
+</script>
 </body>
 </html>
