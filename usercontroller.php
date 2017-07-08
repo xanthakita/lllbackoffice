@@ -104,32 +104,7 @@ switch ($_POST['act']) {
 		$target_dir = "images/artists/";
 		$target_file = $target_dir . $picture;
 		$uploadOk = 1;
-		d($target_file);
-		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-			d($_FILES);
-		    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-		        $uploadOk = 1;
-		move_uploaded_file($_FILES["artistimage"]["tmp_name"], $target_file);
-
-		// $userdept  = $_POST['dept'];
-		// $userpriv  = $_POST['user_priv'];
-		if (isset($_POST['linenum'])) {
-			$linenum = $_POST['linenum'];
-			//delete line from file usernotinsystem.log
-			$newusers = file('./usernotinsystem.log', FILE_SKIP_EMPTY_LINES);
-			$output   = $user->userAdminActivity($newusers[$linenum], $adminuser->id);
-			// d($output);
-			// d($newusers, $linenum);
-			array_splice($newusers, $linenum, 1);
-			// d($newusers);
-
-			file_put_contents('./usernotinsystem.log', '');
-			$fp = fopen('./usernotinsystem.log', 'w');
-			foreach ($newusers as $x) {
-				fwrite($fp, $x);
-			}
-			fclose($fp);
-		}
+		cmd ("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 		if ($pwd1 === $pwd2) {
