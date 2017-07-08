@@ -40,6 +40,7 @@ document.getElementById('artistimage').addEventListener('change', function(){
     var file = this.files[0];
     // This code is only for demo ...
     console.log("name : " + file.name);
+    console.log("path : " + file.path);
     console.log("size : " + file.size);
     console.log("type : " + file.type);
     console.log("date : " + file.lastModified);
