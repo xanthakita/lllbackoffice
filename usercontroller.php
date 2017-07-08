@@ -104,7 +104,7 @@ switch ($_POST['act']) {
 		$target_dir = "images/artists/";
 		$target_file = $target_dir . $picture;
 		$uploadOk = 1;
-		cmd ("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
+		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 		if ($pwd1 === $pwd2) {
