@@ -47,7 +47,7 @@ Copywrite @2015
 						<span class="logo"><img src="images/lll_logo.jpg" alt="" /></span>
 						<h1>Lori's Lovely Lashes</h1>
 						<h3>Backoffice</h3>
-						built by <a href="https://twitter.com/xanthakita">@xanthakita</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						built by <a href="https://twitter.com/xanthakita">@xanthakita</a> for Lori's Lovely Lashes.</p>
 					</header>
 
 				<!-- Nav -->
@@ -69,9 +69,9 @@ Copywrite @2015
 							<h3>Please choose an action below</h3>
 						</div>
 						<div id="action" class="well">
-							<a class="btn btn-sm btn-default" href="logout.php">Logout</a>
-							<a class="btn btn-sm btn-default" href="logout.php">Find Client</a>
-							<a class="btn btn-sm btn-default" href="logout.php">Add Client</a>
+							<a class="btn btn-sm btn-standard" href="logout.php">Logout</a>
+							<a class="btn btn-sm btn-standard" href="logout.php">Find Client</a>
+							<a class="btn btn-sm btn-standard" href="logout.php">Add Client</a>
 						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
