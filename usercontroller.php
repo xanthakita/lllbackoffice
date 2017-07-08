@@ -102,7 +102,7 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/artists/";
-		$target_file = $target_dir . $picture;
+		$target_file = $target_dir . $username;
 		$uploadOk = 1;
 		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
