@@ -75,19 +75,7 @@ Copywrite @2015
 						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
-										</header>
-										<form action="accept-file.php" method="post" enctype="multipart/form-data">
-        Your Photo: <input type="file" name="photo" size="25" />
-        <input type="submit" name="submit" value="Submit" />
-    </form>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/artists/pic01.jpg" alt="" /></span>
 								</div>
 							</section>
 
