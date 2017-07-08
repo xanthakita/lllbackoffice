@@ -97,21 +97,19 @@ switch ($_POST['act']) {
 		$firstname = $_POST['firstname'];
 		$lastname  = $_POST['lastname'];
 		$email     = $_POST['email'];
-		$picture   = $_POST['artistimage'];
-		d($picture);
-		d($_FILES['artistimage']['tmp_name']);
-		d($_FILES['artistimage']['name']);
+		$tempname=$_FILES['artistimage']['tmp_name'];
+		$picture=$_FILES['artistimage']['name'];
 		// images
 
 		$target_dir = "images/artists/";
-		$target_file = $target_dir . basename($picture);
+		$target_file = $target_dir . $picture;
 		$uploadOk = 1;
 		d($target_file);
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			d($_FILES);
 		    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 		        $uploadOk = 1;
-		move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+		move_uploaded_file($_FILES["artistimage"]["tmp_name"], $target_file);
 
 		// $userdept  = $_POST['dept'];
 		// $userpriv  = $_POST['user_priv'];
