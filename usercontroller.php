@@ -102,7 +102,7 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/artists/";
-		$target_file = $target_dir . basename($_FILES["artistimage"][$username]);
+		$target_file = $target_dir . basename($picture);
 		$uploadOk = 1;
 		d($target_file);
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

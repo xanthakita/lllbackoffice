@@ -69,9 +69,9 @@ Copywrite @2015
 							<h3>Please choose an action below</h3>
 						</div>
 						<div id="action" class="well">
-							<a class="btn btn-sm btn-standard" href="logout.php">Logout</a>
-							<a class="btn btn-sm btn-standard" href="logout.php">Find Client</a>
-							<a class="btn btn-sm btn-standard" href="logout.php">Add Client</a>
+							<a class="btn btn-sm btn-primary" href="logout.php">Logout</a>
+							<a class="btn btn-sm btn-primary" href="logout.php">Find Client</a>
+							<a class="btn btn-sm btn-primary" href="logout.php">Add Client</a>
 						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
