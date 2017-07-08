@@ -65,6 +65,14 @@ Copywrite @2015
 					<div id="main">
 						<div class="container">
 						<!-- Introduction -->
+						<div class="well center-text">
+							<h3>Please choose an action below</h3>
+						</div>
+						<div id="action" class="well">
+							<a class="btn btn-sm btn-default" href="logout.php">Logout</a>
+							<a class="btn btn-sm btn-default" href="logout.php">Find Client</a>
+							<a class="btn btn-sm btn-default" href="logout.php">Add Client</a>
+						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
