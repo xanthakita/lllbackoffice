@@ -75,7 +75,7 @@ Copywrite @2015
 						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
-									<span class="image"><img src="images/artists/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/artists/".$username.".jpg" alt="" /></span>
 								</div>
 							</section>
 
