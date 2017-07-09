@@ -148,7 +148,7 @@ function togglePageElementVisibility(what)
     <span class="icon-bar"></span>
      <div class="row row-fluid"></div>
      <div class="row row-fluid"></div>
-    <form action="usercontroller.php" method="POST" accept-charset="utf-8">
+    <form class="text-center" action="usercontroller.php" method="POST" accept-charset="utf-8">
 	   <h1>Lories Lovely Lashes Backoffice Login</h1>
 	   <label for="username">Username:</label><input type="text" id="username" name="username" onblur="test()"><br>
 	   <label for="password">Password:</label><input type="password" name="password" ><br>
