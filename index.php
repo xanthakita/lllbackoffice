@@ -51,19 +51,16 @@ Copywrite @2015
 
 					</header>
 
-				<!-- Nav -->
-				
-					<nav id="nav">
-					<div class="col-3-sm"></div>
-						<div class="col-6-sm">
-							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
-						</div>
-					</nav>
+
 				
 				<!-- Main -->
 					<div id="main">
 						<div class="container">
 						<!-- Introduction -->
+						<div class="col-3-sm"></div>
+						<div class="col-6-sm">
+							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
+						</div>
 						<div class="well center-text">
 							<h3>Please choose an action below</h3>
 						</div>
