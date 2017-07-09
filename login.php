@@ -19,11 +19,11 @@
  */ 
 
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
-	// if (isset($_COOKIE["userid"])) {
-	// 	header('location: index.php');
-	// } 
-// session_name('lllbackoffice');
-// session_start();
+	if (isset($_COOKIE["userid"])) {
+		header('location: index.php');
+	} 
+session_name('lllbackoffice');
+session_start();
 ini_set("allow_url_include", true);
 require_once('./user.class.php');
 require_once('./mystring.class.php');
@@ -36,23 +36,9 @@ require_once('./mystring.class.php');
     <meta name="description" content="LLL Backoffice Login page">
     <meta name="author" content="Jonathan Wagner">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <!-- <link href="../css/prettyPhoto.css" rel="stylesheet"> -->
-    <!-- <link href="../css/animate.css" rel="stylesheet"> -->
-    <!-- <link href="../css/main.css" rel="stylesheet"> -->
-    <!-- <script src="assets/js/jquery-1.10.2.min.js"></script> -->
-    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script src="../assets/prettify/run_prettify.js"></script> -->
-    <!-- <link href="../assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <script src="../assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script> -->
-    <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <script src="../js/respond.min.js"></script>
-    <![endif]-->
 
     <link rel="shortcut icon" href="../images/ico/favicon.ico">
-    <!-- <link rel='stylesheet' type='text/css' href='/DataTables-1.10.4/media/css/jquery.dataTables.css'> -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
