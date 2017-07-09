@@ -46,24 +46,13 @@ Copywrite @2015
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-			Welcome, <?php echo $username;?>:<br>
 			<div class="spotlight pull-right"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
 			</image>
 			</div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+            <h3>Welcome, <?php echo $username;?>:</h3>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Add Client</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Find Client</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Run Reports</a>
-          </li>
-
         </ul>
       </div>
     </nav>
@@ -83,7 +72,17 @@ Copywrite @2015
 				
 				<!-- Main -->
 					<div id="main">
-
+<ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Find Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Run Reports</a>
+          </li>
+</ul>
 
 				<!-- Footer -->
 					<footer id="footer">
