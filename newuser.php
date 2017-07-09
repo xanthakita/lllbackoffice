@@ -38,7 +38,7 @@
  	}
  ?>
 <div class="container">
-<div class="well text-center">
+
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="adduser">
@@ -53,7 +53,7 @@
  		<input type="submit" name="submit" value="Submit">
  </form>
  </div>
-	</div>
+
 </div>
 
 </body>
