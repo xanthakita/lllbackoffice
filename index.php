@@ -40,20 +40,14 @@ Copywrite @2015
 
 			
 			</div>
- <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+ <nav class="navbar navbar-toggleable-md fixed-top">
 
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
 			<div class="spotlight pull-right"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
 			</image>
 			</div>
-          </li>
-          <li class="nav-item active">
             <h3>Welcome, <?php echo $username;?>:</h3>
-          </li>
-        </ul>
       </div>
     </nav>
 
