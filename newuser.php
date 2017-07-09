@@ -39,8 +39,8 @@
  ?>
 <div class="container">
 <div class="well text-center">
-<div class="col-sm-12 col-lg-offset-4">
- <form action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+<div class="col-sm-12 col-lg-offset-3">
+ <form class="col-sm-6" action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>"><br>
