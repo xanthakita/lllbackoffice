@@ -48,7 +48,10 @@ Copywrite @2015
 						<h1>Lori's Lovely Lashes</h1>
 						<h3>Backoffice</h3>
 						built by <a href="https://twitter.com/xanthakita">@xanthakita</a> for Lori's Lovely Lashes.</p>
-
+						<div class="col-3-sm"></div>
+						<div class="col-6-sm">
+							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
+						</div>
 					</header>
 
 				<!-- Nav -->
