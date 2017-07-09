@@ -35,6 +35,7 @@ require_once('./mystring.class.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="LLL Backoffice Login page">
     <meta name="author" content="Jonathan Wagner">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/prettyPhoto.css" rel="stylesheet">
@@ -133,18 +134,14 @@ function togglePageElementVisibility(what)
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
-
-
+        <div class="text-center">
+            <h1>Login to LLL Backoffice</h1>
         </div>
     </header>
     <body>
-    <div><br></div>
     <div class="container">
-    <center>
-<div class="row-fluid">
-<div class="span3"></div>
-<div class="span6">
-    <div class="well well-lg input-group">
+
+    <div class="well well-lg input-group text-center">
     <span class="icon-bar"></span>
     <span class="icon-bar">
                 <a href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a><br></span>
@@ -175,10 +172,6 @@ function togglePageElementVisibility(what)
     	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-caution">Signup for Access</button><br>
     </form>
     </div>
-</div>
-<div class="span3"></div>
-</div>
-</center>
 </div>
 </body>
 </html>
