@@ -49,7 +49,7 @@
  		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
  		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value="">
  		<label for="email">Email:</label> <input type="email" name="email" value="">
- 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" />
+ 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" /><br>
  		<input type="submit" name="submit" value="Submit">
  </form>
  </div>
