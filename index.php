@@ -50,7 +50,7 @@ Copywrite @2015
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container text-center">
 
 	<!-- Header -->
 					<header id="header" class="alt">
