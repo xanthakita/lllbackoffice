@@ -75,8 +75,7 @@ Copywrite @2015
 						</div>
 							<section id="intro" class="main">
 								<div class="spotlight">
-									<span class="image"><?php imagejpeg(imagerotate(imagecreatefromjpeg("images/artists/".$username.".jpg"),90, 0));  ?></span>
-									<!-- <img src="images/artists/Jwagner.jpg" alt="" /></span> -->
+									<span class="image"><img src="images/artists/Jwagner.jpg" alt="" /></span> 
 								</div>
 							</section>
 
