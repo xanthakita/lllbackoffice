@@ -59,7 +59,7 @@ Copywrite @2015
 						<!-- Introduction -->
 						<div class="col-3-sm"></div>
 						<div class="col-6-sm">
-							Welcome, <?php echo $username;?>:<br><div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="15%" height="15%" style="transform: rotate(90deg);">
+							Welcome, <?php echo $username;?>:<br><div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="25px" height="35px" style="transform: rotate(90deg);">
 							</image>
 							</div>
 						</div>
