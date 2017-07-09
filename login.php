@@ -140,7 +140,7 @@ function togglePageElementVisibility(what)
     </header>
     <body>
     <div class="container">
-    <div><br></div>
+    <div><br><br><br></div>
     <div class="well well-lg input-group text-center">
     <span class="icon-bar"></span>
     <span class="icon-bar">
