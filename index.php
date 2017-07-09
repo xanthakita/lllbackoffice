@@ -64,21 +64,14 @@ Copywrite @2015
 
 				
 				<!-- Main -->
-					<div id="main">
-<ul>          
-		  <li class="nav-item">
-            <a class="nav-link" href="logout.php">Log Off</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Add Client</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Find Client</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Run Reports</a>
-          </li>
-</ul>
+					<div id="main" class="center-text">
+         <div class="btn-group">
+            <a class="btn btn-xs btn-primary" href="logout.php">Log Off</a>
+            <a class="btn btn-xs btn-primary" href="#">Add Client</a>
+            <a class="btn btn-xs btn-primary" href="#">Find Client</a>
+            <a class="btn btn-xs btn-primary disabled" href="#">Run Reports</a>
+          </div>
+
 
 
 
