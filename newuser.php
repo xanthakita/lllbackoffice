@@ -44,7 +44,7 @@
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>">
- 		<label class="col-sm-2" for="pwd1">Password:</label><input type="password" name="pwd1" value="" >
+ 		<label class="col-sm-2 col-sm-offset-1" for="pwd1">Password:</label><input type="password" name="pwd1" value="" >
  		<label class="col-sm-2 col-sm-offset-1" for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" >
  		<label class="col-sm-2 col-sm-offset-1" for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
  		<label class="col-sm-2 col-sm-offset-1" for="lastname">Lastname:</label> <input type="text" name="lastname" value="">
