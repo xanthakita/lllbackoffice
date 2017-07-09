@@ -73,10 +73,10 @@ require_once('./mystring.class.php');
      <div class="row row-fluid"></div>
     <form class="text-center" action="usercontroller.php" method="POST" accept-charset="utf-8">
 	   <h1>Lori's Lovely Lashes Backoffice Login</h1>
-	   <span class="label label-important" for="username">Username:</span><input type="text" id="username" name="username" onblur="test()"><br>
-	   <label class="label label-important" for="password">Password:</label><input type="password" name="password" ><br>
+	   <span class="label label-important" for="username">Username:</span><input type="text" id="username" name="username" placeholder="username"><br>
+	   <label class="label label-important" for="password">Password:</label><input type="password" name="password"  placeholder="password"><br>
 	   <input type="hidden" name="act" value="login" >
-	   <span class="glyphicon glyphicon-log-in"></span><button type="submit" name="Login" value="Login" class="btn btn-success">Login</button>
+	   <span class="glyphicon glyphicon-log-in">&nbsp;</span><button type="submit" name="Login" value="Login" class="btn btn-success">Login</button>
     </form>
     </div>
 <!-- 	<div class="well well-sm input-group">
