@@ -40,7 +40,7 @@ Copywrite @2015
 	<body>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="container">
 
 				<!-- Header -->
 					<header id="header" class="alt">
@@ -55,12 +55,12 @@ Copywrite @2015
 				
 				<!-- Main -->
 					<div id="main">
-						<div class="container">
+						<div>
 						<!-- Introduction -->
 						<div class="col-3-sm"></div>
 						<div class="col-6-sm">
 							Welcome, <?php echo $username;?>:<br>
-							<div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="55px"  style="transform: rotate(90deg);">
+							<div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
 							</image>
 							</div>
 						</div>
