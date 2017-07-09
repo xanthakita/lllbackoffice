@@ -20,11 +20,7 @@ Copywrite @2015
 	?>
 
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Lori's Lovely Lashes Backoffice</title>
@@ -89,21 +85,7 @@ Copywrite @2015
 				
 				<!-- Main -->
 					<div id="main">
-						<div>
-						<!-- Introduction -->
-						<div class="col-3-sm"></div>
-						<div class="col-6-sm">
 
-						</div>
-						<div class="well center-text">
-							<h3>Please choose an action below</h3>
-						</div>
-						<div id="action" class="well">
-							<a class="btn btn-sm btn-primary" href="logout.php">Logout</a>
-							<a class="btn btn-sm btn-primary" href="logout.php">Find Client</a>
-							<a class="btn btn-sm btn-primary" href="logout.php">Add Client</a>
-							<a class="btn btn-sm btn-primary" href="logout.php">Reports</a>
-						</div>
 
 				<!-- Footer -->
 					<footer id="footer">
