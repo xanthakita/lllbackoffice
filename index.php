@@ -75,7 +75,7 @@ Copywrite @2015
 							<a class="btn btn-sm btn-primary" href="logout.php">Add Client</a>
 						</div>
 							<section id="intro" class="main">
-								<div> <!-- class="spotlight"> -->
+								<div class="spotlight"> 
 									<span class="image"><img src="images/artists/Jwagner.jpg" alt="" /></span> 
 								</div>
 							</section>
