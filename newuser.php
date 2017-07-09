@@ -43,20 +43,14 @@
  <form class="col-sm-6" action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
- 		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>"><br>
- 		<div  class="col-sm-1">
+ 		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>">
  		<label class="col-sm-2" for="pwd1">Password:</label><input type="password" name="pwd1" value="" >
- 		<label class="col-sm-2" for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" ></div> 
- 		<div  class="col-sm-1">
- 		<label class="col-sm-2" for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
- 		<label class="col-sm-2" for="lastname">Lastname:</label> <input type="text" name="lastname" value=""><div>
- 		<div  class="col-sm-1">
- 		<label class="col-sm-2" for="email">Email:</label> <input type="email" name="email" value="">
- 		</div>
- 		<div  class="col-sm-1">
- 		<label class="col-sm-2" for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" /></div>
- 		<div  class="col-sm-3">
- 		<input type="submit" name="submit" value="Submit"></div>
+ 		<label class="col-sm-2 col-sm-offset-1" for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" >
+ 		<label class="col-sm-2 col-sm-offset-1" for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
+ 		<label class="col-sm-2 col-sm-offset-1" for="lastname">Lastname:</label> <input type="text" name="lastname" value="">
+ 		<label class="col-sm-2 col-sm-offset-1" for="email">Email:</label> <input type="email" name="email" value="">
+ 		<label class="col-sm-2 col-sm-offset-1" for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" />
+ 		<input type="submit" name="submit" value="Submit">
  </form>
  </div>
 	</div>
