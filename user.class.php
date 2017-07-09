@@ -215,7 +215,7 @@ Class User {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$hashpw=hash('sha256', $pwd);
-			$imagename=strtolower($uid).".jpg";
+			$imagename=strtolower($uid).".".substr($picture,-3);
 			$sql="Replace into lllbackoffice.user (username, firstname, lastname, picture, userEmail, password ,active, added_at, last_updated) values ('$uid', '$fname', '$lname', '$imagename', '$email', '$hashpw','1', '$time', '$time');";
 			$adduser=$users->querydb($sql);
 

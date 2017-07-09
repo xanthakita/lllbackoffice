@@ -71,7 +71,7 @@ require_once('./mystring.class.php');
      <div class="row row-fluid"></div>
      <div class="row row-fluid"></div>
     <form class="text-center" action="usercontroller.php" method="POST" accept-charset="utf-8">
-	   <h1>Lories Lovely Lashes Backoffice Login</h1>
+	   <h1>Lori's Lovely Lashes Backoffice Login</h1>
 	   <label for="username">Username:</label><input type="text" id="username" name="username" onblur="test()"><br>
 	   <label for="password">Password:</label><input type="password" name="password" ><br>
 	   <input type="hidden" name="act" value="login" >
