@@ -60,7 +60,7 @@ require_once('./mystring.class.php');
             <h1>Login to LLL Backoffice</h1>
         </div>
     </header>
-    <body>
+    <!-- <body> -->
     <div class="container">
     <div><br><br><br><br><br></div>
     <div class="well well-lg input-group text-center">
