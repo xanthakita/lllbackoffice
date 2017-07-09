@@ -19,9 +19,9 @@
  */ 
 
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
-	if (isset($_COOKIE["userid"])) {
-		header('location: index.php');
-	} 
+	// if (isset($_COOKIE["userid"])) {
+	// 	header('location: index.php');
+	// } 
 session_name('lllbackoffice');
 session_start();
 ini_set("allow_url_include", true);
@@ -140,7 +140,7 @@ function togglePageElementVisibility(what)
     </header>
     <body>
     <div class="container">
-    <div><br><br><br></div>
+    <div><br><br><br><br><br></div>
     <div class="well well-lg input-group text-center">
     <span class="icon-bar"></span>
     <span class="icon-bar">
