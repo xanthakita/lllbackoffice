@@ -76,7 +76,7 @@ require_once('./mystring.class.php');
 	   <label for="username">Username:</label><input type="text" id="username" name="username" onblur="test()"><br>
 	   <label for="password">Password:</label><input type="password" name="password" ><br>
 	   <input type="hidden" name="act" value="login" >
-	   <span class="glyphicon glyphicon-log-in"></span><button type="submit" name="Login" value="Login" class="btn btn-default">Login</button>
+	   <span class="glyphicon glyphicon-log-in"></span><button type="submit" name="Login" value="Login" class="btn btn-success">Login</button>
     </form>
     </div>
 <!-- 	<div class="well well-sm input-group">
@@ -92,7 +92,7 @@ require_once('./mystring.class.php');
     <form action="usercontroller.php" method="POST" accept-charset="utf-8">
     <strong>If you need to be setup on the lllbackoffice system please sign up to get access.</strong><br>
     	<input type="hidden" name="act" value="signup" >
-    	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-caution">Signup for Access</button><br>
+    	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-warning">Signup for Access</button><br>
     </form>
     </div>
 </div>
