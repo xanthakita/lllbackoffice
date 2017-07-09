@@ -37,15 +37,15 @@ require_once('./mystring.class.php');
     <meta name="author" content="Jonathan Wagner">
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link href="../css/prettyPhoto.css" rel="stylesheet"> -->
     <!-- <link href="../css/animate.css" rel="stylesheet"> -->
-    <link href="../css/main.css" rel="stylesheet">
-    <script src="../assets/jquery/jquery-1.10.2.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <link href="../css/main.css" rel="stylesheet"> -->
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
     <!-- <script src="../assets/prettify/run_prettify.js"></script> -->
-    <link href="../assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
-    <script src="../assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script>
+    <!-- <link href="../assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="../assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script> -->
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
