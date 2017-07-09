@@ -59,7 +59,7 @@ Copywrite @2015
 						<!-- Introduction -->
 						<div class="col-3-sm"></div>
 						<div class="col-6-sm">
-							Welcome: <img src="./images/artists/<?php echo $username;?>.jpg" width="10%" height="10%" />
+							Welcome: <img src="./images/artists/<?php echo $username;?>.jpg" width="10%" height="10%" style="transform: rotate(270deg);"/>
 						</div>
 						<div class="well center-text">
 							<h3>Please choose an action below</h3>
