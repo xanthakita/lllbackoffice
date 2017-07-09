@@ -63,6 +63,7 @@ require_once('./mystring.class.php');
     <!-- <body> -->
     <div class="container">
     <div><br><br><br><br><br></div>
+    <div class="col-lg-6 col-lg-offset-3">
     <div class="well well-lg input-group text-center">
     <span class="icon-bar"></span>
     <span class="icon-bar">
@@ -94,6 +95,7 @@ require_once('./mystring.class.php');
     	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-caution">Signup for Access</button><br>
     </form>
     </div>
+</div>
 </div>
 </body>
 </html>
