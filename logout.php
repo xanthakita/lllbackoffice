@@ -20,7 +20,7 @@
 
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
 	if (isset($_COOKIE["userid"])) {
-        setcookie("userid", "", time() -10, "/");
+        setcookie("userid", "", time()-1, "/");
 		header('location: login.php');
 	} 
 ?>
