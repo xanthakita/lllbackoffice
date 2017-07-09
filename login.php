@@ -22,8 +22,8 @@
 	// if (isset($_COOKIE["userid"])) {
 	// 	header('location: index.php');
 	// } 
-session_name('lllbackoffice');
-session_start();
+// session_name('lllbackoffice');
+// session_start();
 ini_set("allow_url_include", true);
 require_once('./user.class.php');
 require_once('./mystring.class.php');
@@ -81,44 +81,44 @@ require_once('./mystring.class.php');
 });
 
     </script>     
-    <script  type="text/javascript">
+    <!-- <script  type="text/javascript"> 
 /* Script by: www.jtricks.com
  * Version: 20090221
  * Latest version:
  * www.jtricks.com/javascript/blocks/showinghiding.html
  */
-function showPageElement(what)
-{
-    var obj = typeof what == 'object'
-        ? what : document.getElementById(what);
+// function showPageElement(what)
+// {
+//     var obj = typeof what == 'object'
+//         ? what : document.getElementById(what);
 
-    obj.style.display = 'inline';
-    return false;
-}
+//     obj.style.display = 'inline';
+//     return false;
+// }
 
-function hidePageElement(what)
-{
-    var obj = typeof what == 'object'
-        ? what : document.getElementById(what);
+// function hidePageElement(what)
+// {
+//     var obj = typeof what == 'object'
+//         ? what : document.getElementById(what);
 
-    obj.style.display = 'none';
-    return false;
-}
+//     obj.style.display = 'none';
+//     return false;
+// }
 
-function togglePageElementVisibility(what)
-{
-    var obj = typeof what == 'object'
-        ? what : document.getElementById(what);
+// function togglePageElementVisibility(what)
+// {
+//     var obj = typeof what == 'object'
+//         ? what : document.getElementById(what);
 
-    if (obj.style.display == 'none')
-        obj.style.display = 'inline';
-    else
-        obj.style.display = 'none';
-    return false;
-}
+//     if (obj.style.display == 'none')
+//         obj.style.display = 'inline';
+//     else
+//         obj.style.display = 'none';
+//     return false;
+// }
 
-//-->
-    </script>
+//
+    </script> -->
 <!-- The following javascript simply copies data from teh username field to a hidden field for a different submit. -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
