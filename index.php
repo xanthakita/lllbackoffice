@@ -59,7 +59,7 @@ Copywrite @2015
 						<!-- Introduction -->
 						<div class="col-3-sm"></div>
 						<div class="col-6-sm">
-							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
+							Welcome: <image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
 						</div>
 						<div class="well center-text">
 							<h3>Please choose an action below</h3>
