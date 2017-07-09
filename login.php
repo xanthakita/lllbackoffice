@@ -9,13 +9,9 @@
   TAB SIZE:          4
  SOFT TABS:          NO
  ====================================
- Copywrite @2015
+ Copywrite @2017
  
-	Login verifys access and access level
-	access levels: 
-	admin: can do anything
-	manager: can add and delete people
-	user: can add and edit customers can mark customers inactive
+
  */ 
 
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
@@ -45,66 +41,6 @@ require_once('./mystring.class.php');
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
- <!--    <script>
-    function downloadthis(ID){
-        document.getElementById("btn"+ID).style.visibility = 'hidden';
-        document.getElementById("checkin"+ID).style.visibility = 'visible';
-        document.getElementById("Form-"+ID).submit();
-    } 
-    </script> -->
-
-
-<!--     <script  type="text/javascript">
-        $( document ).ready(function() {
-             //$(ResetPassword).hide(0);
-             // $(AddUser).hide(0);
-	<?php// if ($_COOKIE['ListCat'] == 0) {?>
-	$(Categories).hide(0); 
-	<?php //} else {setcookie("ListCat", 0);}?>
-    <?php //if ($_COOKIE['ListActive'] == 0) {?>
-    	$(ListUsers).hide(0); 
-    <?php //} else {setcookie("ListActive", 0);}?>
-});
-
-    </script>   -->   
-    <!-- <script  type="text/javascript"> 
-/* Script by: www.jtricks.com
- * Version: 20090221
- * Latest version:
- * www.jtricks.com/javascript/blocks/showinghiding.html
- */
-// function showPageElement(what)
-// {
-//     var obj = typeof what == 'object'
-//         ? what : document.getElementById(what);
-
-//     obj.style.display = 'inline';
-//     return false;
-// }
-
-// function hidePageElement(what)
-// {
-//     var obj = typeof what == 'object'
-//         ? what : document.getElementById(what);
-
-//     obj.style.display = 'none';
-//     return false;
-// }
-
-// function togglePageElementVisibility(what)
-// {
-//     var obj = typeof what == 'object'
-//         ? what : document.getElementById(what);
-
-//     if (obj.style.display == 'none')
-//         obj.style.display = 'inline';
-//     else
-//         obj.style.display = 'none';
-//     return false;
-// }
-
-//
-    </script> -->
 <!-- The following javascript simply copies data from teh username field to a hidden field for a different submit. -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-	<title>New User Signup</title>
+	<title>LLLBackOffice New User Signup</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LLL Backoffice Login page">
+    <meta name="author" content="Jonathan Wagner">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- The following javascript simply copies data from teh username field to a hidden field for a different submit. -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
 <?php include('Classes/include.php'); ?>
 </head>
 <body>
@@ -20,7 +38,7 @@
  	}
  ?>
 <div class="container">
-<div class="well center-text">
+<div class="well text-center">
  <form action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
