@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<!-- The following javascript simply copies data from teh username field to a hidden field for a different submit. -->
+
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
@@ -55,15 +55,6 @@
  </div>
 	</div>
 </div>
-<!-- <script>
-document.getElementById('artistimage').addEventListener('change', function(){
-    var file = this.files[0];
-    // This code is only for demo ...
-    console.log("name : " + file.name);
-    console.log("size : " + file.size);
-    console.log("type : " + file.type);
-    console.log("date : " + file.lastModified);
-}, false);
-</script> -->
+
 </body>
 </html>
