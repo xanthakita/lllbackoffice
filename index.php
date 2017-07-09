@@ -53,27 +53,24 @@ Copywrite @2015
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Add Client</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link disabled" href="#">Find Client</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Run Reports</a>
+          </li>
+          <li class="nav-item">
+			Welcome, <?php echo $username;?>:<br>
+			<div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
+			</image>
+			</div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
 
@@ -96,10 +93,7 @@ Copywrite @2015
 						<!-- Introduction -->
 						<div class="col-3-sm"></div>
 						<div class="col-6-sm">
-							Welcome, <?php echo $username;?>:<br>
-							<div class="spotlight"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
-							</image>
-							</div>
+
 						</div>
 						<div class="well center-text">
 							<h3>Please choose an action below</h3>
