@@ -54,19 +54,19 @@ require_once('./mystring.class.php');
     </script> -->
 
 
-    <script  type="text/javascript">
+<!--     <script  type="text/javascript">
         $( document ).ready(function() {
              //$(ResetPassword).hide(0);
-             $(AddUser).hide(0);
-	<?php if ($_COOKIE['ListCat'] == 0) {?>
+             // $(AddUser).hide(0);
+	<?php// if ($_COOKIE['ListCat'] == 0) {?>
 	$(Categories).hide(0); 
-	<?php } else {setcookie("ListCat", 0);}?>
-    <?php if ($_COOKIE['ListActive'] == 0) {?>
+	<?php //} else {setcookie("ListCat", 0);}?>
+    <?php //if ($_COOKIE['ListActive'] == 0) {?>
     	$(ListUsers).hide(0); 
-    <?php } else {setcookie("ListActive", 0);}?>
+    <?php //} else {setcookie("ListActive", 0);}?>
 });
 
-    </script>     
+    </script>   -->   
     <!-- <script  type="text/javascript"> 
 /* Script by: www.jtricks.com
  * Version: 20090221
