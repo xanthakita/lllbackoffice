@@ -92,7 +92,7 @@ require_once('./mystring.class.php');
     <form action="usercontroller.php" method="POST" accept-charset="utf-8">
     <h3>If you need to be setup on the lllbackoffice system please sign up to get access.</h3>
     	<input type="hidden" name="act" value="signup" >
-    	<span class="glyphicon glyphicon-pencil"></span><button type="submit" name="signup" value="Signup for Access" class="btn btn-warning">Signup for Access</button><br>
+    	<span class="glyphicon glyphicon-pencil">&nbsp;</span><button type="submit" name="signup" value="Signup for Access" class="btn btn-warning">Signup for Access</button><br>
     </form>
     </div>
 </div>
