@@ -48,21 +48,16 @@ Copywrite @2015
 						<h1>Lori's Lovely Lashes</h1>
 						<h3>Backoffice</h3>
 						built by <a href="https://twitter.com/xanthakita">@xanthakita</a> for Lori's Lovely Lashes.</p>
-						<div class="col-3-sm"></div>
-						<div class="col-6-sm">
-							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
-						</div>
+
 					</header>
 
 				<!-- Nav -->
 				
 					<nav id="nav">
-						<ul>
-							<li><a href="logout.php" class="active">Logout</a></li>
-							<li><a href="#first">Find Client</a></li>
-							<li><a href="#second">Add Client</a></li>
-							<li><a href="#cta">Reports</a></li>
-						</ul>
+					<div class="col-3-sm"></div>
+						<div class="col-6-sm">
+							<image source="images/artists/<?php echo $username; ?>.jpg" width="10%" height="10%" />
+						</div>
 					</nav>
 				
 				<!-- Main -->
@@ -76,6 +71,7 @@ Copywrite @2015
 							<a class="btn btn-sm btn-primary" href="logout.php">Logout</a>
 							<a class="btn btn-sm btn-primary" href="logout.php">Find Client</a>
 							<a class="btn btn-sm btn-primary" href="logout.php">Add Client</a>
+							<a class="btn btn-sm btn-primary" href="logout.php">Reports</a>
 						</div>
 <!-- 							<section id="intro" class="main">
 								<div class="spotlight"> 
