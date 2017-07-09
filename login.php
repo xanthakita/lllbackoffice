@@ -41,7 +41,7 @@ require_once('./mystring.class.php');
     <!-- <link href="../css/prettyPhoto.css" rel="stylesheet"> -->
     <!-- <link href="../css/animate.css" rel="stylesheet"> -->
     <!-- <link href="../css/main.css" rel="stylesheet"> -->
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="assets/js/jquery-1.10.2.min.js"></script> -->
     <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
     <!-- <script src="../assets/prettify/run_prettify.js"></script> -->
     <!-- <link href="../assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" /> -->
@@ -52,7 +52,7 @@ require_once('./mystring.class.php');
     <![endif]-->
 
     <link rel="shortcut icon" href="../images/ico/favicon.ico">
-    <link rel='stylesheet' type='text/css' href='/DataTables-1.10.4/media/css/jquery.dataTables.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='/DataTables-1.10.4/media/css/jquery.dataTables.css'> -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
