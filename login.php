@@ -108,13 +108,13 @@ require_once('./mystring.class.php');
 <!-- The following javascript simply copies data from teh username field to a hidden field for a different submit. -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script>
+<!-- 	<script>
       function test(){
         var f1 = document.getElementById("username");
         var f2 = document.getElementById("username2");
         f2.value = f1.value;
       }
-    </script>
+    </script> -->
 
 <?php include('Classes/include.php'); ?>
 </head>
