@@ -36,14 +36,14 @@ require_once('./mystring.class.php');
     <meta name="description" content="LLL Backoffice Login page">
     <meta name="author" content="Jonathan Wagner">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/prettyPhoto.css" rel="stylesheet">
-    <link href="../css/animate.css" rel="stylesheet">
+    <!-- <link href="../css/prettyPhoto.css" rel="stylesheet"> -->
+    <!-- <link href="../css/animate.css" rel="stylesheet"> -->
     <link href="../css/main.css" rel="stylesheet">
     <script src="../assets/jquery/jquery-1.10.2.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/prettify/run_prettify.js"></script>
+    <!-- <script src="../assets/prettify/run_prettify.js"></script> -->
     <link href="../assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
     <script src="../assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script>
     <!--[if lt IE 9]>
@@ -59,13 +59,13 @@ require_once('./mystring.class.php');
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <script>
+ <!--    <script>
     function downloadthis(ID){
         document.getElementById("btn"+ID).style.visibility = 'hidden';
         document.getElementById("checkin"+ID).style.visibility = 'visible';
         document.getElementById("Form-"+ID).submit();
     } 
-    </script>
+    </script> -->
 
 
     <script  type="text/javascript">
