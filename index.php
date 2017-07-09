@@ -35,7 +35,7 @@ Copywrite @2015
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
-<?php include('Classes/include.php'); ?>
+<?php include('Classes/include.php'); ?> 
 	</head>
 	<body>
 
@@ -77,11 +77,11 @@ Copywrite @2015
 							<a class="btn btn-sm btn-primary" href="logout.php">Find Client</a>
 							<a class="btn btn-sm btn-primary" href="logout.php">Add Client</a>
 						</div>
-							<section id="intro" class="main">
+<!-- 							<section id="intro" class="main">
 								<div class="spotlight"> 
 									<span class="image"><img src="images/artists/Jwagner.jpg" alt="" /></span> 
 								</div>
-							</section>
+							</section> -->
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
