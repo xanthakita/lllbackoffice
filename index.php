@@ -44,10 +44,9 @@ Copywrite @2015
 
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<div class="spotlight pull-right"> <image src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
+			 <img src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
 			</image>
-			</div>
-            <h3>Welcome, <?php echo $username;?>:</h3>
+            <h3>Welcome, <?php echo $username;?></h3>
       </div>
     </nav>
 
