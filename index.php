@@ -65,9 +65,7 @@ Copywrite @2015
 				
 				<!-- Main -->
 					<div id="main" class="text-center">
-					<div class="col-lg-12">
-					<div class="col-xs-4"></div>
-         <div class="btn-group col-xs-4">
+         <div class="btn-group text-center">
             <a class="btn btn-xs btn-primary" href="logout.php">Log Off</a>
             <a class="btn btn-xs btn-primary" href="#">Add Client</a>
             <a class="btn btn-xs btn-primary" href="#">Find Client</a>
