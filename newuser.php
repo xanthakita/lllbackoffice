@@ -41,6 +41,7 @@
 
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="usercontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+		 <a href="http://lllbackoffice.com/index.php"><img src="images/lll-small-logo.png" height="95" alt="logo"></a><br>
  		<input type="hidden" name="act" value="adduser">
  		<h3> Please enter the following to signup for access to LLLBackoffice System </h3>
  		<label for="username">Username (first initial lastname i.e. jsmith):</label><input type="text" name="username" value="<?php echo $username; ?>">
