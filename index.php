@@ -68,7 +68,7 @@ Copywrite @2015
 					<div id="main" class="text-center">
          <div class="btn-group text-center">
             <a class="btn btn-xs btn-primary" href="logout.php">Log Off</a>
-            <a class="btn btn-xs btn-primary" href="#">Add Client</a>
+            <a class="btn btn-xs btn-primary" href="addClient.php">Add Client</a>
             <a class="btn btn-xs btn-primary" href="#">Find Client</a>
             <a class="btn btn-xs btn-primary disabled" href="#">Run Reports</a>
           </div>
