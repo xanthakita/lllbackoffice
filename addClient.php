@@ -51,8 +51,8 @@
  		<label for="firstVisit">First Visit:&nbsp;</label><input type="date" name="firstVisit" id="firstVisit"><br>
  		<label for="phone">Phone Number:&nbsp;</label><input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' name='phone' title='Phone Number (Format: +99(99)9999-9999)'> <br>
  		<label for="email">Email:&nbsp;</label><input type="email" name="email" autocomplete="off"><br>
- 		<span class="col-sm-3"><label for="city">City:&nbsp;</label><input type="text" name="city"></span>
- 		<span class="col-sm-3"><label for="State">State (IN):&nbsp;</label><input type="text" name="state" value="IN"></span><br>
+ 		<div><span class="col-sm-3 text-center"><label for="city">City:&nbsp;</label><input type="text" name="city"></span>
+ 		<span class="col-sm-3 text-center"><label for="state">State (IN):&nbsp;</label><input type="text" name="state" value="IN"></span><br></div>
  		<input type="submit" name="submit" value="Submit">
  </form>
  </div>
