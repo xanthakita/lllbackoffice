@@ -48,13 +48,9 @@
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addclient">
  		<h3> Fill out the following fields </h3>
- 		<label for="firstVisit">First Visit:</label><input type="date" name="firstVisit" id="firstVisit">
- 		<label for="pwd1">Password:</label><input type="password" name="pwd1" value="" >
- 		<label for="pwd2">Verify Password:</label> <input type="password" name="pwd2" value="" >
- 		<label for="firstname">Firstname:</label> <input type="text" name="firstname" value="" >
- 		<label for="lastname">Lastname:</label> <input type="text" name="lastname" value="">
- 		<label for="email">Email:</label> <input type="email" name="email" value="">
- 		<label for="artistimage">Artist Image:</label><input type="file" name="artistimage" id="artistimage" /><br>
+ 		<label for="firstVisit">First Visit:</label><input type="date" name="firstVisit" id="firstVisit"><br>
+ 		<label for="phone">Phone Number:</label><input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' name='phone' title='Phone Number (Format: +99(99)9999-9999)'> <br>
+ 		<label for="email">Email:</label><input type="email" name="email" autocomplete="off"><br>
  		<input type="submit" name="submit" value="Submit">
  </form>
  </div>
