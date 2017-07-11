@@ -36,10 +36,18 @@
 <?php include('Classes/include.php'); ?> 
 	</head>
 	<body>
+    <div class="container text-center">
+
+	<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/lll_logo.jpg" alt="" /></span>
+						<h1>Add Client</h1>
+
+					</header>
 
 
 
-
+</div><!-- /.container -->
    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
