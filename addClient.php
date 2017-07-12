@@ -92,6 +92,15 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+	<script>
+			function printValue(input, output){
+				str invalue= input.value;
+				output.innerhtml=invalue;
+			}
+
+	</script>
+
+
 	</body>
 </html>
 
