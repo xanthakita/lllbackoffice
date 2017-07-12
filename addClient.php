@@ -94,12 +94,9 @@
 
 	<script>
 			function printValue(input, output){
-				console.log("input: " + input);
-				console.log("output: " + output);
 
-				str invalue= input.value;
-					console.log("inputvalue: " + input.value);
-				output.innerhtml=invalue;
+				str invalue= $.getElementById(input).innerHTML;
+				$.getElementById(output).innerhtml=invalue;
 			}
 
 	</script>
