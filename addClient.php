@@ -61,11 +61,14 @@
 		 		<input class="col-sm-2 text-center" type="text" name="state" value="IN">
 	 		</span>
 	 		<br>
-	 		<label for="birthmonth">Birthday Month:&nbsp;</label><input id="birthmonth" type="range" min="1" max="12" step="1" /><br>
-	 		<label for="birthday">Birthday Day:&nbsp;</label><input id="birthday" type="range" min="1" max="31" step="1" /><br>
+	 		<label for="birthmonth">Birthday Month:&nbsp;</label><input id="birthmonth" type="range" min="1" max="12" step="1" onchange="printValue('birthmonth','bmonth');" /><input id='bmonth' type='text' size='2'/><br>
+	 		<label for="birthday">Birthday Day:&nbsp;</label><input id="birthday" type="range" min="1" max="31" step="1" onchange="printValue('birthday','bdate');" /><input id='bdate' type='text' size='2'/><br>
  		</div>
 		<br>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
+
+
+
  </form>
  </div>
 
