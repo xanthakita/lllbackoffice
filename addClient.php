@@ -42,7 +42,6 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/lll-small-logo.png" alt="" /></span>
 						<h1>Add Client</h1>
-
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
@@ -66,7 +65,7 @@
 	 		<!-- </span> -->
 	 		<br>
 	 		<label for="birthmonth">Birthday Month:&nbsp;</label>
-	 		<input id='bmonth' name="birthmonth" type='month'/><br>
+	 		<input id='birthmonth' name="birthmonth" type='month'/><br>
 	 		<label for="birthday">Birthday Day:&nbsp;</label><input type="number" name="birthday" min="1" max="31"><br>
  		</div>
 		<br>
@@ -77,12 +76,11 @@
 			<option value="Google">Google</option>
 			<option value="Other">Other</option>
 		</select>
-		<label for="referal">(if Friend or Other)</label>
-		<input type="text" name="referal">
+		<label for="referal">(if Friend's name or Other)</label>
+		<input type="text" name="referal"><br>
+ 		<label for="clientimage">Client Image:</label>
+ 		<input type="file" name="clientimage" id="clientimage" /><br>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
-
-
-
  </form>
  </div>
 
