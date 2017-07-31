@@ -48,6 +48,10 @@
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addclient">
  		<h3> Fill out the following fields </h3>
+ 		<label for="firstName">First Name:</label>
+ 		<input type="text" name="firstName" id="firstName"/><br>
+ 		<label for="lastName">Last Name:</label>
+ 		<input type="text" name="lastName" id="lastName"/><br>
  		<label for="firstVisit">First Visit:&nbsp;</label><input type="date" name="firstVisit" id="firstVisit"><br>
  		<label for="phone">Phone Number:&nbsp;</label><input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' name='phone' title='Phone Number (Format: +99(99)9999-9999)'> <br>
  		<label for="email">Email:&nbsp;</label><input type="email" name="email" autocomplete="off"><br>
