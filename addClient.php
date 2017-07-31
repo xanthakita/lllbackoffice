@@ -70,6 +70,15 @@
 	 		<label for="birthday">Birthday Day:&nbsp;</label><input type="number" name="birthday" min="1" max="31"><br>
  		</div>
 		<br>
+		<label for"heardAbout">How did they hear about us:</label>
+		<select name="heardAbout">
+			<option value="Friend">Friend</option>
+			<option value="Facebook">Facebook</option>
+			<option value="Google">Google</option>
+			<option value="Other">Other</option>
+		</select>
+		<label for="referal">(if Friend or Other)</label>
+		<input type="text" name="referal">
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
 
 
