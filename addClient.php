@@ -63,7 +63,7 @@
 	 		<br>
 	 		<label for="birthmonth">Birthday Month:&nbsp;</label>
 	 		<input id='bmonth' name="birthmonth" type='month'/><br>
-	 		<label for="birthday">Birthday Day:&nbsp;</label><input id="birthday" type="range" min="1" max="31" step="1" onchange="printValue('birthday','bdate');" /><input id='bdate' type='text' size='2'/><br>
+	 		<label for="birthday">Birthday Day:&nbsp;</label><input type="number" name="birthday" min="1" max="31"><br>
  		</div>
 		<br>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
