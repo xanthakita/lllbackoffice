@@ -55,14 +55,10 @@
  		<label for="phone">Phone Number:&nbsp;</label><input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' name='phone' title='Phone Number (Format: +99(99)9999-9999)'> <br>
  		<label for="email">Email:&nbsp;</label><input type="email" name="email" autocomplete="off"><br>
  		<div class="text-center">
-	 		<!-- <span class="pull-left"> -->
-		 		<label class="col-sm-6" for="city">City:&nbsp;</label>
-		 		<input class="col-sm-2" type="text" name="city">
-	 		<!-- </span> -->
-	 		<!-- <span class="pull-right"> --><br>
-		 		<label  class="col-sm-6" for="state">State (IN):&nbsp;</label>
-		 		<input class="col-sm-2 text-center" type="text" name="state" value="IN">
-	 		<!-- </span> -->
+		 		<label for="city">City:&nbsp;</label>
+		 		<input type="text" name="city"><br>
+		 		<label for="state">State (IN):&nbsp;</label>
+		 		<input type="text" name="state" value="IN">
 	 		<br>
 	 		<label for="birthmonth">Birthday Month:&nbsp;</label>
 	 		<input id='birthmonth' name="birthmonth" type='month'/><br>
