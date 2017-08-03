@@ -97,7 +97,7 @@ switch ($_POST['act']) {
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 
-		$output = $client->Add_User($username, $firstname, $lastname, $picture, $email, $pwd1); //, $userdept, $userpriv);
+		$output = $client->Add_visit($username, $firstname, $lastname, $picture, $email, $pwd1); //, $userdept, $userpriv);
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/index.php');
 
