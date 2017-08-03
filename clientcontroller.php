@@ -95,7 +95,7 @@ switch ($_POST['act']) {
 
  		$act = $_POST['act'];
  		$firstName = $_POST['firstName'];
- 		$lastName" = $_POST['lastName'];
+ 		$lastName" = $_POST['lastName']; 
  		$firstVisit = $_POST['firstVisit'];
  		$phone = $_POST['phone'];
  		$email = $_POST['email'];
