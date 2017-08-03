@@ -4,6 +4,7 @@ require_once ('/var/www/html/Classes/kint.php');
 require_once ('Classes/include.php');
 require_once('mystring.class.php');
 require_once ('user.class.php');
+require_once ('client.class.php');
 session_name("lllbackoffice");
 session_start();
 /* ?>
@@ -86,6 +87,73 @@ switch ($_POST['act']) {
 		} else {
 			echo "Failed to change password retry.";
 		}
+		break;
+	case 'addclient':
+		// kint::enabled(false);
+		// s('in adduser');
+		// d($_POST);
+
+ 		$act = $_POST['act'];
+ 		$firstName = $_POST['firstName'];
+ 		$lastName" = $_POST['lastName"'];
+ 		$firstVisit = $_POST['firstVisit'];
+ 		$phone = $_POST['phone'];
+ 		$email = $_POST['email'];
+ 		$city = $_POST['city'];
+ 		$state = $_POST['state'];
+ 		$birthmonth = $_POST['birthmonth'];
+ 		$birthday = $_POST['birthday'];
+		$heardAbout = $_POST['heardAbout'];
+		$referal = $_POST['referal'];
+		$tempname=$_FILES['clientimage']['tmp_name'];
+		$picture=$_FILES['clientimage']['name'];
+		// images
+
+		$target_dir = "images/clients/";
+		$target_file = $target_dir . $username. substr($picture, -4);
+		$uploadOk = 1;
+		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
+
+		// d($username, $firstname, $lastname, $email, $userdept);
+
+		$output = $client->Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
+
+		setcookie('errormsg', "Client ".$username." successfully created.", strtotime('+15 second'), '/');
+		header('location: http://lllbackoffice.com/addvisit.php');
+
+		break;
+	case 'addvisit':
+		// kint::enabled(false);
+		// s('in adduser');
+		// d($_POST);
+
+ 		$act = $_POST['act'];
+ 		$firstName = $_POST['firstName'];
+ 		$lastName" = $_POST['lastName"'];
+ 		$firstVisit = $_POST['firstVisit'];
+ 		$phone = $_POST['phone'];
+ 		$email = $_POST['email'];
+ 		$city = $_POST['city'];
+ 		$state = $_POST['state'];
+ 		$birthmonth = $_POST['birthmonth'];
+ 		$birthday = $_POST['birthday'];
+		$heardAbout = $_POST['heardAbout'];
+		$referal = $_POST['referal'];
+		$tempname=$_FILES['clientimage']['tmp_name'];
+		$picture=$_FILES['clientimage']['name'];
+		// images
+
+		$target_dir = "images/clients/";
+		$target_file = $target_dir . $username. substr($picture, -4);
+		$uploadOk = 1;
+		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
+
+		// d($username, $firstname, $lastname, $email, $userdept);
+
+		$output = $user->Add_User($username, $firstname, $lastname, $picture, $email, $pwd1); //, $userdept, $userpriv);
+		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
+		header('location: http://lllbackoffice.com/index.php');
+
 		break;
 	case 'adduser':
 		// kint::enabled(false);
