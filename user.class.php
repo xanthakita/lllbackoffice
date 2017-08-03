@@ -221,6 +221,16 @@ Class User {
 
 	}
 
+	public function Get_Artists(){
+		// Gets list of all artists and usernames for artists
+			GLOBAL $users;
+			$now = new DateTime();
+			$time = $now->format('Y-m-d H:i:s');
+			$sql="select username, firstname, lastname, picture from lllbackoffice.user;";
+			$getArtists=$users->querydb($sql);
+			return($getArtists);
+
+	}
 
 	public function Delete_User($du_uid, $fname, $lname, $authpwd ){
 		// This method does not actually delete a user from the lllbackoffice.user table instaed it simply changes the active flag to 0 so the user will not be considered.

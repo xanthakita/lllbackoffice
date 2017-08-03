@@ -220,6 +220,7 @@ Class Client {
 			// var_dump($sql);
 			// die;
 			$adduser=$clients->querydb($sql);
+			return($adduser);
 
 	}
 
