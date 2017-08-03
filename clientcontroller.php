@@ -31,7 +31,7 @@ if (isset($_POST['username'])) {$username   = $_POST['username'];} else { $usern
 if (isset($_POST['password'])) {$password   = $_POST['password'];}
 if (isset($_POST['newpassword'])) {$newpass = $_POST['newpassword'];}
 
-$user = new User($username);
+$client = new Client($username);
 
 // d($user);
 switch ($_POST['act']) {
