@@ -52,7 +52,7 @@
  		<label for="lastName">Last Name:</label>
  		<input type="text" name="lastName" id="lastName"/><br>
  		<label for="firstVisit">First Visit:&nbsp;</label><input type="date" name="firstVisit" id="firstVisit"><br>
- 		<label for="phone">Phone Number:&nbsp;</label><input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' name='phone' title='Phone Number (Format: +99(99)9999-9999)'> <br>
+ 		<label for="phone">Phone Number:&nbsp;</label><input type='tel'  name='phone' title='Phone Number'> <br>
  		<label for="email">Email:&nbsp;</label><input type="email" name="email" autocomplete="off"><br>
  		<div class="text-center">
 		 		<label for="city">City:&nbsp;</label>
