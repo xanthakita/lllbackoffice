@@ -10,7 +10,7 @@ $clients = '';
 
 
 
-Class User {
+Class Client {
 	// The User class is where all the work is done which involves users There are two tables accessed:
 	// lllbackoffice.user and lllbackoffice.userpriv
 	// Each method is named to be clear as to what it's purpose is. adding comments for each one.
