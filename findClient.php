@@ -20,7 +20,7 @@
 		include('client.class.php');
 		$client = new Client($username);
 		$clientList = $client->GetClients();
-		var_dump($clientList);
+		echo "<pre>"; var_dump($clientList); echo "</pre>";
 		die;
 	}
 	?>
