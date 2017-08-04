@@ -112,6 +112,7 @@
 		</select><br>
  		<label for="classicStyle">Classic Style:</label>
 		<select name="classicStyle">
+			<option value=" "> </option>
 			<option value="Cat Eye">Cat Eye</option>
 			<option value="Kitten Eye">Kitten Eye</option>
 			<option value="Open Eye">Open Eye</option>
@@ -119,16 +120,19 @@
 		</select><br>		
  		<label for="VolumeType">Volume:</label>
 		<select name="VolumeType">
+			<option value=" "> </option>
 			<option value="Built">Built</option>
 			<option value="Purchased">Purchased</option>
 		</select><br>			
  		<label for="BottomType">Bottom:</label>
 		<select name="BottomType">
+			<option value=" "> </option>
 			<option value=".15 B 07">.15 B 07</option>
 			<option value=".15 B 08">.15 B 08</option>
 		</select><br>			
  		<label for="Artist">Artist:</label>
-		<select name="Artist">		
+		<select name="Artist">	
+			<option value=" "> </option>	
 		<?php
 			foreach($artistsList as $x){
 				echo "<option value='".$x['username']."'>".$x['firstname']." ".$x['lastname']."</option>";
