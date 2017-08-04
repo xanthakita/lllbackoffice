@@ -20,8 +20,8 @@
 		include('client.class.php');
 		$client = new Client($username);
 		$clientList = $client->GetClients();
-		echo "<pre>"; var_dump($clientList); echo "</pre>";
-		die;
+		// echo "<pre>"; var_dump($clientList); echo "</pre>";
+		// die;
 	}
 	?>
 
@@ -55,10 +55,9 @@
 		<select name="clientList">
 			<?php
 				foreach($clientList as $x){
-					echo "option value=".$x[''];
+					echo "<option value=".$x.">".$x['last_name'].", ".$x['first_name']."</option>";
 				}
 			?>
-			<option value="Other">Other</option>
 		</select>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
  </form>
