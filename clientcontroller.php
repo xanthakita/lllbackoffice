@@ -64,40 +64,31 @@ switch ($_POST['act']) {
 		// d($username, $firstname, $lastname, $email, $userdept);
 
 		$output = $client->Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
-
+		var_dump($output);
+		die;
 		setcookie('errormsg', "Client ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/addVisit.php');
 
 		break;
-	case 'addvisit':
+	case 'addVisit':
 		// kint::enabled(false);
 		// s('in adduser');
 		// d($_POST);
 
  		$act = $_POST['act'];
- 		$firstName = $_POST['firstName'];
- 		$lastName = $_POST['lastName'];
- 		$firstVisit = $_POST['firstVisit'];
- 		$phone = $_POST['phone'];
- 		$email = $_POST['email'];
- 		$city = $_POST['city'];
- 		$state = $_POST['state'];
- 		$birthmonth = $_POST['birthmonth'];
- 		$birthday = $_POST['birthday'];
-		$heardAbout = $_POST['heardAbout'];
-		$referal = $_POST['referal'];
-		$tempname=$_FILES['clientimage']['tmp_name'];
-		$picture=$_FILES['clientimage']['name'];
-		// images
+		$VisitType = $_POST['VisitType'];
+		$lashType = $_POST['lashType'];
+		$curlType = $_POST['curlType'];
+		$Length = $_POST['Length'];
+		$Size = $_POST['Size'];
+		$eyePadType = $_POST['eyePadType'];
+		$glueType = $_POST['glueType'];
+		$classicStyle = $_POST['classicStyle'];
+		$VolumeType = $_POST['VolumeType'];
+		$BottomType = $_POST['BottomType'];
+		$Artist = $_POST['Artist'];
 
-		$target_dir = "images/clients/";
-		$target_file = $target_dir . $username. substr($picture, -4);
-		$uploadOk = 1;
-		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
-
-		// d($username, $firstname, $lastname, $email, $userdept);
-
-		$output = $client->Add_visit($username, $firstname, $lastname, $picture, $email, $pwd1); //, $userdept, $userpriv);
+		$output = $client->Add_visit($username, $firstname, $lastname, $picture, $email, $pwd1); 
 		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/index.php');
 

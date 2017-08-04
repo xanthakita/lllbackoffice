@@ -48,7 +48,7 @@
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
- 		<input type="hidden" name="act" value="addvisit">
+ 		<input type="hidden" name="act" value="addVisit">
  		<h3> Fill out the following fields </h3>
  		<label for="VisitType">Type of Appointment:</label>
 		<select name="VisitType">
