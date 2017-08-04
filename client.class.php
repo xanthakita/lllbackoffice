@@ -215,8 +215,8 @@ Class Client {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients;";
-			$getArtists=$users->querydb($sql);
-			return($getArtists);
+			$getClients=$clients->querydb($sql);
+			return($getClients);
 
 	}
 
