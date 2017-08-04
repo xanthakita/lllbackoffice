@@ -66,7 +66,7 @@ switch ($_POST['act']) {
 		$output = $client->Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
 
 		setcookie('errormsg', "Client ".$username." successfully created.", strtotime('+15 second'), '/');
-		header('location: http://lllbackoffice.com/addvisit.php');
+		header('location: http://lllbackoffice.com/addVisit.php');
 
 		break;
 	case 'addvisit':
