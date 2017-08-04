@@ -20,6 +20,9 @@
 		include('user.class.php');
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
+		if (isset($_GET['client'])){
+			$clientid=$_GET['client'];
+		}
 	}
 	?>
 
@@ -49,6 +52,11 @@
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addVisit">
+ 		<input type="hidden" name="clientID" value="<?php echo $clientid; ?>">
+ 		<label for="appointmentDate">Appointment Date:</label>
+		<input type="date" name="appointmentDate">
+ 		<label for="appointmentTime">Appointment Time:</label>
+ 		<input type="time" name="appointmentTime">
  		<h3> Fill out the following fields </h3>
  		<label for="VisitType">Type of Appointment:</label>
 		<select name="VisitType">
