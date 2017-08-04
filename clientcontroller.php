@@ -58,7 +58,7 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/clients/";
-		$target_file = $target_dir . $username. substr($picture, -4);
+		$target_file = $target_dir . $lastName."".$firstName. substr($picture, -4);
 		$uploadOk = 1;
 		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
