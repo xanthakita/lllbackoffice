@@ -21,11 +21,11 @@
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
 		foreach($artistsList as $x){
-			$username[]=$x['username'];
+			$userid[]=$x['username'];
 			$artistname[]=$x['firstname']." ".$x['lastname'];
 			$artistimage[]=$x['picture'];
 		}
-		echo "<pre>";var_dump($username);var_dump($artistname);var_dump($artistimage);echo "</pre>";
+		echo "<pre>";var_dump($userid);var_dump($artistname);var_dump($artistimage);echo "</pre>";
 		die;
 	}
 	?>
