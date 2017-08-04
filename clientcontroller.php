@@ -99,14 +99,14 @@ switch ($_POST['act']) {
 	case 'findClient':
 		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
+ 		$clientInfo = $client->getClientInfo($clientID);
  		echo "<pre>";
  		var_dump($act);
  		var_dump($clientID);
- 		// var_dump($clientInfo);
+ 		var_dump($clientInfo);
  		// var_dump($clientVisit);
  		echo "</pre>";
  		die;
- 		// $clientInfo = $clients->getClientInfo($clientID);
  		// $clientVisit = $clients->getLastVisit($clientID);
 
 		break;
