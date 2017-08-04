@@ -54,7 +54,7 @@ switch ($_POST['act']) {
 		$referal = $_POST['referal'];
 		$tempname=$_FILES['clientimage']['tmp_name'];
 		$picture=$_FILES['clientimage']['name'];
-		$clientID = $lastName.$phone;
+		$clientID = $lastName."".$phone;
 		// images
 
 		$target_dir = "images/clients/";
