@@ -100,14 +100,15 @@ switch ($_POST['act']) {
 		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
  		$clientInfo = $client->getClientInfo($clientID);
+ 		$clientVisit = $client->getLastVisit($clientID);
  		echo "<pre>";
  		var_dump($act);
  		var_dump($clientID);
  		var_dump($clientInfo);
- 		// var_dump($clientVisit);
+ 		var_dump($clientVisit);
  		echo "</pre>";
  		die;
- 		// $clientVisit = $clients->getLastVisit($clientID);
+ 		
 
 		break;
 	case 'ListUsers':

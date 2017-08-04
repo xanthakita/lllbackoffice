@@ -225,13 +225,24 @@ Class Client {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients where clientID='".$ClientID."';";
-			
+
 			// var_dump($sql);die;
 			$getClient=$clients->querydb($sql);
 			return($getClient);
 
 	}
 
+	public function getLastVisit($ClientID){
+		// Gets list of all artists and usernames for artists
+			GLOBAL $clients;
+			$now = new DateTime();
+			$time = $now->format('Y-m-d H:i:s');
+			$sql="select clientID, AppointmentDate, AppointmentTime, VisitType, lashType, curlType, Length, Size, eyePadType, glueType, classicStyle, VolumeType, BottomType, Artist from lllbackoffice.visits where clientID='".$ClientID."';";
+			
+			$getLastVisit=$clients->querydb($sql);
+			return($getLastVisit);
+
+	}
 	public function Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture){
 		// Adds a user to the user table
 			GLOBAL $clients;
