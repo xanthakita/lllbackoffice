@@ -46,7 +46,7 @@
 	<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/lll-small-logo.png" alt="" /></span>
-						<h1>Add Client</h1>
+						<h1>Find Client</h1>
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
