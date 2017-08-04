@@ -219,7 +219,8 @@ Class Client {
 			$sql="Replace into lllbackoffice.clients (last_name, first_name, first_visit, phone, email, city, state, birth_month, birth_day, refered, refered_by, picture, added_by, ts) values ('$lastName', '$firstName', '$firstVisit', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$heardAbout', '$referal', '$picture', '$thisuser', '$time');";
 			// var_dump($sql);
 			// die;
-			$adduser=$clients->querydb($sql);
+			$clients->querydb($sql);
+			$adduser=$clients->insert_id;
 			return($adduser);
 
 	}
