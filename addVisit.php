@@ -72,7 +72,7 @@
 			<option value="B">B</option>
 			<option value="C">C</option>
 			<option value="D">D</option>
-			<option value="L">L</option>
+			<option value="L">L</option> 
 		</select><br>
  		<label for="Length">Length:</label>
 		<select name="Length">
