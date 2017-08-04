@@ -209,19 +209,33 @@ Class Client {
 		return($GetEmail[0][email]);
 	}
 
-	public function Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture){
+	public function Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture){
 		// Adds a user to the user table
 			GLOBAL $clients;
 			GLOBAL $thisuser;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$imagename=strtolower($uid).".".substr($picture,-3);
-			$sql="Replace into lllbackoffice.clients (last_name, first_name, first_visit, phone, email, city, state, birth_month, birth_day, refered, refered_by, picture, added_by, ts) values ('$lastName', '$firstName', '$firstVisit', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$heardAbout', '$referal', '$picture', '$thisuser', '$time');";
+			$sql="Replace into lllbackoffice.clients (clientID, last_name, first_name, first_visit, phone, email, city, state, birth_month, birth_day, refered, refered_by, picture, added_by, ts) values ('$clientID', '$lastName', '$firstName', '$firstVisit', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$heardAbout', '$referal', '$picture', '$thisuser', '$time');";
 			// var_dump($sql);
 			// die;
 			$clients->querydb($sql);
 			$adduser=$clients->insert_id;
 			return($adduser);
+
+	}
+
+	public function Add_Visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist){
+		// Adds a user to the user table
+			GLOBAL $clients;
+			GLOBAL $thisuser;
+			$now = new DateTime();
+			$time = $now->format('Y-m-d H:i:s');
+			$sql="Replace into lllbackoffice.visits (clientID, AppointmentDate, AppointmentTime, VisitType, lashType, curlType, Length, Size, eyePadType, glueType, classicStyle, VolumeType, BottomType, Artist, ts) values ('$clientID', '$appointmentDate', '$appointmentTime', '$VisitType', '$lashType', '$curlType', '$Length', '$Size', '$eyePadType', '$glueType', '$classicStyle', '$VolumeType', '$BottomType', '$Artist', '$time');";
+			// var_dump($sql);
+			// die;
+			$addvisit=$clients->querydb($sql);
+			return($addvisit);
 
 	}
 

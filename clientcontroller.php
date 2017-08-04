@@ -54,6 +54,7 @@ switch ($_POST['act']) {
 		$referal = $_POST['referal'];
 		$tempname=$_FILES['clientimage']['tmp_name'];
 		$picture=$_FILES['clientimage']['name'];
+		$clientID = $lastName.$phone;
 		// images
 
 		$target_dir = "images/clients/";
@@ -63,7 +64,7 @@ switch ($_POST['act']) {
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 
-		$output = $client->Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
+		$output = $client->Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
 		$clientCode = $lastName.$phone;
 		setcookie('errormsg', "Client ".$clientCode." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/addVisit.php?client='.$clientCode);
@@ -75,6 +76,9 @@ switch ($_POST['act']) {
 		// d($_POST);
 
  		$act = $_POST['act'];
+ 		$clientID = $_POST['clientID'];
+ 		$appointmentDate = $_POST['appointmentDate'];
+ 		$appointmentTime = $_POST['appointmentTime'];
 		$VisitType = $_POST['VisitType'];
 		$lashType = $_POST['lashType'];
 		$curlType = $_POST['curlType'];
@@ -87,8 +91,8 @@ switch ($_POST['act']) {
 		$BottomType = $_POST['BottomType'];
 		$Artist = $_POST['Artist'];
 
-		$output = $client->Add_visit($username, $firstname, $lastname, $picture, $email, $pwd1); 
-		setcookie('errormsg', "User ".$username." successfully created.", strtotime('+15 second'), '/');
+		$output = $client->Add_visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist); 
+		setcookie('errormsg', "Visit ".$clientID.$appointmnetDate." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/index.php');
 
 		break;
