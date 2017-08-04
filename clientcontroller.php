@@ -109,7 +109,7 @@ switch ($_POST['act']) {
  		var_dump($clientInfo);
  		var_dump($clientVisit);
  		echo "</pre>";
- 		echo "<img src='/images/clients/".$clientImage."'>";
+ 		echo "<img src='images/clients/".$clientImage."'>";
  		die;
  		
 
