@@ -100,7 +100,7 @@ switch ($_POST['act']) {
 		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
  		$clientInfo = $clients->getClientInfo($clientID);
- 		$clientVisit = $clients->getLastVisit($clientID);
+ 		// $clientVisit = $clients->getLastVisit($clientID);
  		echo "<pre>";
  		var_dump($clientID);
  		var_dump($clientInfo);
