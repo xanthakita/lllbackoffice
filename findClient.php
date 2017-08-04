@@ -50,12 +50,12 @@
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
- 		<input type="hidden" name="act" value="findclient">
-		<label for"clientList">Select Client:</label>
-		<select name="clientList">
+ 		<input type="hidden" name="act" value="findClient">
+		<label for"clientID">Select Client:</label>
+		<select name="clientID">
 			<?php
 				foreach($clientList as $x){
-					echo "<option value=".$x.">".$x['last_name'].", ".$x['first_name']."</option>";
+					echo "<option value=".$x['clientID'].">".$x['last_name'].", ".$x['first_name']."</option>";
 				}
 			?>
 		</select>

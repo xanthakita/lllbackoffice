@@ -96,6 +96,17 @@ switch ($_POST['act']) {
 		header('location: http://lllbackoffice.com/index.php');
 
 		break;
+	case 'findClient':
+		$act = $_POST['act'];
+ 		$clientID = $_POST['clientID'];
+ 		$clientInfo = $clients->getClientInfo($clientID);
+ 		$clientVisit = $clients->getLastVisit($clientID);
+ 		echo "<pre>";
+ 		var_dump($clientInfo);
+ 		var_dump($clientVisit);
+ 		echo "</pre>";
+ 		die;
+		break;
 	case 'ListUsers':
 		$status = $_POST['status'];
 		setcookie("ListActive", 1, time()+300);
