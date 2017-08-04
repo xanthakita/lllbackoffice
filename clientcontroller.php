@@ -105,6 +105,7 @@ switch ($_POST['act']) {
  		echo "<pre>";
  		var_dump($act);
  		var_dump($clientID);
+ 		var_dump($clientImage );
  		var_dump($clientInfo);
  		var_dump($clientVisit);
  		echo "</pre>";
