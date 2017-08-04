@@ -20,7 +20,12 @@
 		include('user.class.php');
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
-		echo "<pre>";var_dump($artistsList);echo "</pre>";
+		foreach($artistsList as $x){
+			$username[]=$x['username'];
+			$artistname[]=$x['firstname']." ".$x['lastname'];
+			$artistimage[]=$x['picture'];
+		}
+		echo "<pre>";var_dump($username);var_dump($artistname);var_dump($artistimage);echo "</pre>";
 		die;
 	}
 	?>
