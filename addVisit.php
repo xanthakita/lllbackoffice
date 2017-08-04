@@ -20,7 +20,7 @@
 		include('user.class.php');
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
-		var_dump($artistsList);
+		echo "<pre>";var_dump($artistsList);echo "</pre>";
 		die;
 	}
 	?>
