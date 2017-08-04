@@ -101,13 +101,14 @@ switch ($_POST['act']) {
  		$clientID = $_POST['clientID'];
  		$clientInfo = $client->getClientInfo($clientID);
  		$clientVisit = $client->getLastVisit($clientID);
+ 		$clientImage = $clientInfo['picture'];
  		echo "<pre>";
  		var_dump($act);
  		var_dump($clientID);
  		var_dump($clientInfo);
  		var_dump($clientVisit);
  		echo "</pre>";
- 		echo "<img src='/images/clients/".$clientInfo['picture']."'>";
+ 		echo "<img src='/images/clients/".$clientImage."'>";
  		die;
  		
 
