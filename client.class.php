@@ -209,6 +209,18 @@ Class Client {
 		return($GetEmail[0][email]);
 	}
 
+	public function GetClients(){
+		// Gets list of all artists and usernames for artists
+			GLOBAL $clients;
+			$now = new DateTime();
+			$time = $now->format('Y-m-d H:i:s');
+			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients;";
+			$getArtists=$users->querydb($sql);
+			return($getArtists);
+
+	}
+
+
 	public function Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture){
 		// Adds a user to the user table
 			GLOBAL $clients;
