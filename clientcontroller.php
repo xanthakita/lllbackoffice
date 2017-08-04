@@ -64,7 +64,7 @@ switch ($_POST['act']) {
 		// d($username, $firstname, $lastname, $email, $userdept);
 
 		$output = $client->Add_Client($firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
-		var_dump($output);
+		var_dump($client->insert_id);
 		die;
 		setcookie('errormsg', "Client ".$username." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/addVisit.php');
