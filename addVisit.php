@@ -20,13 +20,6 @@
 		include('user.class.php');
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
-		foreach($artistsList as $x){
-			$userid[]=$x['username'];
-			$artistname[]=$x['firstname']." ".$x['lastname'];
-			$artistimage[]=$x['picture'];
-		}
-		echo "<pre>";var_dump($userid);var_dump($artistname);var_dump($artistimage);echo "</pre>";
-		die;
 	}
 	?>
 
@@ -133,7 +126,15 @@
 		<select name="BottomType">
 			<option value=".15 B 07">.15 B 07</option>
 			<option value=".15 B 08">.15 B 08</option>
-		</select><br>		
+		</select><br>			
+ 		<label for="Artist">Artist:</label>
+		<select name="Artist">		
+		<?php
+			foreach($artistsList as $x){
+				echo "<option value='".$x['username']."'>".$x['firstname']." ".$x['lastname']."</option>";
+			}
+		?>
+		</select><br>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
  </form>
  </div>
