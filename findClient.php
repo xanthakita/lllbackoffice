@@ -18,7 +18,7 @@
 	} else {
 		$username=$_COOKIE["userid"];
 		include('client.class.php');
-		$client = new Client($username);
+		$client = new Client;
 		$clientList = $client->GetClients();
 		var_dump($clientList);
 		die;
