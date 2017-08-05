@@ -65,7 +65,7 @@
 			echo "</pre>";
 			die;
 				foreach($clientInfo as $x){
-					echo "<tr><td>".$x['first_name']." ".$x['last_name']."</td><td>".$x['phone']."</td><td><img src='".$x[0]['picture']."' width='75'></td></tr>";
+					echo "<tr><td>".$x[0]['first_name']." ".$x[0]['last_name']."</td><td>".$x[0]['phone']."</td><td><img src='".$x[0]['picture']."' width='75'></td></tr>";
 				}
 			?>
 		</tbody>
