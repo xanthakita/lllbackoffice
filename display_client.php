@@ -17,8 +17,8 @@
 		header('location: login.php');
 	} else {
 		$username=$_COOKIE["userid"];
-		$clientInfo=$_GET['clientInfo'];
-		$clientVisit=$_GET['clientVisit'];
+		$clientInfo=jason_decode($_GET['clientInfo']);
+		$clientVisit=jason_decode($_GET['clientVisit']);
 		echo "<pre>";
 		var_dump($clientInfo);
 		var_dump($clientVisit);
@@ -47,9 +47,12 @@
 	<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/lll-small-logo.png" alt="" /></span>
-						<h1>Display Client & visit</h1>
+						<h1>Display Client / Visit</h1>
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
+<panel id="client_info">
+
+</panel>
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addclient">
  		<h3> Fill out the following fields </h3>
