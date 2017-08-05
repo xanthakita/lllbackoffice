@@ -99,8 +99,8 @@ switch ($_POST['act']) {
 	case 'findClient':
 		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
- 		$clientInfo = $client->getClientInfo($clientID);
- 		$clientVisit = $client->getLastVisit($clientID);
+ 		$clientInfo = json_encode($client->getClientInfo($clientID));
+ 		$clientVisit = json_encode($client->getLastVisit($clientID));
  		header("location: http://lllbackoffice.com/display_client.php?clintInfo=$clientInfo&clientVisit=$clientVisit");
 		break;
 	case 'ListUsers':
