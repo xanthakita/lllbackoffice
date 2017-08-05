@@ -19,10 +19,10 @@
 		$username=$_COOKIE["userid"];
 		$clientInfo=json_decode($_GET['clientInfo']);
 		$clientVisit=json_decode($_GET['clientVisit']);
-		echo "<pre>";
-		var_dump($clientInfo);
-		var_dump($clientVisit);
-		die;
+		// echo "<pre>";
+		// var_dump($clientInfo);
+		// var_dump($clientVisit);
+		// die;
 	}
 	?>
 
@@ -51,7 +51,22 @@
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
 <panel id="client_info">
-
+	<table class="table">
+		<trhead>
+			<tr>
+				<th>Client</th>
+				<th>Phone</th>
+				<th>Picture</th>
+			</tr>
+		</trhead>
+		<tbody>
+			<?php 
+				foreach($clientInfo as $x){
+					echo "<tr><td>".$x[0]['first_name']." ".$x[0]['last_name']."</td><td>".$x[0]['phone']."</td><td><img src='".$x[0]['picture']."' width='75'></td></tr>";
+				}
+			?>
+		</tbody>
+	</table>
 </panel>
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addclient">
