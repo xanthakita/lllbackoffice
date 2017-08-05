@@ -49,7 +49,7 @@
 						<span class="logo"><img src="images/lll-small-logo.png" alt="" /></span>
 						<h1>Display Client / Visit</h1>
 					</header>
-<div class="col-sm-12 col-lg-offset-3">
+<div>
 	<table class="table">
 		<trhead>
 			<tr>
