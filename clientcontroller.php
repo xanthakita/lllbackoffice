@@ -101,18 +101,7 @@ switch ($_POST['act']) {
  		$clientID = $_POST['clientID'];
  		$clientInfo = $client->getClientInfo($clientID);
  		$clientVisit = $client->getLastVisit($clientID);
- 		$clientImage = $clientInfo[0]['picture'];
- 		echo "<pre>";
- 		var_dump($act);
- 		var_dump($clientID);
- 		var_dump($clientImage );
- 		var_dump($clientInfo);
- 		var_dump($clientVisit);
- 		echo "</pre>";
- 		echo "<img src='http://lllbackoffice.com/images/clients/".$clientImage."'>";
- 		die;
- 		
-
+ 		header("location: http://lllbackoffice.com/display_client.php?clintInfo=$clientInfo&clientVisit=$clientVisit");
 		break;
 	case 'ListUsers':
 		$status = $_POST['status'];
