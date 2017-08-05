@@ -50,7 +50,6 @@
 						<h1>Display Client / Visit</h1>
 					</header>
 <div class="col-sm-12 col-lg-offset-3">
-<panel id="client_info">
 	<table class="table">
 		<trhead>
 			<tr>
@@ -67,7 +66,6 @@
 			?>
 		</tbody>
 	</table>
-</panel>
  <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
  		<input type="hidden" name="act" value="addclient">
  		<h3> Fill out the following fields </h3>
