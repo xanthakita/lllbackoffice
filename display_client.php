@@ -17,8 +17,8 @@
 		header('location: login.php');
 	} else {
 		$username=$_COOKIE["userid"];
-		$clientInfo=jason_decode($_GET['clientInfo']);
-		$clientVisit=jason_decode($_GET['clientVisit']);
+		$clientInfo=json_decode($_GET['clientInfo']);
+		$clientVisit=json_decode($_GET['clientVisit']);
 		echo "<pre>";
 		var_dump($clientInfo);
 		var_dump($clientVisit);
