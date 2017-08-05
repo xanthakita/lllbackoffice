@@ -65,7 +65,11 @@
 			echo "</pre>";
 			die;
 				foreach($clientInfo as $x){
-					echo "<tr><td>".$x[0]['first_name']." ".$x[0]['last_name']."</td><td>".$x[0]['phone']."</td><td><img src='".$x[0]['picture']."' width='75'></td></tr>";
+					$first_name = $x[0]['first_name'];
+					$last_name = $x[0]['last_name'];
+					$phone = $x[0]['phone'];
+					$picture= $x[0]['picture'];
+					echo "<tr><td>$first_name $last_name</td><td>$phone</td><td><img src='$picture' width='75'></td></tr>";
 				}
 			?>
 		</tbody>
