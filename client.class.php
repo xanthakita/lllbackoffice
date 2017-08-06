@@ -249,7 +249,7 @@ Class Client {
 			GLOBAL $thisuser;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$imagename=strtolower($uid).".".substr($picture,-3);
+			$imagename=strtolower($lastName)."".strtolower($firstName).".".substr($picture,-3);
 			$sql="Replace into lllbackoffice.clients (clientID, last_name, first_name, first_visit, phone, email, city, state, birth_month, birth_day, refered, refered_by, picture, added_by, ts) values ('$clientID', '$lastName', '$firstName', '$firstVisit', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$heardAbout', '$referal', '$picture', '$thisuser', '$time');";
 			// var_dump($sql);
 			// die;
