@@ -60,12 +60,13 @@ switch ($_POST['act']) {
 		$target_dir = "images/clients/";
 		$extention=substr($picture, -4);
 		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
+		$newPicture = $lastName.$firstName.$phone.$extention;
 		$uploadOk = 1;
 		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 
-		$output = $client->Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $picture); 
+		$output = $client->Add_Client($clientID, $firstName, $lastName, $firstVisit, $phone, $email, $city, $state, $birthmonth, $birthday, $heardAbout, $referal, $newPicture); 
 		$clientCode = $lastName.$phone;
 		setcookie('errormsg', "Client ".$clientCode." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/addVisit.php?client='.$clientCode);
