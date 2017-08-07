@@ -61,50 +61,15 @@
 		<tbody>
 			<?php
 
-				foreach($clientInfo as $x){
-					$first_name = $x[0]['first_name'];
-					$last_name = $x[0]['last_name'];
-					$phone = $x[0]['phone'];
-					$picture= $x[0]['picture'];
-					echo "<tr><td>$first_name $last_name</td><td>$phone</td><td><img src='$picture' width='75'></td></tr>";
-				}
+					$first_name = $clientInfo[0]['first_name'];
+					$last_name = $clientInfo[0]['last_name'];
+					$phone = $clientInfo[0]['phone'];
+					$picture= $clientInfo[0]['picture'];
+echo "<tr><td>$first_name $last_name</td><td>$phone</td><td><img src='$picture' width='75'></td></tr>";
 			?>
 		</tbody>
 	</table>
- <form class="col-sm-6" action="clientcontroller.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
- 		<input type="hidden" name="act" value="addclient">
- 		<h3> Fill out the following fields </h3>
- 		<label for="firstName">First Name:</label>
- 		<input type="text" name="firstName" id="firstName"/><br>
- 		<label for="lastName">Last Name:</label>
- 		<input type="text" name="lastName" id="lastName"/><br>
- 		<label for="firstVisit">First Visit:&nbsp;</label><input type="date" name="firstVisit" id="firstVisit"><br>
- 		<label for="phone">Phone Number:&nbsp;</label><input type='tel'  name='phone' title='Phone Number'> <br>
- 		<label for="email">Email:&nbsp;</label><input type="email" name="email" autocomplete="off"><br>
- 		<div class="text-center">
-		 		<label for="city">City:&nbsp;</label>
-		 		<input type="text" name="city"><br>
-		 		<label for="state">State (IN):&nbsp;</label>
-		 		<input type="text" name="state" value="IN">
-	 		<br>
-	 		<label for="birthmonth">Birthday Month:&nbsp;</label>
-	 		<input id='birthmonth' name="birthmonth" type='month'/><br>
-	 		<label for="birthday">Birthday Day:&nbsp;</label><input type="number" name="birthday" min="1" max="31"><br>
- 		</div>
-		<br>
-		<label for"heardAbout">How did they hear about us:</label>
-		<select name="heardAbout">
-			<option value="Friend">Friend</option>
-			<option value="Facebook">Facebook</option>
-			<option value="Google">Google</option>
-			<option value="Other">Other</option>
-		</select>
-		<label for="referal">(if Friend's name or Other)</label>
-		<input type="text" name="referal"><br>
- 		<label for="clientimage">Client Image:</label>
- 		<input type="file" name="clientimage" id="clientimage" /><br>
- 		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
- </form>
+ 
  </div>
 
 
