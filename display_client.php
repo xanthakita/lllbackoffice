@@ -60,10 +60,7 @@
 		</trhead>
 		<tbody>
 			<?php
-			echo "<pre>"; 
-			var_dump($clientInfo);
-			echo "</pre>";
-			die;
+
 				foreach($clientInfo as $x){
 					$first_name = $x[0]['first_name'];
 					$last_name = $x[0]['last_name'];
