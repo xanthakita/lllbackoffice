@@ -73,7 +73,7 @@
  
  </div>
  <div class="text-center">
-	<btn class="btn btn-success">Add Visit</btn>
+	<a class="btn btn-success" href="addVisit.php">Add Visit</a>
  </div>
 
 
