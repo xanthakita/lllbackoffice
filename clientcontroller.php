@@ -59,7 +59,7 @@ switch ($_POST['act']) {
 
 		$target_dir = "images/clients/";
 		$extention=substr($picture, -4);
-		$target_file = $target_dir . $lastName . $firstName . $extention ;
+		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
 		$uploadOk = 1;
 		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
