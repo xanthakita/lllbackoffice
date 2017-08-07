@@ -72,6 +72,9 @@
 	</table>
  
  </div>
+ <div class="text-center">
+	<btn class="btn btn-success">Add Visit</btn>
+ </div>
 
 
 </div><!-- /.container -->
