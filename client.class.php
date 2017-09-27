@@ -273,6 +273,19 @@ Class Client {
 
 	}
 
+	public function Get_Last_Visit($clientID){
+		// Adds a user to the user table
+			GLOBAL $clients;
+			GLOBAL $thisuser;
+			$now = new DateTime();
+			$time = $now->format('Y-m-d H:i:s');
+			$sql="select * from visits where (clientID='$clientID' AND id = (select max(id) from visits where clientID='$clientID' ));;";
+			// var_dump($sql);
+			// die;
+			$getlastvisit=$clients->querydb($sql);
+			return($getlastvisit);
+
+	}
 
 	public function Delete_User($du_uid, $fname, $lname, $authpwd ){
 		// This method does not actually delete a user from the lllbackoffice.user table instaed it simply changes the active flag to 0 so the user will not be considered.
