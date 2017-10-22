@@ -74,30 +74,31 @@
 	<?php if ( sizeof($clientVisit[0]) > 0 ) { ?>
 	<h3>Last Visit</h3>
  	<table class="table table-responsive">
-		<trhead>
-			<tr>
-				<th>Last Appointment Date</th>
-				<th>Time</th>
-				<th>Appt For</th>
-				<th>Lash Type</th>
-				<th>Curl Type(s)</th>
-				<th>Lash Length(s)</th>
-				<th>Size(s)</th>
-				<th>EyePad Type</th>
-				<th>Glue Type</th>
-				<th>Style</th>
-				<th>Volume Type</th>
-				<th>Bottom Size(s)</th>
-				<th>Artist</th>
-			</tr>
-		</trhead>
+//		<trhead>
+//			<tr>
+//
+//			</tr>
+//		</trhead>
 		<tbody>
 			<?php
-				echo "<br><tr>";
-				foreach($clientVisit[0] as $x){
-					echo "<td>".$x."</td>";
-				}
-				echo "</tr>";
+					echo "<tr><td>Last Appointment Date</td><td>$clientVisit[0][0]</td></tr>";
+					echo "<tr><td>Time</td><td>$clientVisit[0][1]</td></tr>";
+					echo "<tr><td>Appt For</td><td>$clientVisit[0][2]</td></tr>";
+					echo "<tr><td>Lash Type</td><td>$clientVisit[0][3]</td></tr>";
+					echo "<tr><td>Curl Type(s)</td><td>$clientVisit[0][4]</td></tr>";
+					echo "<tr><td>Lash Length(s)</td><td>$clientVisit[0][5]</td></tr>";
+					echo "<tr><td>Size(s)</td><td>$clientVisit[0][6]</td></tr>";
+					echo "<tr><td>EyePad Type</td><td>$clientVisit[0][7]</td></tr>";
+					echo "<tr><td>Glue Type</td><td>$clientVisit[0][8]</td></tr>";
+					echo "<tr><td>Style</td><td>$clientVisit[0][9]</td></tr>";
+					echo "<tr><td>Volume Type</td><td>$clientVisit[0][10]</td></tr>";
+					echo "<tr><td>Bottom Size(s)</td><td>$clientVisit[0][11]</td></tr>";
+					echo "<tr><td>Artist<</td><td>$clientVisit[0][12]</td></tr>";
+				//echo "<br><tr>";
+				//foreach($clientVisit[0] as $x){
+				//	echo "<td>".$x."</td>";
+				//}
+				//echo "</tr>";
 /*					$lastDate = $clientVisit[0]['AppointmentDate'];
 					$lastTime = $clientVisit[0]['AppointmentTime'];
 					$phone = $clientVisit[0]['phone'];
