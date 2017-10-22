@@ -19,10 +19,10 @@
 		$username=$_COOKIE["userid"];
 		$clientInfo=json_decode($_GET['clientInfo'],1);
 		$clientVisit=json_decode($_GET['clientVisit'],1);
-		// echo "<pre>";
+		 echo "<pre>";
 		// var_dump($clientInfo);
-		// var_dump($clientVisit);
-		// die;
+		 var_dump($clientVisit);
+		 die;
 	}
 	?>
 
