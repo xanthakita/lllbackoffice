@@ -109,7 +109,7 @@
 	</table>
  </div>
  <div class="text-center">
-	<a class="btn btn-success" href="addVisit.php">Add Visit</a>
+	<a class="btn btn-success" href="addVisit.php?client=">Add Visit</a>
  </div>
 
 

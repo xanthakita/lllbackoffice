@@ -115,7 +115,7 @@ var_dump($Length);
  		$clientID = $_POST['clientID'];
  		$clientInfo = json_encode($client->getClientInfo($clientID));
  		$clientVisit = json_encode($client->getLastVisit($clientID));
- 		header("location: http://lllbackoffice.com/display_client.php?clientInfo=$clientInfo&clientVisit=$clientVisit");
+ 		header("location: http://lllbackoffice.com/display_client.php?clinet=$clientID&clientInfo=$clientInfo&clientVisit=$clientVisit");
 		break;
 	case 'ListUsers':
 		$status = $_POST['status'];
