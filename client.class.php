@@ -266,8 +266,8 @@ Class Client {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$sql="Replace into lllbackoffice.visits (clientID, AppointmentDate, AppointmentTime, VisitType, lashType, curlType, Length, Size, eyePadType, glueType, classicStyle, VolumeType, BottomType, Artist, ts) values ('$clientID', '$appointmentDate', '$appointmentTime', '$VisitType', '$lashType', '$curlType', '$Length', '$Size', '$eyePadType', '$glueType', '$classicStyle', '$VolumeType', '$BottomType', '$Artist', '$time');";
-			 var_dump($sql);
-			 die;
+			// var_dump($sql);
+			// die;
 			$addvisit=$clients->querydb($sql);
 			return($addvisit);
 
