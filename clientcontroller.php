@@ -70,7 +70,8 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/clients/";
-		$extention=substr($picture, -4);
+		$img = new Imagick(realpath($picture));
+		$extention=substr($img, -4);
 		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
 		$newPicture = $lastName.$firstName.$phone.$extention;
 		$uploadOk = 1;
