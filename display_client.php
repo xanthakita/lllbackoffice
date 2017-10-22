@@ -54,9 +54,9 @@
 	<table class="table table-responsive">
 		<trhead>
 			<tr>
-				<th>Client</th>
-				<th>Phone</th>
-				<th>Picture</th>
+				<th class='align-left'>Client</th>
+				<th class='align-left'>Phone</th>
+				<th class='align-left'>Picture</th>
 			</tr>
 		</trhead>
 		<tbody>
@@ -66,7 +66,7 @@
 					$last_name = $clientInfo[0]['last_name'];
 					$phone = $clientInfo[0]['phone'];
 					$picture= $clientInfo[0]['picture'];
-					echo "<tr><td><strong>$first_name $last_name</strong></td><td><strong>$phone</strong></td><td>
+					echo "<tr><td class='align-left'><strong>$first_name $last_name</strong></td><td class='align-left'><strong>$phone</strong></td><td class='align-left'>
 					<img src='images/clients/$picture' width='75'></td></tr>";
 			?>
 		</tbody>
