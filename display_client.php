@@ -25,7 +25,9 @@
 		// echo "</pre>";
 		// die;
 	}
-	?>
+
+
+		?>
 
 <!DOCTYPE HTML>
 
@@ -67,7 +69,8 @@
 					$phone = $clientInfo[0]['phone'];
 					$picture= $clientInfo[0]['picture'];
 					echo "<tr><td class='align-left'><strong>$first_name $last_name</strong></td><td class='align-left'><strong>$phone</strong></td><td class='align-left'>
-					<img src='images/clients/$picture' width='75'></td></tr>";
+					<img src='images/clients/$picture' width='75'></td>";
+					echo "<td class='align-right'><a class="btn btn-success" href="editClient.php">Edit/a></td></tr>";
 			?>
 		</tbody>
 	</table>
