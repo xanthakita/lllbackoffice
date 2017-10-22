@@ -70,12 +70,19 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/clients/";
-		$img = new Imagick(realpath($picture));
+		$img = new Imagick(realpath($tempname));
+		$profiles = $img->getImageProfiles("icc", true);
+		$img->stripImage();
+
+    	if(!empty($profiles)) {
+       		$img->profileImage("icc", $profiles['icc']);
+    	}
+
 		$extention=substr($img, -4);
 		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
 		$newPicture = $lastName.$firstName.$phone.$extention;
 		$uploadOk = 1;
-		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
+		passthru("mv " . $img . " " . $target_file . " && chmod 755 " . $target_file);
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 
