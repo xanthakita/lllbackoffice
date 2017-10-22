@@ -70,7 +70,7 @@ switch ($_POST['act']) {
 		// images
 
 		$target_dir = "images/clients/";
-		$img = new Imagick(realpath($tempname));
+		$img = new Imagick(realpath($picture));
 		$profiles = $img->getImageProfiles("icc", true);
 		$img->stripImage();
 
@@ -82,7 +82,7 @@ switch ($_POST['act']) {
 		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
 		$newPicture = $lastName.$firstName.$phone.$extention;
 		$uploadOk = 1;
-		passthru("mv " . $img . " " . $target_file . " && chmod 755 " . $target_file);
+		passthru("mv " . $tempname . " " . $target_file . " && chmod 755 " . $target_file);
 
 		// d($username, $firstname, $lastname, $email, $userdept);
 
