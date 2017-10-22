@@ -71,6 +71,7 @@
 			?>
 		</tbody>
 	</table>
+	<?php if ( sizeof($clientVisit[0]) > 0 ) { ?>
 	<h3>Last Visit</h3>
  	<table class="table">
 		<trhead>
@@ -92,7 +93,6 @@
 		</trhead>
 		<tbody>
 			<?php
-				echo sizeof($clientVisit[0]);
 				echo "<br><tr>";
 				foreach($clientVisit[0] as $x){
 					echo "<td>".$x."</td>";
@@ -108,6 +108,7 @@
 			?>
 		</tbody>
 	</table>
+	<?php } ?>
  </div>
  <div class="text-center">
 	<a class="btn btn-success" href="addVisit.php?client=">Add Visit</a>
