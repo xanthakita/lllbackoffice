@@ -34,11 +34,12 @@ if (isset($_POST['newpassword'])) {$newpass = $_POST['newpassword'];}
 $client = new Client($username);
 
 function getList($postArray) {
-	var_dump($_POST[$postArray]); echo "".PHP_EOL;
+	//var_dump($_POST[$postArray]); echo "".PHP_EOL;
 	$outstring="";
 	foreach($_POST[$postArray] as $x){
-		$outstring .= $x;
+		$outstring .= $x.", ";
 	}
+	$outstring=substr($outstring,0,-2);
 	var_dump($x); echo "".PHP_EOL;
 	return $outstring;
 }
