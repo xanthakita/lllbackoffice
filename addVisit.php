@@ -81,7 +81,7 @@
 			<option value="L">L</option> 
 		</select><br>
  		<label for="Length">Length:</label>
-		<select multiple name="Length">
+		<select multiple name="Length[]">
 			<option value="07">07</option>
 			<option value="08">08</option>
 			<option value="09">09</option>
