@@ -74,11 +74,11 @@
 	<?php if ( sizeof($clientVisit[0]) > 0 ) { ?>
 	<h3>Last Visit</h3>
  	<table class="table table-responsive">
-//		<trhead>
+<?php //		<trhead>
 //			<tr>
 //
 //			</tr>
-//		</trhead>
+//		</trhead>  ?>
 		<tbody>
 			<?php
 					echo "<tr><td>Last Appointment Date</td><td>$clientVisit[0][0]</td></tr>";
