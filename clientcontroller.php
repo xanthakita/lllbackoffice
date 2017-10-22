@@ -106,7 +106,7 @@ var_dump($Length);
 		$output = $client->Add_visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist); 
 		setcookie('outputdata', $output, strtotime('+95 second'), '/');
 		setcookie('errormsg', "Visit ".$clientID.$appointmnetDate." successfully created.", strtotime('+15 second'), '/');
-		//header('location: http://lllbackoffice.com/index.php');
+		header('location: http://lllbackoffice.com/index.php');
 
 		break;
 	case 'findClient':
