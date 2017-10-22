@@ -92,7 +92,8 @@
 		</trhead>
 		<tbody>
 			<?php
-				echo "<tr>";
+				echo Length($clientVisit[0]);
+				echo "<br><tr>";
 				foreach($clientVisit[0] as $x){
 					echo "<td>".$x."</td>";
 				}
