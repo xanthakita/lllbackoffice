@@ -76,7 +76,7 @@ switch ($_POST['act']) {
 		// kint::enabled(false);
 		// s('in adduser');
 		// d($_POST);
-
+var_dump($_POST);
  		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
  		$appointmentDate = $_POST['appointmentDate'];
