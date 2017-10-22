@@ -100,7 +100,7 @@ switch ($_POST['act']) {
 		$eyePadType = $_POST['eyePadType'];
 		$glueType = $_POST['glueType'];
 		$classicStyle = $_POST['classicStyle'];
-		$VolumeType = getList('VolumeType');
+		$VolumeType = $_POST['VolumeType'];
 		$BottomType = getList('BottomType');
 		$Artist = $_POST['Artist'];
 var_dump($Length);
