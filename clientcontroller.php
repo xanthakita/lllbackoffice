@@ -106,7 +106,7 @@ switch ($_POST['act']) {
 var_dump($Length);
 		$output = $client->Add_visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist); 
 		setcookie('outputdata', $output, strtotime('+95 second'), '/');
-		setcookie('errormsg', "Visit ".$clientID.$appointmnetDate." successfully created.", strtotime('+15 second'), '/');
+		setcookie('errormsg', "Visit ".$clientID." ".$appointmentDate." successfully created.", strtotime('+15 second'), '/');
 		header('location: http://lllbackoffice.com/index.php');
 
 		break;
@@ -115,7 +115,7 @@ var_dump($Length);
  		$clientID = $_POST['clientID'];
  		$clientInfo = json_encode($client->getClientInfo($clientID));
  		$clientVisit = json_encode($client->getLastVisit($clientID));
- 		header("location: http://lllbackoffice.com/display_client.php?clinet=$clientID&clientInfo=$clientInfo&clientVisit=$clientVisit");
+ 		header("location: http://lllbackoffice.com/display_client.php?client=$clientID&clientInfo=$clientInfo&clientVisit=$clientVisit");
 		break;
 	case 'ListUsers':
 		$status = $_POST['status'];
