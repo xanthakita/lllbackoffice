@@ -81,19 +81,19 @@
 //		</trhead>  ?>
 		<tbody>
 			<?php
-					echo "<tr><td class='align-left'><strong>Last Appointment Date</strong></td><td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Time</strong></td><td class='align-right'>".$clientVisit[0]['AppointmentTime']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Appt For</strong></td><td class='align-right'>".$clientVisit[0]['VisitType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Lash Type</strong></td><td class='align-right'>".$clientVisit[0]['lashType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Curl Type(s)</strong></td><td class='align-right'>".$clientVisit[0]['curlType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Lash Length(s)</strong></td><td class='align-right'>".$clientVisit[0]['Length']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Size(s)</strong></td><td class='align-right'>".$clientVisit[0]['Size']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>EyePad Type</strong></td><td class='align-right'>".$clientVisit[0]['eyePadType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Glue Type</strong></td><td class='align-right'>".$clientVisit[0]['glueType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Style</strong></td><td class='align-right'>".$clientVisit[0]['classicStyle']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Volume Type</strong></td><td class='align-right'>".$clientVisit[0]['VolumeType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Bottom Size(s)</strong></td><td class='align-right'>".$clientVisit[0]['BottomType']."</td></tr>";
-					echo "<tr><td class='align-left'><strong>Artist</strong></td><td class='align-right'>".$clientVisit[0]['Artist']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td><td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Time:</strong></td><td class='align-right'>".$clientVisit[0]['AppointmentTime']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Appt For:</strong></td><td class='align-right'>".$clientVisit[0]['VisitType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Lash Type:</strong></td><td class='align-right'>".$clientVisit[0]['lashType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Curl Type(s):</strong></td><td class='align-right'>".$clientVisit[0]['curlType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Lash Length(s):</strong></td><td class='align-right'>".$clientVisit[0]['Length']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Size(s):</strong></td><td class='align-right'>".$clientVisit[0]['Size']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>EyePad Type:</strong></td><td class='align-right'>".$clientVisit[0]['eyePadType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Glue Type:</strong></td><td class='align-right'>".$clientVisit[0]['glueType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Style:</strong></td><td class='align-right'>".$clientVisit[0]['classicStyle']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Volume Type:</strong></td><td class='align-right'>".$clientVisit[0]['VolumeType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Bottom Size(s):</strong></td><td class='align-right'>".$clientVisit[0]['BottomType']."</td></tr>";
+					echo "<tr><td class='align-left'><strong>Artist:</strong></td><td class='align-right'>".$clientVisit[0]['Artist']."</td></tr>";
 				//echo "<br><tr>";
 				//foreach($clientVisit[0] as $x){
 				//	echo "<td>".$x."</td>";
