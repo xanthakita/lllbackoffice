@@ -19,10 +19,10 @@
 		$username=$_COOKIE["userid"];
 		$clientInfo=json_decode($_GET['clientInfo'],1);
 		$clientVisit=json_decode($_GET['clientVisit'],1);
-		 echo "<pre>";
+		// echo "<pre>";
 		// var_dump($clientInfo);
-		 var_dump($clientVisit);
-		 echo "</pre>";
+		// var_dump($clientVisit);
+		// echo "</pre>";
 		// die;
 	}
 	?>
@@ -71,7 +71,42 @@
 			?>
 		</tbody>
 	</table>
- 
+	<h3>Last Visit</h3>
+ 	<table class="table">
+		<trhead>
+			<tr>
+				<th>Last Appointment Date</th>
+				<th>Time</th>
+				<th>Appt For</th>
+				<th>Lash Type</th>
+				<th>Curl Type(s)</th>
+				<th>Lash Length(s)</th>
+				<th>Size(s)</th>
+				<th>EyePad Type</th>
+				<th>Glue Type</th>
+				<th>Style</th>
+				<th>Volume Type</th>
+				<th>Bottom Size(s)</th>
+				<th>Artist</th>
+			</tr>
+		</trhead>
+		<tbody>
+			<?php
+				echo "<tr>";
+				foreach($clientVisit[0] as $x){
+					echo "<td>".$x."</td>";
+				}
+				echo "</tr>";
+/*					$lastDate = $clientVisit[0]['AppointmentDate'];
+					$lastTime = $clientVisit[0]['AppointmentTime'];
+					$phone = $clientVisit[0]['phone'];
+					$picture= $clientVisit[0]['picture'];
+					echo "<tr><td>$first_name $last_name</td><td>$phone</td><td>
+					<img src='images/clients/$picture' width='75'></td></tr>";
+*/
+			?>
+		</tbody>
+	</table>
  </div>
  <div class="text-center">
 	<a class="btn btn-success" href="addVisit.php">Add Visit</a>
