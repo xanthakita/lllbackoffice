@@ -112,8 +112,8 @@
 	<?php }  else echo "<h3> No Previous Visit on File. </h3>"; ?>
  </div>
  <div class="text-center">
-	<a class="btn btn-success" href="addVisit.php?client=<?php echo $_GET['client']; ?>">Add Visit</a>
-	<a class="btn btn-default" href="findClient.php">Find a Different Client</a>
+	<a class="btn btn-success" href="addVisit.php?client=<?php echo $_GET['client']; ?>">Add New Visit</a><br>
+	<a class="btn btn-default" href="findClient.php">Find a Different Client</a><br>
 	<a class="btn btn-default" href="addClient.php">Add a New Client</a>
  </div>
 
