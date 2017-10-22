@@ -81,19 +81,19 @@
 //		</trhead>  ?>
 		<tbody>
 			<?php
-					echo "<tr><td>Last Appointment Date</td><td>$clientVisit[0][0]</td></tr>";
-					echo "<tr><td>Time</td><td>$clientVisit[0][1]</td></tr>";
-					echo "<tr><td>Appt For</td><td>$clientVisit[0][2]</td></tr>";
-					echo "<tr><td>Lash Type</td><td>$clientVisit[0][3]</td></tr>";
-					echo "<tr><td>Curl Type(s)</td><td>$clientVisit[0][4]</td></tr>";
-					echo "<tr><td>Lash Length(s)</td><td>$clientVisit[0][5]</td></tr>";
-					echo "<tr><td>Size(s)</td><td>$clientVisit[0][6]</td></tr>";
-					echo "<tr><td>EyePad Type</td><td>$clientVisit[0][7]</td></tr>";
-					echo "<tr><td>Glue Type</td><td>$clientVisit[0][8]</td></tr>";
-					echo "<tr><td>Style</td><td>$clientVisit[0][9]</td></tr>";
-					echo "<tr><td>Volume Type</td><td>$clientVisit[0][10]</td></tr>";
-					echo "<tr><td>Bottom Size(s)</td><td>$clientVisit[0][11]</td></tr>";
-					echo "<tr><td>Artist<</td><td>$clientVisit[0][12]</td></tr>";
+					echo "<tr><td>Last Appointment Date</td><td>$clientVisit[0]</td></tr>";
+					echo "<tr><td>Time</td><td>$clientVisit[1]</td></tr>";
+					echo "<tr><td>Appt For</td><td>$clientVisit[2]</td></tr>";
+					echo "<tr><td>Lash Type</td><td>$clientVisit[3]</td></tr>";
+					echo "<tr><td>Curl Type(s)</td><td>$clientVisit[4]</td></tr>";
+					echo "<tr><td>Lash Length(s)</td><td>$clientVisit[5]</td></tr>";
+					echo "<tr><td>Size(s)</td><td>$clientVisit[6]</td></tr>";
+					echo "<tr><td>EyePad Type</td><td>$clientVisit[7]</td></tr>";
+					echo "<tr><td>Glue Type</td><td>$clientVisit[8]</td></tr>";
+					echo "<tr><td>Style</td><td>$clientVisit[9]</td></tr>";
+					echo "<tr><td>Volume Type</td><td>$clientVisit[10]</td></tr>";
+					echo "<tr><td>Bottom Size(s)</td><td>$clientVisit[11]</td></tr>";
+					echo "<tr><td>Artist</td><td>$clientVisit[12]</td></tr>";
 				//echo "<br><tr>";
 				//foreach($clientVisit[0] as $x){
 				//	echo "<td>".$x."</td>";
