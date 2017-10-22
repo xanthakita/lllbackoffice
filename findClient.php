@@ -59,7 +59,10 @@
 				}
 			?>
 		</select>
- 		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
+ 		<div class="text-center"><input type="submit" name="submit" value="Submit">
+ 		<a class="btn btn-default" href="addClient.php">Add a New Client</a>
+ 	</div>
+	
  </form>
  </div>
 

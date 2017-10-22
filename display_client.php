@@ -51,7 +51,7 @@
 						<h1>Display Client / Visit</h1>
 					</header>
 <div>
-	<table class="table">
+	<table class="table table-responsive">
 		<trhead>
 			<tr>
 				<th>Client</th>
@@ -73,7 +73,7 @@
 	</table>
 	<?php if ( sizeof($clientVisit[0]) > 0 ) { ?>
 	<h3>Last Visit</h3>
- 	<table class="table">
+ 	<table class="table table-responsive">
 		<trhead>
 			<tr>
 				<th>Last Appointment Date</th>
@@ -113,6 +113,7 @@
  <div class="text-center">
 	<a class="btn btn-success" href="addVisit.php?client=<?php echo $_GET['client']; ?>">Add Visit</a>
 	<a class="btn btn-default" href="findClient.php">Find a Different Client</a>
+	<a class="btn btn-default" href="addClient.php">Add a New Client</a>
  </div>
 
 
