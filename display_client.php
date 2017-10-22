@@ -108,7 +108,7 @@
 			?>
 		</tbody>
 	</table>
-	<?php } ?>
+	<?php }  else echo "<h3> No Previous Visit on File. </h3>"; ?>
  </div>
  <div class="text-center">
 	<a class="btn btn-success" href="addVisit.php?client=">Add Visit</a>
