@@ -81,19 +81,19 @@
 //		</trhead>  ?>
 		<tbody>
 			<?php
-					echo "<tr><td>Last Appointment Date</td><td>$clientVisit[0]['AppointmentDate']</td></tr>";
-					echo "<tr><td>Time</td><td>$clientVisit[0]['AppointmentTime']</td></tr>";
-					echo "<tr><td>Appt For</td><td>$clientVisit[0]['VisitType']</td></tr>";
-					echo "<tr><td>Lash Type</td><td>$clientVisit[0]['lashType']</td></tr>";
-					echo "<tr><td>Curl Type(s)</td><td>$clientVisit[0]['curlType']</td></tr>";
-					echo "<tr><td>Lash Length(s)</td><td>$clientVisit[0]['Length']</td></tr>";
-					echo "<tr><td>Size(s)</td><td>$clientVisit[0]['Size']</td></tr>";
-					echo "<tr><td>EyePad Type</td><td>$clientVisit[0]['eyePadType']</td></tr>";
-					echo "<tr><td>Glue Type</td><td>$clientVisit[0]['glueType']</td></tr>";
-					echo "<tr><td>Style</td><td>$clientVisit[0]['classicStyle']</td></tr>";
-					echo "<tr><td>Volume Type</td><td>$clientVisit[0]['VolumeType']</td></tr>";
-					echo "<tr><td>Bottom Size(s)</td><td>$clientVisit[0]['BottomType']</td></tr>";
-					echo "<tr><td>Artist</td><td>$clientVisit[0]['Artist']</td></tr>";
+					echo "<tr><td>Last Appointment Date</td><td>".$clientVisit[0]['AppointmentDate']."</td></tr>";
+					echo "<tr><td>Time</td><td>".$clientVisit[0]['AppointmentTime']."</td></tr>";
+					echo "<tr><td>Appt For</td><td>".$clientVisit[0]['VisitType']."</td></tr>";
+					echo "<tr><td>Lash Type</td><td>".$clientVisit[0]['lashType']."</td></tr>";
+					echo "<tr><td>Curl Type(s)</td><td>".$clientVisit[0]['curlType']."</td></tr>";
+					echo "<tr><td>Lash Length(s)</td><td>".$clientVisit[0]['Length']."</td></tr>";
+					echo "<tr><td>Size(s)</td><td>".$clientVisit[0]['Size']."</td></tr>";
+					echo "<tr><td>EyePad Type</td><td>".$clientVisit[0]['eyePadType']."</td></tr>";
+					echo "<tr><td>Glue Type</td><td>".$clientVisit[0]['glueType']."</td></tr>";
+					echo "<tr><td>Style</td><td>".$clientVisit[0]['classicStyle']."</td></tr>";
+					echo "<tr><td>Volume Type</td><td>".$clientVisit[0]['VolumeType']."</td></tr>";
+					echo "<tr><td>Bottom Size(s)</td><td>".$clientVisit[0]['BottomType']."</td></tr>";
+					echo "<tr><td>Artist</td><td>".$clientVisit[0]['Artist']."</td></tr>";
 				//echo "<br><tr>";
 				//foreach($clientVisit[0] as $x){
 				//	echo "<td>".$x."</td>";
