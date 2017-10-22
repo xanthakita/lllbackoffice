@@ -33,6 +33,14 @@ if (isset($_POST['newpassword'])) {$newpass = $_POST['newpassword'];}
 
 $client = new Client($username);
 
+function getList($postArray) {
+	foreach($_POST[$postArray] as $x){
+		$outstring .= $_POST[$postArray][$x];
+	}
+	return $outstring;
+}
+
+
 // d($client);
 switch ($_POST['act']) {
 	case 'addclient':
@@ -76,7 +84,6 @@ switch ($_POST['act']) {
 		// kint::enabled(false);
 		// s('in adduser');
 		// d($_POST);
-var_dump($_POST['Length']);
  		$act = $_POST['act'];
  		$clientID = $_POST['clientID'];
  		$appointmentDate = $_POST['appointmentDate'];
@@ -84,7 +91,7 @@ var_dump($_POST['Length']);
 		$VisitType = $_POST['VisitType'];
 		$lashType = $_POST['lashType'];
 		$curlType = $_POST['curlType'];
-		$Length = $_POST['Length'];
+		$Length = getList('Length');
 		$Size = $_POST['Size'];
 		$eyePadType = $_POST['eyePadType'];
 		$glueType = $_POST['glueType'];
@@ -92,7 +99,7 @@ var_dump($_POST['Length']);
 		$VolumeType = $_POST['VolumeType'];
 		$BottomType = $_POST['BottomType'];
 		$Artist = $_POST['Artist'];
-
+var_dump($Length);
 		$output = $client->Add_visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist); 
 		setcookie('outputdata', $output, strtotime('+95 second'), '/');
 		setcookie('errormsg', "Visit ".$clientID.$appointmnetDate." successfully created.", strtotime('+15 second'), '/');
