@@ -22,7 +22,8 @@
 		 echo "<pre>";
 		// var_dump($clientInfo);
 		 var_dump($clientVisit);
-		 die;
+		 echo "</pre>";
+		// die;
 	}
 	?>
 
