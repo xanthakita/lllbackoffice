@@ -71,14 +71,7 @@ switch ($_POST['act']) {
 
 		$target_dir = "images/clients/";
 		$img = new Imagick(realpath($picture));
-		$profiles = $img->getImageProfiles("icc", true);
-		$img->stripImage();
-
-    	if(!empty($profiles)) {
-       		$img->profileImage("icc", $profiles['icc']);
-    	}
-
-		$extention=substr($img, -4);
+		$extention=substr($picture, -4);
 		$target_file = $target_dir . $lastName . $firstName . $phone . $extention ;
 		$newPicture = $lastName.$firstName.$phone.$extention;
 		$uploadOk = 1;
