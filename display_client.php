@@ -112,6 +112,7 @@
  </div>
  <div class="text-center">
 	<a class="btn btn-success" href="addVisit.php?client=<?php echo $_GET['client']; ?>">Add Visit</a>
+	<a class="btn btn-default" href="findClient.php">Find a Different Client</a>
  </div>
 
 
