@@ -73,7 +73,7 @@
 			<option value="Colored">Colored</option>
 		</select><br>
  		<label for="curlType">Curl:</label>
-		<select multiple name="curlType">
+		<select multiple name="curlType[]">
 			<option value="J">J</option>
 			<option value="B">B</option>
 			<option value="C">C</option>
@@ -94,7 +94,7 @@
 			<option value="16">16</option>
 		</select><br>
  		<label for="Size">Size:</label>
-		<select multiple name="Size">
+		<select multiple name="Size[]">
 			<option value=".07">.07</option>
 			<option value=".10">.10</option>
 			<option value=".15">.15</option>
@@ -133,7 +133,7 @@
 			<option value="Purchased">Purchased</option>
 		</select><br>			
  		<label for="BottomType">Bottom:</label>
-		<select multiple name="BottomType">
+		<select multiple name="BottomType[]">
 			<option value=" "> </option>
 			<option value=".15 B 07">.15 B 07</option>
 			<option value=".15 B 08">.15 B 08</option>

@@ -94,14 +94,13 @@ switch ($_POST['act']) {
  		$appointmentTime = $_POST['appointmentTime'];
 		$VisitType = $_POST['VisitType'];
 		$lashType = $_POST['lashType'];
-		$curlType = $_POST['curlType'];
+		$curlType = getList('curlType');
 		$Length = getList('Length');
-		$Size = $_POST['Size'];
+		$Size = getList('Size');
 		$eyePadType = $_POST['eyePadType'];
 		$glueType = $_POST['glueType'];
 		$classicStyle = $_POST['classicStyle'];
-		$VolumeType = $_POST['VolumeType'];
-		$BottomType = $_POST['BottomType'];
+		$VolumeType = getList('BottomType');
 		$Artist = $_POST['Artist'];
 var_dump($Length);
 		$output = $client->Add_visit($clientID, $appointmentDate, $appointmentTime, $VisitType, $lashType, $curlType, $Length, $Size, $eyePadType, $glueType, $classicStyle, $VolumeType, $BottomType, $Artist); 
