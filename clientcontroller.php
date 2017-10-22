@@ -34,8 +34,8 @@ if (isset($_POST['newpassword'])) {$newpass = $_POST['newpassword'];}
 $client = new Client($username);
 
 function getList($postArray) {
-	var_dump($_POST["'".$postArray."'"]);
-	foreach($_POST["'".$postArray."'"] as $x){
+	var_dump($_POST[$postArray]);
+	foreach($_POST[$postArray] as $x){
 		$outstring .= $_POST[$postArray][$x];
 	}
 	return $outstring;
