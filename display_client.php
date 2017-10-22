@@ -66,7 +66,7 @@
 					$last_name = $clientInfo[0]['last_name'];
 					$phone = $clientInfo[0]['phone'];
 					$picture= $clientInfo[0]['picture'];
-					echo "<tr><td>$first_name $last_name</td><td>$phone</td><td>
+					echo "<tr><td><strong>$first_name $last_name</strong></td><td><strong>$phone</strong></td><td>
 					<img src='images/clients/$picture' width='75'></td></tr>";
 			?>
 		</tbody>
