@@ -237,7 +237,7 @@ Class Client {
 			GLOBAL $clients;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="select clientID, AppointmentDate, AppointmentTime, VisitType, lashType, curlType, Length, Size, eyePadType, glueType, classicStyle, VolumeType, BottomType, Artist from lllbackoffice.visits where clientID='".$ClientID."'order by id desc limit 1;";
+			$sql="select AppointmentDate, AppointmentTime, VisitType, lashType, curlType, Length, Size, eyePadType, glueType, classicStyle, VolumeType, BottomType, Artist from lllbackoffice.visits where clientID='".$ClientID."'order by id desc limit 1;";
 			
 			$getLastVisit=$clients->querydb($sql);
 			return($getLastVisit);
