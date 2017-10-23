@@ -15,12 +15,12 @@ Class Client {
 	// lllbackoffice.user and lllbackoffice.userpriv
 	// Each method is named to be clear as to what it's purpose is. adding comments for each one.
 
-	public function __construct($username) {
+	public function __construct($clientID) {
 		// basic constructor for user it establishes a connection to the database which is used in each of the methods
 
 		GLOBAL $clients;
 		GLOBAL $thisuser;
-		$thisuser = $username;
+		$thisClient = $clientID;
 		// print "In BaseClass constructor\n";
 		require('/var/www/html/Classes/mydbi.php');
 		require_once('/var/www/html/Classes/mydbconnect.class.php');
@@ -220,12 +220,13 @@ Class Client {
 
 	}   
 
-	public function getClientInfo($ClientID){
+	public function getClientInfo(){
 		// Gets list of all artists and usernames for artists
 			GLOBAL $clients;
+			GLOBAL $thisClient;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients where clientID='".$ClientID."';";
+			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients where clientID='".$thisClient."';";
 
 			// var_dump($sql);die;
 			$getClient=$clients->querydb($sql);

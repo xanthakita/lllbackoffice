@@ -29,7 +29,7 @@
 
 
 	include("client.class.php");
-	$thisClient = new Client($username);
+	$thisClient = new Client($clientID);
 	//$clientInfo = $thisClient.getClientInfo($clientID);
 	var_dump($thisClient);
 	die;
