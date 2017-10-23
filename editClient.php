@@ -61,14 +61,19 @@
 		</header>
 <div>
 
+<form action="/updateClient.php" method="put">
+  First name: <input type="text" name="fname" value="<?php echo $clientInfo[0]['first_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  <input type="submit" value="Submit">
 
 <?php 
-foreach($clientInfo[0] as $x){
+	echo "$clientInfo[0]
 	echo $x."<br>";
-}
+
 
 ?>
 
+</form>
 
  </div>
  <div class="text-center">
