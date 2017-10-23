@@ -66,12 +66,6 @@
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
   <input type="submit" value="Submit">
 
-<?php 
-	echo "$clientInfo[0]
-	echo $x."<br>";
-
-
-?>
 
 </form>
 
