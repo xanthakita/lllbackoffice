@@ -220,13 +220,11 @@ Class Client {
 
 	}   
 
-	public function getClientInfo(){
+	public function getClientInfo($clientID){
 		// Gets list of all artists and usernames for artists
-			GLOBAL $clients;
-			GLOBAL $thisClient;
-			$now = new DateTime();
+			GLOBAL $clients;			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients where clientID='".$thisClient."';";
+			$sql="select clientID, first_name, last_name, phone, picture from lllbackoffice.clients where clientID='".$clientID."';";
 
 			// var_dump($sql);die;
 			$getClient=$clients->querydb($sql);
