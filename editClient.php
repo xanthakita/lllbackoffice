@@ -28,7 +28,7 @@
 	}
 
 
-	include('./client.class.php');
+	include('client.class.php');
 	$client = new Client($username);
 	$clientInfo = $client.getClientInfo($clientID);
 
