@@ -76,6 +76,10 @@
 		<input type="text" name="referal"><br>
  		<label for="clientimage">Client Image:</label>
  		<input type="file" name="clientimage" id="clientimage" /><br>
+ 		<label for="clientnotes">Notes:</label>
+ 		<textarea rows="4" cols="50" name="clientnotes" id="clientnotes">
+ 			 
+		</textarea><br>
  		<div class="text-center"><input type="submit" name="submit" value="Submit"></div>
  </form>
  </div>

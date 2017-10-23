@@ -64,17 +64,21 @@
 <form action="/updateClient.php" method="put">
   First name: <input type="text" name="fname" value="<?php echo $clientInfo[0]['first_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
   <input type="submit" value="Submit">
 
 
 </form>
 
  </div>
- <div class="text-center">
-	<a class="btn btn-success" href="addVisit.php?client=<?php echo $_GET['client']; ?>">Add New Visit</a><br>
-	<a class="btn btn-default" href="findClient.php">Find a Different Client</a><br>
-	<a class="btn btn-default" href="addClient.php">Add a New Client</a>
- </div>
+
 
 
 </div><!-- /.container -->
