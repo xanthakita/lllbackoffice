@@ -63,7 +63,7 @@
 
 
 <?php 
-foreach($clientInfo as $x){
+foreach($clientInfo[0] as $x){
 	echo $x."<br>";
 }
 
