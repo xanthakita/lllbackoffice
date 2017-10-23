@@ -62,7 +62,12 @@
 <div>
 
 
-<?php var_dump($clientInfo); ?>
+<?php 
+foreach($clientInfo as $x){
+	echo $x."<br>";
+}
+
+?>
 
 
  </div>
