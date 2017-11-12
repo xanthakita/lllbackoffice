@@ -59,6 +59,7 @@
 				<th class='align-left'>Client</th>
 				<th class='align-left'>Phone</th>
 				<th class='align-left'>Picture</th>
+				<th class='align-right'></th>
 			</tr>
 		</trhead>
 		<tbody>
@@ -75,7 +76,7 @@
 		</tbody>
 	</table>
 	<?php if ( sizeof($clientVisit[0]) > 0 ) { ?>
-	<h3>Last Visit</h3>
+	<h3>Info on Last Visit</h3>
  	<table class="table table-responsive">
 <?php //		<trhead>
 //			<tr>
