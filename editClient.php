@@ -20,10 +20,10 @@
 		$clientInfo=json_decode($_GET['clientInfo'],1);
 		$clientVisit=json_decode($_GET['clientVisit'],1);
 		$clientID=$_GET['client'];
-		// echo "<pre>";
-		// var_dump($clientInfo);
-		// var_dump($clientVisit);
-		// echo "</pre>";
+		 echo "<pre>";
+		 var_dump($clientInfo);
+		 var_dump($clientVisit);
+		 echo "</pre>";
 		// die;
 	}
 
