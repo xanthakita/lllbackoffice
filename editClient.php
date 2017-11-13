@@ -20,16 +20,16 @@
 		$clientInfo=json_decode($_GET['clientInfo'],1);
 		$clientVisit=json_decode($_GET['clientVisit'],1);
 		$clientID=$_GET['client'];
-		 //echo "<pre>";
-		 //var_dump($clientInfo);
+		 echo "<pre>";
+		 var_dump($clientInfo);
 		 //var_dump($clientVisit);
-		 //echo "</pre>";
+		 echo "</pre>";
 		// die;
 	}
 
 
 	include("client.class.php");
-	$thisClient = new Client($clinetInfo[0][$clientID]);
+	$thisClient = new Client($clinetInfo[$clientID]);
 	//$clientInfo = $thisClient->getClientInfo($clientID);
 	//var_dump($clientInfo);
 	//die;
@@ -63,16 +63,16 @@
 	<?php var_dump($clientInfo[0]); ?>
 </div>
 <form action="/updateClient.php" method="put">
-  First name: <input type="text" name="fname" value="<?php echo $clientInfo[0]['first_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo[0]['last_name']; ?>"><br>
+  First name: <input type="text" name="fname" value="<?php echo $clientInfo['first_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
 
 echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td>
 	<td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
