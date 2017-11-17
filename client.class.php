@@ -265,8 +265,8 @@ Class Client {
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
 			$sql="Replace into lllbackoffice.clients (last_name, first_name, phone, email, city, state, birth_month, birth_day,  added_by, ts) values ('$lastName', '$firstName', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$thisuser', '$time') where clientID='$clientID';";
-			// var_dump($sql);
-			// die;
+			 var_dump($sql);
+			 die;
 			$clients->querydb($sql);
 			$updateuser=$clients->insert_id;
 			return($updateuser);
