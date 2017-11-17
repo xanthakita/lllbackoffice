@@ -12,7 +12,7 @@
  Copywrite @2017
  */ 
 
-$data=$_PUT;
+$data=$_POST;
 var_dump($data);
 
 
