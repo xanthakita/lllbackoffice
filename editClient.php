@@ -29,9 +29,9 @@
 
 
 	include("client.class.php");
-	$thisClient = new Client($clientInfo[$clientID]);
+	$thisClient = new Client($clientInfo['clientID']);
 	//$clientInfo = $thisClient->getClientInfo($clientID);
-	var_dump($clientInfo[$clientID]);
+	var_dump($clientInfo['clientID']);
 	echo "<br>";
 	var_dump($thisClient->getClientInfo($clinetInfo[$clientID]));
 	//die;
