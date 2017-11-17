@@ -20,6 +20,7 @@ Class Client {
 
 		GLOBAL $clients;
 		GLOBAL $thisuser;
+		$thisuser=$_COOKIE['userid'];
 		$thisClient = $clientID;
 		// print "In BaseClass constructor\n";
 		require('/var/www/html/Classes/mydbi.php');
