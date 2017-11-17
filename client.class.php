@@ -258,13 +258,13 @@ Class Client {
 			return($adduser);
 
 	}
-	public function Update_Client($clientID, $firstName, $lastName, $phone, $email, $city, $state, $birthmonth, $birthday){
+	public function Update_Client($clientID, $firstName, $lastName, $phone, $email, $city, $state, $notes){
 		// Adds a user to the user table
 			GLOBAL $clients;
 			GLOBAL $thisuser;
 			$now = new DateTime();
 			$time = $now->format('Y-m-d H:i:s');
-			$sql="Replace into lllbackoffice.clients (last_name, first_name, phone, email, city, state, birth_month, birth_day,  added_by, ts) values ('$lastName', '$firstName', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday', '$thisuser', '$time') where clientID='$clientID';";
+			$sql="Replace into lllbackoffice.clients (last_name, first_name, phone, email, city, state, birth_month, birth_day,  changed_by, changed_ts) values ('$lastName', '$firstName', '$phone', '$email', '$city', '$state', '$birthmonth', '$birthday','$notes', '$thisuser', '$time') where clientID='$clientID';";
 			 var_dump($sql);
 			 die;
 			$clients->querydb($sql);
