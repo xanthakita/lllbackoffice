@@ -20,10 +20,10 @@
 		$clientInfo=json_decode($_GET['clientInfo'],1);
 		$clientVisit=json_decode($_GET['clientVisit'],1);
 		$clientID=$_GET['client'];
-		 echo "<pre>";
-		 var_dump($clientInfo);
+		 //echo "<pre>";
+		 //var_dump($clientInfo);
 		 //var_dump($clientVisit);
-		 echo "</pre>";
+		 //echo "</pre>";
 		// die;
 	}
 
@@ -31,9 +31,9 @@
 	include("client.class.php");
 	$thisClient = new Client($clientInfo['clientID']);
 	//$clientInfo = $thisClient->getClientInfo($clientID);
-	var_dump($clientInfo['clientID']);
-	echo "<br>";
-	var_dump($thisClient->getClientInfo($clinetInfo[$clientID]));
+	//var_dump($clientInfo['clientID']);
+	//echo "<br>";
+	//var_dump($thisClient->getClientInfo($clinetInfo[$clientID]));
 	//die;
 
 	?>
