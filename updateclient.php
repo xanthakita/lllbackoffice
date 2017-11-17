@@ -12,6 +12,9 @@
  Copywrite @2017
  */ 
 
+include("client.class.php");
+include('Classes/include.php'); 
+
 $data=$_POST;
 var_dump($data);
 
