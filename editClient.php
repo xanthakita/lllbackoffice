@@ -31,7 +31,7 @@
 	include("client.class.php");
 	$thisClient = new Client($clinetInfo[$clientID]);
 	//$clientInfo = $thisClient->getClientInfo($clientID);
-	//var_dump($clientInfo);
+	var_dump($thisClient);
 	//die;
 
 	?>
@@ -72,7 +72,7 @@
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['notes']; ?>"><br>
 
 echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td>
 	<td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
