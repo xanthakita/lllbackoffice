@@ -31,7 +31,7 @@
 	include("client.class.php");
 	$thisClient = new Client($clinetInfo[$clientID]);
 	//$clientInfo = $thisClient->getClientInfo($clientID);
-	var_dump($thisClient);
+	var_dump($thisClient->getclient($clinetInfo[$clientID]));
 	//die;
 
 	?>
