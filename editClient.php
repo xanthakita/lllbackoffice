@@ -64,7 +64,7 @@
 <div>
 	<?php var_dump($clientInfo[0]); ?>
 </div>
-<form action="/updateClient.php" method="put" name="clientEdit">
+<form action="updateClient.php" method="put" name="clientEdit">
   First name: <input type="text" name="fname" value="<?php echo $clientInfo['first_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
   Phone: <input type="text" name="phone" value="<?php echo $clientInfo['phone']; ?>"><br>
