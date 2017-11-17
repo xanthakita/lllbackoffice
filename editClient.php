@@ -71,10 +71,9 @@
   Email: <input type="text" name="email" value="<?php echo $clientInfo['email']; ?>"><br>
   City: <input type="text" name="city" value="<?php echo $clientInfo['city']; ?>"><br>
   State: <input type="text" name="state" value="<?php echo $clientInfo['state']; ?>"><br>
-  Birth Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
+  Birth Year-Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
   Birth Day: <input type="text" name="birth_day" value="<?php echo $clientInfo['birth_day']; ?>"><br>
-  Birth Year: <input type="text" name="birth_year" value="<?php echo $clientInfo['birth_year']; ?>"><br>
-  Notes: <textarea name="lname" form="clientEdit"> <?php echo $clientInfo['notes']; ?></textarea><br>
+  Notes: <textarea rows="6" name="lname" form="clientEdit"> <?php echo $clientInfo['notes']; ?></textarea><br>
 
   <input type="submit" value="Submit">
 
