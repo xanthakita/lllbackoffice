@@ -16,7 +16,9 @@ include("client.class.php");
 include('Classes/include.php'); 
 
 $data=$_POST;
-var_dump($data['clientID']);
+$thisClient = new Client($data['clientID']);
+echo $thisClient->Update_Client($data['clientID'], $data['firstName'], $data['lastName'], $data['phone'], $data['email'], $data['city'], $data['state'], $data['birthmonth'], $data['birthday']);
+var_dump($thisClient);
 
 
 
