@@ -74,7 +74,7 @@
   Birth Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
   Birth Day: <input type="text" name="birth_day" value="<?php echo $clientInfo['birth_day']; ?>"><br>
   Birth Year: <input type="text" name="birth_year" value="<?php echo $clientInfo['birth_year']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['notes']; ?>"><br>
+  Notes: <textarea name="lname"> <?php echo $clientInfo['notes']; ?></textarea><br>
 
 echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td>
 	<td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
