@@ -64,7 +64,7 @@
 <div>
 	<?php var_dump($clientInfo[0]); ?>
 </div>
-<form action="/updateClient.php" method="put">
+<form action="/updateClient.php" method="put" name="clientEdit">
   First name: <input type="text" name="fname" value="<?php echo $clientInfo['first_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
   Phone: <input type="text" name="phone" value="<?php echo $clientInfo['phone']; ?>"><br>
@@ -74,34 +74,7 @@
   Birth Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
   Birth Day: <input type="text" name="birth_day" value="<?php echo $clientInfo['birth_day']; ?>"><br>
   Birth Year: <input type="text" name="birth_year" value="<?php echo $clientInfo['birth_year']; ?>"><br>
-  Notes: <textarea name="lname"> <?php echo $clientInfo['notes']; ?></textarea><br>
-
-echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['AppointmentDate']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Time:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['AppointmentTime']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Appt For:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['VisitType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Lash Type:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['lashType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Curl Type(s):</strong></td>
-	<td class='align-right'>".$clientVisit[0]['curlType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Lash Length(s):</strong></td>
-	<td class='align-right'>".$clientVisit[0]['Length']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Size(s):</strong></td>
-	<td class='align-right'>".$clientVisit[0]['Size']."</td></tr>";
-echo "<tr><td class='align-left'><strong>EyePad Type:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['eyePadType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Glue Type:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['glueType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Style:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['classicStyle']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Volume Type:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['VolumeType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Bottom Size(s):</strong></td>
-	<td class='align-right'>".$clientVisit[0]['BottomType']."</td></tr>";
-echo "<tr><td class='align-left'><strong>Artist:</strong></td>
-	<td class='align-right'>".$clientVisit[0]['Artist']."</td></tr>";
+  Notes: <textarea name="lname" form="clientEdit"> <?php echo $clientInfo['notes']; ?></textarea><br>
 
   <input type="submit" value="Submit">
 
