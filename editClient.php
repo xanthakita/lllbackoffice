@@ -67,13 +67,13 @@
 <form action="/updateClient.php" method="put">
   First name: <input type="text" name="fname" value="<?php echo $clientInfo['first_name']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
-  Last name: <input type="text" name="lname" value="<?php echo $clientInfo['last_name']; ?>"><br>
+  Phone: <input type="text" name="phone" value="<?php echo $clientInfo['phone']; ?>"><br>
+  Email: <input type="text" name="email" value="<?php echo $clientInfo['email']; ?>"><br>
+  City: <input type="text" name="city" value="<?php echo $clientInfo['city']; ?>"><br>
+  State: <input type="text" name="state" value="<?php echo $clientInfo['state']; ?>"><br>
+  Birth Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
+  Birth Day: <input type="text" name="birth_day" value="<?php echo $clientInfo['birth_day']; ?>"><br>
+  Birth Year: <input type="text" name="birth_year" value="<?php echo $clientInfo['birth_year']; ?>"><br>
   Last name: <input type="text" name="lname" value="<?php echo $clientInfo['notes']; ?>"><br>
 
 echo "<tr><td class='align-left'><strong>Last Appointment Date:</strong></td>
