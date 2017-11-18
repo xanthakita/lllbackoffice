@@ -17,7 +17,7 @@ include('Classes/include.php');
 
 $data=$_POST;
 $thisClient = new Client($data['clientID']);
-$thisClient->Update_Client($data['clientID'], $data['fname'], $data['lname'], $data['phone'], $data['email'], $data['city'], $data['state']);
+$thisClient->Update_Client($data['clientID'], $data['fname'], $data['lname'], $data['phone'], $data['email'], $data['city'], $data['state'], $data['notes']);
 header('Location: http://lllbackoffice.com/findClient.php');
 
 

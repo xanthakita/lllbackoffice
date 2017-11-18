@@ -74,7 +74,7 @@
   State: <input type="text" name="state" value="<?php echo $clientInfo['state']; ?>"><br>
   Birth Year-Month: <input type="text" name="birth_month" value="<?php echo $clientInfo['birth_month']; ?>"><br>
   Birth Day: <input type="text" name="birth_day" value="<?php echo $clientInfo['birth_day']; ?>"><br>
-  Notes: <textarea rows="6" name="lname" form="clientEdit"> <?php echo $clientInfo['notes']; ?></textarea><br>
+  Notes: <textarea rows="6" name="notes" form="clientEdit"> <?php echo $clientInfo['notes']; ?></textarea><br>
 
   <input type="submit" value="Submit">
 
