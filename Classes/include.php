@@ -11,6 +11,16 @@
  ====================================
  Copywrite @2017
  */
+ require_once("./loggen.class.php");
+ 	$log = new logGen('xanthakita','./backoffice.log',TRUE);
+	// error_reporting(E_ALL);
+	if (!isset($_COOKIE["userid"])) {
+		$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
+		header('location: login.php');
+	} else {
+		$username=$_COOKIE["userid"];
+		$log->logThis(LOG_DEBUG, "User logged in: $username");
+	}
  ?>
 
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />

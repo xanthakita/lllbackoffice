@@ -11,12 +11,8 @@ SOFT TABS:          NO
 ====================================
 Copywrite @2015
 */
-	error_reporting(E_ALL);
-	if (!isset($_COOKIE["userid"])) {
-		header('location: login.php');
-	} else {
-		$username=$_COOKIE["userid"];
-	}
+	require_once('./loggen.class.php');
+
 	?>
 
 <!DOCTYPE HTML>
@@ -47,7 +43,7 @@ Copywrite @2015
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 <!-- 			 <img src="./images/artists/<?php echo $username;?>.jpg" width="85px"  style="transform: rotate(90deg);">
 			</image> -->
-            <h3>Welcome, <?php echo $username;?></h3>
+            <h3>Welcome, <?php echo $username; ?></h3>
       </div>
     </nav>
 
