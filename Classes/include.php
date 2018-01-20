@@ -11,7 +11,7 @@
  ====================================
  Copywrite @2017
  */
- require_once("./loggen.class.php");
+ require_once('./loggen.class.php');
  	$log = new logGen('xanthakita','./backoffice.log',TRUE);
 	// error_reporting(E_ALL);
 	if (!isset($_COOKIE["userid"])) {
