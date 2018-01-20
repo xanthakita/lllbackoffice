@@ -15,8 +15,10 @@
  	$log = new logGen('xanthakita','./backoffice.log',TRUE);
 	// error_reporting(E_ALL);
 	if (!isset($_COOKIE["userid"])) {
-		//$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
-		header('location: login.php');
+		$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
+		if ($log->thisScript()!="login.php") {
+			header('location: login.php');
+		}
 	} else {
 		$username=$_COOKIE["userid"];
 		$log->logThis(LOG_DEBUG, "User logged in: $username");
