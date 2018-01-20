@@ -11,7 +11,7 @@ SOFT TABS:          NO
 ====================================
 Copywrite @2015
 */
-	require_once('./loggen.class.php');
+	include('Classes/include.php');
 
 	?>
 
@@ -28,7 +28,7 @@ Copywrite @2015
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
-<?php include('Classes/include.php'); ?> 
+
 	</head>
 	<body>
 
