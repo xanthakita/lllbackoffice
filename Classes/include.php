@@ -22,6 +22,13 @@
 	} else {
 		$username=$_COOKIE["userid"];
 		$log->logThis(LOG_DEBUG, "User logged in: $username");
+		include('user.class.php');
+		$artist = new User($username);
+		$artistsList=$artist->Get_Artists();
+		$log->logthis(LOG_DEBUG, "artists: $artistsList");
+		if (isset($_GET['client'])){
+			$clientid=$_GET['client'];
+		}
 	}
  ?>
 

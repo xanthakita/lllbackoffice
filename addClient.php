@@ -12,12 +12,8 @@
  Copywrite @2017
  */
 
-	error_reporting(E_ALL);
-	if (!isset($_COOKIE["userid"])) {
-		header('location: login.php');
-	} else {
-		$username=$_COOKIE["userid"];
-	}
+ 	require_once('Classes/include.php');
+
 	?>
 
 <!DOCTYPE HTML>
@@ -33,7 +29,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
-<?php include('Classes/include.php'); ?> 
+
 	</head>
 	<body>
     <div class="container text-center">
