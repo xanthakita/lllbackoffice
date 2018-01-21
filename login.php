@@ -14,6 +14,7 @@
 
  */ 
 require_once('Classes/include.php');
+$log->logthis(LOG_DEBUG, "Entered index.php");
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
 	if (isset($_COOKIE["userid"])) {
 		header('location: index.php');

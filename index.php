@@ -12,7 +12,7 @@ SOFT TABS:          NO
 Copywrite @2015
 */
 	include('Classes/include.php');
-
+	$log->logthis(LOG_DEBUG, "Entered index.php");
 	?>
 
 <!DOCTYPE HTML>
