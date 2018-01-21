@@ -245,16 +245,21 @@ class logGen extends \Error
       $this->logthis($output);
   }
 
+  public function thisScript()
+  {
+    $this->fn=get_included_files();
+    $output=explode('/',$this->fn[0]);
+    return(array_pop($output));
+  }
+
   public function logThis($logLevel=LOG_INFO, $message='')
   {
     $this->message=$message;
     if (self::$showDebug===FALSE & $logLevel===LOG_DEBUG) { return(0); }
     $varname="static";
     $output="";
-    $this->fn=get_included_files();
-    // $this->fn=array_pop(explode('/',get_included_files()[0]));
-    $output=explode('/',$this->fn[0]);
-    $this->script=array_pop($output);
+    $this->script=$this->thisScript();
+
     $this->ts=date("d-M-Y H:i:sa T");
     $type=gettype($this->message);
 
