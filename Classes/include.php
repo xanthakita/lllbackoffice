@@ -12,6 +12,7 @@
  Copywrite @2017
  */
  require_once('/var/www/html/Classes/loggen.class.php');
+ $username="";
  	$log = new logGen('xanthakita','./backoffice.log',TRUE);
 	// error_reporting(E_ALL);
 	$script=$log->thisScript();
@@ -22,7 +23,7 @@
 	} else {
 		$username=$_COOKIE["userid"];
 		$log->logThis(LOG_DEBUG, "User logged in: $username");
-		include('user.class.php');
+		require_once('user.class.php');
 		$artist = new User($username);
 		$artistsList=$artist->Get_Artists();
 		$log->logthis(LOG_DEBUG, "artists: $artistsList");
