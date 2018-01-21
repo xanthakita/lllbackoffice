@@ -14,13 +14,11 @@
  require_once('/var/www/html/Classes/loggen.class.php');
  	$log = new logGen('xanthakita','./backoffice.log',TRUE);
 	// error_reporting(E_ALL);
-	if (!isset($_COOKIE["userid"])) {
+	$script=$log->thisScript();
+	$log->logthis(LOG_DEBUG, "script: $script");
+	if (($script!="login.php") AND (!isset($_COOKIE["userid"]))) {
 		$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
-		$script=$log->thisScript();
-		$log->logthis(LOG_DEBUG, "script: $script");
-		if ($script!="login.php") {
-			header('location: login.php');
-		}
+		header('location: login.php');
 	} else {
 		$username=$_COOKIE["userid"];
 		$log->logThis(LOG_DEBUG, "User logged in: $username");

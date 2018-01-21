@@ -13,7 +13,7 @@
  
 
  */ 
-
+require_once('Classes/include.php');
 //setcookie("userid", "test_value", time() + (60 * 30), "/"); // 86400 = 1 day
 	if (isset($_COOKIE["userid"])) {
 		header('location: index.php');
@@ -52,7 +52,6 @@ require_once('./mystring.class.php');
       }
     </script> -->
 
-<?php include('Classes/include.php'); ?>
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
