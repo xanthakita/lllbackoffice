@@ -11,6 +11,9 @@ SOFT TABS:          NO
 ====================================
 Copywrite @2015
 */
+
+	session_name('lllbackoffice');
+	session_start();
 	include('Classes/include.php');
 	$log->logthis(LOG_DEBUG, "Entered index.php");
 	?>
