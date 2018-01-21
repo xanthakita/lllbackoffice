@@ -13,7 +13,9 @@
  */
  require_once('/var/www/html/Classes/loggen.class.php');
  $username="";
- 	$log = new logGen('xanthakita','./backoffice.log',TRUE);
+ 	if (!isset($log)){
+	 	$log = new logGen('xanthakita','./backoffice.log',TRUE);
+	}
 	// error_reporting(E_ALL);
 	$script=$log->thisScript();
 	$log->logthis(LOG_DEBUG, "script: $script");
