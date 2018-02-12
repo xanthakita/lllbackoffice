@@ -20,11 +20,11 @@
 	$script=$log->thisScript();
 	$log->logthis(LOG_DEBUG, "script: $script");
 	$log->logthis(LOG_DEBUG, "COOKIES".print_r($_COOKIE, TRUE));
-	if (($script!="login.php") AND (!isset($_COOKIE["userid"]))) {
+	if (($script!="login.php") AND (!isset($_COOKIE["uid"]))) {
 		$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
 		header('location: login.php');
 	} else {
-		$username=$_COOKIE["userid"];
+		$username=$_COOKIE["uid"];
 		$log->logThis(LOG_DEBUG, "User logged in: $username");
 		require_once('user.class.php');
 		$artist = new User($username);
