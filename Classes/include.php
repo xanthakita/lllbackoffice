@@ -19,6 +19,7 @@
 	// error_reporting(E_ALL);
 	$script=$log->thisScript();
 	$log->logthis(LOG_DEBUG, "script: $script");
+	$log->logthis(LOG_DEBUG, "COOKIES".print_r($_COOKIE, TRUE));
 	if (($script!="login.php") AND (!isset($_COOKIE["userid"]))) {
 		$log->logthis(LOG_DEBUG, 'User not loggedin. going to login.php');
 		header('location: login.php');
