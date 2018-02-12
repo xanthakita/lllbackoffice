@@ -11,7 +11,7 @@
  ====================================
  Copywrite @2017
  */
- require_once('/var/www/html/Classes/loggen.class.php');
+ require_once('/var/www/html/Classes/loggen.class.php'); 
  $username="";
  	if (!isset($log)){
 	 	$log = new logGen('xanthakita','./backoffice.log',TRUE);
